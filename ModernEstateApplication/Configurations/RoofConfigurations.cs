@@ -1,0 +1,14 @@
+﻿using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Microsoft.EntityFrameworkCore;
+using ModernEstateApplication.Models;
+
+namespace ModernEstateApplication.Configurations
+{
+    public class RoofConfigurations : IEntityTypeConfiguration<Roof>
+    {
+        public void Configure(EntityTypeBuilder<Roof> builder)
+        {
+            builder.Property(c => c.RoofType).IsRequired().HasColumnType("nvarchar(100)");
+        }
+    }
+}
