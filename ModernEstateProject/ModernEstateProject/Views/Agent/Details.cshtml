@@ -1,0 +1,270 @@
+﻿@using ModernEstateProject.ViewModels.Agents
+@model AgentVM
+
+<section class="section-full text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-8 col-lg-offset-4">
+                <h1>@Model.Agent.FullName</h1>
+                <p></p>
+                <ol class="breadcrumb">
+                    <li>
+                        <a asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                    </li>
+                    <li class="active">Personal Agent Page</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section Description-->
+<section class="section-sm bg-dark text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-4 inset-8">
+                <div class="img-wrap-mod-1">
+                    <img src="~/assets/images/@Model.Agent.Photo" alt="" width="320" height="320">
+                </div>
+                <h4 class="border-bottom offset-8">Get in Touch</h4>
+                <p class="offset-10">You can contact us any way that is convenient for you. We would be happy to answer your questions.</p>
+                <!-- RD Mailform-->
+                <form data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" class="rd-mailform text-left offset-10">
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">Enter your name</label>
+                        <input id="contact-name" type="text" name="name" data-constraints="Required" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">Enter your e-mail</label>
+                        <input id="contact-email" type="email" name="email" data-constraints="Required Email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">Message</label>
+                        <textarea id="contact-message" name="message" data-constraints="Required" placeholder="Hello, Heather! I`d like..." class="form-control min-height"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-sushi btn-sm">Send</button>
+                </form>
+            </div>
+            <div class="col-xs-12 col-md-8 offset-5">
+                <div class="row row-mod-1">
+                    <div class="col-xs-12 col-sm-4 col-md-3">
+                        <dl class="contact-info">
+                            <dt>
+                                <span class="h6 text-ubold">Phones</span>
+                            </dt>
+                            <dd>
+                                <a href="callto:#" class="text-light">
+                                    @Model.Agent.PhoneNumber
+                                    <br>
+                                </a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <dl class="contact-info">
+                            <dt>
+                                <span class="h6 text-ubold">E-mail</span>
+                            </dt>
+                            <dd>
+                                <a href="mailto:#" class="text-sushi">@Model.Agent.Email</a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <address class="address">
+                            <span class="h6 text-ubold">Address</span>
+                            <p>@Model.Agent.Address</p>
+                        </address>
+                    </div>
+                </div>
+                <h4 class="offset-8 border-bottom">About Heather</h4>
+                <p>
+                    @Model.Agent.Description
+                </p>
+                <h4 class="border-bottom offset-8">Social Connections</h4>
+                <div class="icon-group">
+                    <a href="@Model.Agent.FacebookLink" class="icon icon-sm icon-social fa-facebook"></a>
+                    <a href="@Model.Agent.XLink" class="icon icon-sm icon-social fa-twitter"></a>
+                    <a href="@Model.Agent.LinkedinLink" class="icon icon-sm icon-social fa-linkedin"></a>
+                    <a href="@Model.Agent.InstagramLink" class="icon icon-sm icon-social fa-instagram"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section Heather Turner’s Properties-->
+<section class="section-md text-left">
+    <div class="container text-center text-sm-left">
+		<h2>@Model.Agent.FullName’s Offerings</h2>
+        <hr>
+        <div class="row relative text-left offset-10">
+            <div class="col-xs-12 col-sm-12 col-md-8">
+                <div class="row clearleft-custom-5">
+                    @foreach (Property property in Model.Properties)
+                    {
+                        <div class="col-sm-6">
+                            <div class="thumbnail thumbnail-3">
+                                <a href="single-property-page.html" class="img-link">
+                                    <img src="~/assets/images/@property.PropertyPhotos.FirstOrDefault(p=>p.IsPrimary==true)?.Photo" alt="" width="370" height="250">
+                                </a>
+                                <div class="caption">
+                                    <h4>
+                                        <a asp-controller="SingleProperty" asp-action="Details" asp-route-Id="@property.Id" class="text-sushi">@property.Location</a>
+                                    </h4>
+                                    <span class="thumbnail-price h5">
+                                        $@property.Price/
+                                        <span class="mon text-regular">month</span>
+                                    </span>
+                                    <ul class="describe-1">
+                                        <li>
+                                            <span class="icon-square icon-sm">
+                                                <svg x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve">
+                                                <g>
+                                                <path d="M3.6,75.7h3.6V7.3l85.7-0.1v85.3l-16.7-0.1l0-16.7c0-0.9-0.4-1.9-1-2.5c-0.7-0.7-1.6-1-2.5-1h-69V75.7h3.6                          H3.6v3.6H69L69,96c0,2,1.6,3.6,3.6,3.6l23.8,0.1c1,0,1.9-0.4,2.5-1c0.7-0.7,1-1.6,1-2.5V3.6c0-1-0.4-1.9-1-2.5                          c-0.7-0.7-1.6-1-2.5-1L3.6,0.1C1.6,0.2,0,1.7,0,3.7v72c0,0.9,0.4,1.9,1,2.5c0.7,0.7,1.6,1,2.5,1V75.7z"></path>
+                                                <path d="M38.1,76.9v-9.5c0-1.3-1.1-2.4-2.4-2.4c-1.3,0-2.4,1.1-2.4,2.4v9.5c0,1.3,1.1,2.4,2.4,2.4                          C37,79.3,38.1,78.2,38.1,76.9"></path>
+                                                <path d="M38.1,50.7V15c0-1.3-1.1-2.4-2.4-2.4c-1.3,0-2.4,1.1-2.4,2.4v35.7c0,1.3,1.1,2.4,2.4,2.4                          C37,53.1,38.1,52.1,38.1,50.7"></path>
+                                                <path d="M2.4,38.8h33.3c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4H2.4c-1.3,0-2.4,1.1-2.4,2.4                          C0,37.8,1.1,38.8,2.4,38.8"></path>
+                                                <path d="M35.7,46h31c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4h-31c-1.3,0-2.4,1.1-2.4,2.4                          C33.3,44.9,34.4,46,35.7,46"></path>
+                                                <path d="M78.6,46h16.7c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4H78.6c-1.3,0-2.4,1.1-2.4,2.4                          C76.2,44.9,77.3,46,78.6,46"></path>
+                                                <path d="M78.6,46h16.7c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4H78.6c-1.3,0-2.4,1.1-2.4,2.4                          C76.2,44.9,77.3,46,78.6,46"></path>
+                                                <path d="M81,43.6v-7.1c0-1.3-1.1-2.4-2.4-2.4c-1.3,0-2.4,1.1-2.4,2.4v7.1c0,1.3,1.1,2.4,2.4,2.4                          C79.9,46,81,44.9,81,43.6"></path>
+                                                <path d="M81,43.6v-7.1c0-1.3-1.1-2.4-2.4-2.4c-1.3,0-2.4,1.1-2.4,2.4v7.1c0,1.3,1.1,2.4,2.4,2.4                            C79.9,46,81,44.9,81,43.6"></path>
+                                </g>
+                              </svg>
+                                            </span>@property.Area sq ft
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-sm icon-primary hotel-icon-10"></span>@property.BathroomCount bathrooms
+                                        </li>
+                                    </ul>
+                                    <ul class="describe-2">
+                                        <li>
+                                            <span class="icon icon-sm icon-primary hotel-icon-05"></span>@property.BedroomCount bedrooms
+                                        </li>
+                                        <li>
+                                            <span class="icon icon-sm icon-primary hotel-icon-26"></span>@property.GarageCount garages
+                                        </li>
+                                    </ul>
+                                    <p class="text-abbey">@property.Description</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                    <div class="col-sm-12 text-center text-sm-left offset-11">
+                        <ul class="pagination">
+                            <li class="disabled">
+                                <span class="fa-chevron-left"></span>
+                            </li>
+                            <li class="active">
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">3</a>
+                            </li>
+                            <li>
+                                <a href="#">4</a>
+                            </li>
+                            <li>
+                                <a href="#" class="fa-chevron-right"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-4 inset-7 text-center text-md-left">
+                <h4 class="border-bottom offset-11">Property Filter</h4>
+                <form class="form-mod-1 offset-11">
+                    <div class="form-group">
+                        <label for="select-1" class="form-label">Location</label>
+                        <!--Select 2-->
+                        <select id="select-1" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                            <option value="Any" selected="selected">Any</option>
+                            <option value="Denver">Denver</option>
+                            <option value="Houston">Houston</option>
+                            <option value="Las Vegas">Las Vegas</option>
+                            <option value="Orlando">Orlando</option>
+                            <option value="Phoenix">Phoenix</option>
+                            <option value="San Diego">San Diego</option>
+                            <option value="Miami">Miami</option>
+                            <option value="Atlanta">Atlanta</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="select-2" class="form-label">Property Status</label>
+                        <!--Select 2-->
+                        <select id="select-2" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                            <option value="Any" selected="selected">Any</option>
+                            <option value="Vacant land">Vacant land</option>
+                            <option value="Commercial">Commercial</option>
+                            <option value="Residential">Residential</option>
+                            <option value="Homes">Homes</option>
+                            <option value="Condos">Condos</option>
+                            <option value="Townhouses">Townhouses</option>
+                            <option value="Foreclosures">Foreclosures</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="select-3" class="form-label">Property Type</label>
+                        <!--Select 2-->
+                        <select id="select-3" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                            <option value="Any" selected="selected">Any</option>
+                            <option value="Under Construction">Under Construction</option>
+                            <option value="Ready to Move">Ready to Move</option>
+                        </select>
+                    </div>
+                    <div class="form-inline-flex-xs">
+                        <div class="form-group">
+                            <label for="select-4" class="form-label">Min Beds</label>
+                            <!--Select 2-->
+                            <select id="select-4" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                                <option value="Any" selected="selected">Any</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="select-5" class="form-label">Min Baths</label>
+                            <!--Select 2-->
+                            <select id="select-5" data-minimum-results-for-search="Infinity" class="form-control select-filter">
+                                <option value="Any" selected="selected">Any</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="price" class="form-label">Price (USD)</label>
+                        <div class="form-inline-flex-xs">
+                            <input id="price" type="text" name="min-price" placeholder="100" class="form-control">
+                            <span class="text-abbey dash">–</span>
+                            <input id="max-price" type="text" name="max-price" placeholder="10000" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="area" class="form-label">Area (Sq Ft)</label>
+                        <div class="form-inline-flex-xs">
+                            <input id="area" type="text" name="min-area" placeholder="1500" class="form-control">
+                            <span class="text-abbey dash">–</span>
+                            <input id="max-area" type="text" name="max-area" placeholder="22000" class="form-control">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-sushi btn-sm btn-min-width-mod-3">apply filter</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
