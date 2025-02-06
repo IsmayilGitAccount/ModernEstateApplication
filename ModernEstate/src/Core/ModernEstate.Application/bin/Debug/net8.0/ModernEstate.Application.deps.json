@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ModernEstate.Application/1.0.0": {
+        "dependencies": {
+          "ModernEstate.Domain": "1.0.0"
+        },
+        "runtime": {
+          "ModernEstate.Application.dll": {}
+        }
+      },
+      "ModernEstate.Domain/1.0.0": {
+        "runtime": {
+          "ModernEstate.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ModernEstate.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ModernEstate.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

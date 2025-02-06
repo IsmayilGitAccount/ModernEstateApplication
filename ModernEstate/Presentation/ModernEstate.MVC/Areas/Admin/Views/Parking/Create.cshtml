@@ -1,0 +1,21 @@
+﻿@using ModernEstate.MVC.Areas.Admin.ViewModels.Parkings
+@model CreateAdminParkingVM
+<div class="card mb-0">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <legend>Parking Form</legend>
+            <div class="mb-3">
+                <label asp-for="ParkingType" class="form-label">Parking Type</label>
+                <input asp-for="ParkingType" class="form-control" placeholder="Enter parking type">
+                <span asp-validation-for="ParkingType" class="text-danger"></span>
+            </div>
+            <button class="btn btn-light m-1">Submit</button>
+            <a asp-action="Index" type="button" class="btn btn-light m-1">Cancel</a>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

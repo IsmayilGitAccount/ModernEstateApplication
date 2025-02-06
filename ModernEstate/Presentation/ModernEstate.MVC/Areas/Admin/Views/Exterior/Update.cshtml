@@ -1,0 +1,21 @@
+﻿@using ModernEstate.MVC.Areas.Admin.ViewModels.Exteriors
+@model UpdateAdminExteriorVM
+<div class="card mb-0">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <legend>Exterior Form</legend>
+            <div class="mb-3">
+                <label asp-for="ExteriorName" class="form-label">Exterior Name</label>
+                <input asp-for="ExteriorName" class="form-control" placeholder="Enter exterior name">
+                <span asp-validation-for="ExteriorName" class="text-danger"></span>
+            </div>
+            <button class="btn btn-light m-1">Submit</button>
+            <a asp-action="Index" type="button" class="btn btn-light m-1">Cancel</a>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+}

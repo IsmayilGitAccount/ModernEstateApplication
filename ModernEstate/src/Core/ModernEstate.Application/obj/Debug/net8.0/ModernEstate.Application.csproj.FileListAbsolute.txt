@@ -1,0 +1,15 @@
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\bin\Debug\net8.0\ModernEstate.Application.deps.json
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\bin\Debug\net8.0\ModernEstate.Application.dll
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\bin\Debug\net8.0\ModernEstate.Application.pdb
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ModernEstate.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ModernEstate.Application.AssemblyInfoInputs.cache
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ModernEstate.Application.AssemblyInfo.cs
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ModernEstate.Application.csproj.CoreCompileInputs.cache
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ModernEstate.Application.dll
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\refint\ModernEstate.Application.dll
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ModernEstate.Application.pdb
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ref\ModernEstate.Application.dll
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\bin\Debug\net8.0\ModernEstate.Domain.dll
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\bin\Debug\net8.0\ModernEstate.Domain.pdb
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ModernEstate.Application.csproj.AssemblyReference.cache
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Application\obj\Debug\net8.0\ModernEs.8376B8FD.Up2Date

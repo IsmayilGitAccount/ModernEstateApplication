@@ -1,0 +1,86 @@
+﻿@using ModernEstate.MVC.Areas.Admin.ViewModels.Agents
+@model CreateAdminAgentVM
+<div class="card mb-0">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <legend>Category Form</legend>
+            <div class="mb-3">
+                <label asp-for="Photo" class="form-label">Photo</label>
+                <input asp-for="Photo" class="form-control">
+                <span asp-validation-for="Photo" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="FullName" class="form-label">Agent Name</label>
+                <input asp-for="FullName" class="form-control" placeholder="Enter agent name">
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="AgencyId" class="form-label">Agency Name</label>
+                <select class="form-control" asp-for="AgencyId" asp-items="new SelectList(Model.Agencies, nameof(ModernEstate.Domain.Entities.Agency.Id), nameof(ModernEstate.Domain.Entities.Agency.AgencyName))"></select>
+                <span asp-validation-for="AgencyId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Email" class="form-label">Email</label>
+                <input asp-for="Email" class="form-control" placeholder="Enter email">
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+                <input asp-for="PhoneNumber" class="form-control" placeholder="Enter phone number">
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="FacebookLink" class="form-label">Facebook Link</label>
+                <input asp-for="FacebookLink" class="form-control" placeholder="Enter facebook link">
+                <span asp-validation-for="FacebookLink" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="InstagramLink" class="form-label">Instagram Link</label>
+                <input asp-for="InstagramLink" class="form-control" placeholder="Enter instagram link">
+                <span asp-validation-for="InstagramLink" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="XLink" class="form-label">Twitter Link</label>
+                <input asp-for="XLink" class="form-control" placeholder="Enter twitter link">
+                <span asp-validation-for="XLink" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="LinkedinLink" class="form-label">Linkedin Link</label>
+                <input asp-for="LinkedinLink" class="form-control" placeholder="Enter linkedin link">
+                <span asp-validation-for="LinkedinLink" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Address" class="form-label">Address</label>
+                <input asp-for="Address" class="form-control" placeholder="Enter address">
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label">Description</label>
+                <input asp-for="Description" class="form-control" placeholder="Enter description">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <button class="btn btn-light m-1">Submit</button>
+            <a asp-action="Index" type="button" class="btn btn-light m-1">Cancel</a>
+        </form>
+    </div>
+</div>
+@section Scripts {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('input, select').on('input change', function () {
+                    var field = $(this);
+                    var errorSpan = field.siblings('.text-danger');
+                    if (field.val().trim() !== '') {
+                        errorSpan.hide();
+                    } else {
+                        errorSpan.show();
+                    }
+                });
+            });
+        </script>
+}

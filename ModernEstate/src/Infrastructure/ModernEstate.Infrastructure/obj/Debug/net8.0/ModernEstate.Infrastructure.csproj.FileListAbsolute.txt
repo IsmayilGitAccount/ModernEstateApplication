@@ -1,0 +1,11 @@
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\bin\Debug\net8.0\ModernEstate.Infrastructure.deps.json
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\bin\Debug\net8.0\ModernEstate.Infrastructure.dll
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\bin\Debug\net8.0\ModernEstate.Infrastructure.pdb
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.AssemblyInfoInputs.cache
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.AssemblyInfo.cs
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.dll
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\refint\ModernEstate.Infrastructure.dll
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.pdb
+C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ref\ModernEstate.Infrastructure.dll
