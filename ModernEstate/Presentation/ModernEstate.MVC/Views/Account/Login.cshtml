@@ -11,9 +11,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Login - Modernize</title>
+    <title>Login</title>
     <link rel="shortcut icon" type="image/png" href="~/admin/images/logos/favicon.png" />
     <link rel="stylesheet" href="~/admin/css/styles.min.css" />
+    <link rel="icon" href="~/assets/images/favicon.ico" type="image/x-icon">
     <style>
         .btn-green {
             background-color: #4CAF50; /* Green */
@@ -68,9 +69,14 @@
                     <div class="text-center mt-3">
                         <p>New to Modern Estate? <a asp-controller="Account" asp-action="Register" class="text-primary">Create an account</a></p>
                         <p> <a asp-controller="Account" asp-action="VerifyEmail" class="text-primary">Forgot Password</a></p>
-
+                        <div class="icon-group">
+                            <a href="#" class="icon icon-sm icon-social fa-facebook"></a>
+                            <a href="#" class="icon icon-sm icon-social fa-twitter"></a>
+                            <a href="#" class="icon icon-sm icon-social fa-google-plus"></a>
+                        </div>
                     </div>
                 </form>
+                
             </div>
         </div>
     </div>

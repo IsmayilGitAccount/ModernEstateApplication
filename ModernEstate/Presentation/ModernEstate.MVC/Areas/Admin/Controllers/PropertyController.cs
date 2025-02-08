@@ -435,7 +435,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             if (propertyVM.MainPhoto is not null)
             {
                 string file = await propertyVM.MainPhoto.CreatFileAsync(_env.WebRootPath, "assets", "images");
-                PropertyPhoto main = property.PropertyPhotos.FirstOrDefault(p => p.IsPrimary == false);
+                PropertyPhoto main = property.PropertyPhotos.FirstOrDefault(p => p.IsPrimary == true);
 
                 if (main is not null)
                 {

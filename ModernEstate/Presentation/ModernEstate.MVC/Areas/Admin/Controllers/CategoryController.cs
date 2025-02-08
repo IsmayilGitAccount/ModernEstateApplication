@@ -138,7 +138,10 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             if (category == null) return BadRequest();
 
-            category.CategoryPhoto.DeleteFile(_env.WebRootPath, Root);
+           if(category.CategoryPhoto is not null)
+            {
+                category.CategoryPhoto.DeleteFile(_env.WebRootPath, Root);
+            }
 
             _context.Categories.Remove(category);
 

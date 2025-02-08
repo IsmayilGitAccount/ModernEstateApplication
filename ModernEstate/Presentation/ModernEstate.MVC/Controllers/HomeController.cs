@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Transactions;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels.Paginations;
 using ModernEstate.Application.ViewModels.Properties;
 using ModernEstate.Application.ViewModels.Search;
 using ModernEstate.Domain.Entities;
@@ -9,23 +11,17 @@ namespace ModernEstate.MVC.Controllers
 {
     public class HomeController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index(string? search)
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
 
-            IQueryable<Property> query = _context.Properties.Include(p => p.Category).Include(p => p.PropertyPhotos.Where(pp => pp.IsPrimary == true));
+            int count = await _context.Properties.CountAsync();
 
-            if (!string.IsNullOrEmpty(search))
-            {
-                query = query.Where(p => p.Category.CategoryName.ToLower().Contains(search.ToLower()));
-            }
+            double total = Math.Ceiling((double)count / 6);
 
-            SearchPropertyVM propertyVM = new SearchPropertyVM()
-            {
-                Properties = query.ToList(),
-            };
+            if (total < page) return BadRequest();
 
-
-            PropertyVM propertyVMs = new PropertyVM()
+            var propertyVMs = new PropertyVM()
             {
                 Property = await _context.Properties
                .Include(p => p.Agency)
@@ -56,21 +52,26 @@ namespace ModernEstate.MVC.Controllers
                    Photo = p.PropertyPhotos.FirstOrDefault(p => p.IsDeleted == false).Photo,
                    CreatedAt = p.CreatedAt,
                })
-               .Take(6)
                .OrderByDescending(p => p.Id)
+               .Skip((page-1)*6)
+               .Take(6)
                .ToListAsync(),
                 Category = await _context.Categories
                 .Include(c => c.Properties)
                 .OrderByDescending(c => c.CreatedAt)
-                .Take(4)
+                .Take(12)
                 .ToListAsync(),
                 Status = await _context.Status.Include(s => s.Properties).ToListAsync(),
                 Types = await _context.Types.Include(s => s.Properties).ToListAsync(),
-                Slides = await _context.Slides.Take(3).OrderByDescending(s => s.Order).ToListAsync()
+                Slides = await _context.Slides.Take(3).OrderByDescending(s => s.Order).ToListAsync(),
+                Agents = await _context.Agents.Take(9).Include(a => a.Agency).ToListAsync(),
+                TotalPage = total,
+                CurrentPage = page
             };
 
             return View(propertyVMs);
         }
+
     }
 }
 

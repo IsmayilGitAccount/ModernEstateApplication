@@ -1,5 +1,5 @@
+using System.Reflection;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.UI.Services;
 using ModernEstate.Domain.Entities.Account;
 using ModernEstate.Persistence.Data;
 using ModernEstate.Persistence.ServiceRegistration;
@@ -21,6 +21,7 @@ builder.Services
         opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
         opt.Lockout.MaxFailedAccessAttempts = 3;
     }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>().AddDefaultUI();;
+
 
 var app = builder.Build();
 

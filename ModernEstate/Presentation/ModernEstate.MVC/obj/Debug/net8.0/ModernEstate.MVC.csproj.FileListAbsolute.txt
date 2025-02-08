@@ -282,3 +282,6 @@ C:\Code Academy\ModernEstate\Presentation\ModernEstate.MVC\bin\Debug\net8.0\Zaab
 C:\Code Academy\ModernEstate\Presentation\ModernEstate.MVC\bin\Debug\net8.0\Zaabee.SequentialGuid.dll
 C:\Code Academy\ModernEstate\Presentation\ModernEstate.MVC\bin\Debug\net8.0\Zaabee.SmtpClient.dll
 C:\Code Academy\ModernEstate\Presentation\ModernEstate.MVC\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Code Academy\ModernEstate\Presentation\ModernEstate.MVC\bin\Debug\net8.0\AutoMapper.dll
+C:\Code Academy\ModernEstate\Presentation\ModernEstate.MVC\bin\Debug\net8.0\AutoMapper.Collection.dll
+C:\Code Academy\ModernEstate\Presentation\ModernEstate.MVC\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
