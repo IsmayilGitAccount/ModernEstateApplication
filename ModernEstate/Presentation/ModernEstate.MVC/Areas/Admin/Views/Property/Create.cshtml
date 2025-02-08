@@ -1,0 +1,184 @@
+﻿@model CreateAdminPropertyVM
+@using ModernEstate.Domain.Entities
+@using ModernEstate.MVC.Areas.Admin.ViewModels.Properties
+<div class="card mb-0">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <legend>Property Form</legend>
+            <div class="mb-3">
+                <label asp-for="MainPhoto" class="form-label">Main Photo</label>
+                <input asp-for="MainPhoto" class="form-control" accept="image/*">
+                <span asp-validation-for="MainPhoto" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="AdditionalPhoto" class="form-label">Additional Photos</label>
+                <input asp-for="AdditionalPhoto" type="file" class="form-control" multiple accept="image/*">
+                <span asp-validation-for="AdditionalPhoto" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="AgentId" class="form-label">Agent Name</label>
+                <select asp-for="AgentId" class="form-select" asp-items="new SelectList(Model.Agents,nameof(Agent.Id), nameof(Agent.FullName))">
+                    <option value="">Choose Agent</option>
+
+                </select>
+                <span asp-validation-for="AgentId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="AgencyId" class="form-label">Agency Name</label>
+                <select asp-for="AgencyId" class="form-select" asp-items="new SelectList(Model.Agencies,nameof(Agency.Id), nameof(Agency.AgencyName))">
+                    <option value="">Choose Agency</option>
+
+                </select>
+                <span asp-validation-for="AgencyId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="CategoryId" class="form-label">Category</label>
+                <select asp-for="CategoryId" class="form-select" asp-items="new SelectList(Model.Categories,nameof(Category.Id), nameof(Category.CategoryName))">
+                    <option value="">Choose Category</option>
+                </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Location" class="form-label">Location</label>
+                <input asp-for="Location" class="form-control" placeholder="Enter Location">
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Price" class="form-label">Price</label>
+                <input asp-for="Price" class="form-control" placeholder="Enter Price">
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Area" class="form-label">Area</label>
+                <input asp-for="Area" class="form-control" placeholder="Enter Area">
+                <span asp-validation-for="Area" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="BedroomCount" class="form-label">Bedroom Count</label>
+                <input asp-for="BedroomCount" class="form-control" placeholder="Enter Bedroom Count">
+                <span asp-validation-for="BedroomCount" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="BathroomCount" class="form-label">Bathroom Count</label>
+                <input asp-for="BathroomCount" class="form-control" placeholder="Enter Bathroom Count">
+                <span asp-validation-for="BathroomCount" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="GarageCount" class="form-label">Garage Count</label>
+                <input asp-for="GarageCount" class="form-control" placeholder="Enter Garage Count">
+                <span asp-validation-for="GarageCount" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="RoomCount" class="form-label">Room Count</label>
+                <input asp-for="RoomCount" class="form-control" placeholder="Enter Room Count">
+                <span asp-validation-for="RoomCount" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="BuiltYear" class="form-label">Built Year</label>
+                <input asp-for="BuiltYear" class="form-control" placeholder="Enter Built Year">
+                <span asp-validation-for="BuiltYear" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="LotSize" class="form-label">Lot Size</label>
+                <input asp-for="LotSize" class="form-control" placeholder="Enter Lot Size">
+                <span asp-validation-for="LotSize" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="SchoolDistrict" class="form-label">School District</label>
+                <input asp-for="SchoolDistrict" class="form-control" placeholder="Enter School District">
+                <span asp-validation-for="SchoolDistrict" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="FeatureIds" class="form-label">Features</label>
+                <div>
+                    @foreach (var feature in Model.Features)
+                    {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="FeatureIds" value="@feature.Id" id="feature_@feature.Id">
+                                <label class="form-check-label" for="feature_@feature.Id">
+                                @feature.FeatureName
+                                </label>
+                            </div>
+                    }
+                </div>
+                <span asp-validation-for="FeatureIds" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ParkingId" class="form-label">Parking Type</label>
+                <select asp-for="ParkingId" class="form-select" asp-items="new SelectList(Model.Parkings,nameof(Parking.Id), nameof(Parking.ParkingType))">
+                    <option value="">Choose Parking Type</option>
+
+                </select>
+                <span asp-validation-for="ParkingId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="RoofId" class="form-label">Roof</label>
+                <select asp-for="RoofId" class="form-select" asp-items="new SelectList(Model.Roofs,nameof(Roof.Id), nameof(Roof.RoofType))">
+                    <option value="">Choose Roof Type</option>
+
+                </select>
+                <span asp-validation-for="RoofId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ViewId" class="form-label">View</label>
+                <select asp-for="ViewId" class="form-select" asp-items="new SelectList(Model.Views,nameof(View.Id), nameof(View.ViewType))">
+                    <option value="">Choose View Type</option>
+
+                </select>
+                <span asp-validation-for="ViewId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ExteriorId" class="form-label">Exterior</label>
+                <select asp-for="ExteriorId" class="form-select" asp-items="new SelectList(Model.Exteriors,nameof(Exterior.Id), nameof(Exterior.ExteriorType))">
+                    <option value="">Choose Exterior Type</option>
+
+                </select>
+                <span asp-validation-for="ExteriorId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="StatusId" class="form-label">Status</label>
+                <select asp-for="StatusId" class="form-select" asp-items="new SelectList(Model.Status,nameof(Status.Id), nameof(Status.StatusName))">
+                    <option value="">Choose Property Status</option>
+
+                </select>
+                <span asp-validation-for="StatusId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="TypeId" class="form-label">Type</label>
+                <select asp-for="TypeId" class="form-select" asp-items="new SelectList(Model.Types,nameof(Types.Id), nameof(Types.TypeName))">
+                    <option value="">Choose Property Type</option>
+
+                </select>
+                <span asp-validation-for="TypeId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label">Description</label>
+                <input asp-for="Description" class="form-control" placeholder="Enter Description">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <button class="btn btn-light m-1">Submit</button>
+            <a asp-action="Index" type="button" class="btn btn-light m-1">Cancel</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('input, select').on('input change', function () {
+                    var field = $(this);
+                    var errorSpan = field.siblings('.text-danger');
+                    if (field.val().trim() !== '') {
+                        errorSpan.hide();
+                    } else {
+                        errorSpan.show();
+                    }
+                });
+            });
+        </script>
+}
+

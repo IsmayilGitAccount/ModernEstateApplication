@@ -9,3 +9,4 @@ C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\Moder
 C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\refint\ModernEstate.Domain.dll
 C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.pdb
 C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ref\ModernEstate.Domain.dll
+C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.csproj.AssemblyReference.cache

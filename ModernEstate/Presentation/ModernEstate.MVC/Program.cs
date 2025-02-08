@@ -1,3 +1,7 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using ModernEstate.Domain.Entities.Account;
+using ModernEstate.Persistence.Data;
 using ModernEstate.Persistence.ServiceRegistration;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +9,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddPersistenceServices(builder.Configuration);
 
 builder.Services.AddControllersWithViews();
+builder.Services
+    .AddIdentity<AppUser, IdentityRole>(
+
+    opt =>
+    {
+        opt.Password.RequireNonAlphanumeric = false;
+        opt.Password.RequiredLength = 8;
+        opt.User.RequireUniqueEmail = true;
+        opt.Lockout.AllowedForNewUsers = true;
+        opt.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(3);
+        opt.Lockout.MaxFailedAccessAttempts = 3;
+    }).AddDefaultTokenProviders().AddEntityFrameworkStores<AppDbContext>().AddDefaultUI();;
 
 var app = builder.Build();
 

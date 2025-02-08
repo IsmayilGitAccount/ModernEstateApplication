@@ -14,7 +14,7 @@ namespace ModernEstate.Domain.Entities
         public string XLink { get; set; }
         public string LinkedinLink { get; set; }
         public string InstagramLink { get; set; }
-        public int AgencyId { get; set; }
+        public int? AgencyId { get; set; }
         public Agency Agency { get; set; }
         public ICollection<Property> Properties { get; set; }
     }

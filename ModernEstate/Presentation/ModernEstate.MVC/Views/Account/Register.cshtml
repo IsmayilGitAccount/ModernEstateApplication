@@ -1,0 +1,153 @@
+﻿@using ModernEstate.Application.ViewModels
+@model RegisterVM
+@{
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register - Modernize</title>
+    <link rel="shortcut icon" type="image/png" href="~/admin/images/logos/favicon.png" />
+    <link rel="stylesheet" href="~/admin/css/styles.min.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+    <style>
+        .btn-green {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 14px;
+            font-size: 18px;
+            text-align: center;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            display: block;
+        }
+
+        .card {
+            width: 480px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .form-control {
+            padding: 12px;
+            font-size: 16px;
+            height: 50px;
+        }
+
+        .text-danger {
+            color: red;
+        }
+
+        /* Circle buttons for Google and Facebook */
+        .social-btn {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+            .social-btn i {
+                font-size: 24px;
+                color: white;
+            }
+
+        .btn-google {
+            background-color: #db4437; /* Google Red */
+        }
+
+        .btn-facebook {
+            background-color: #3b5998; /* Facebook Blue */
+        }
+
+        .social-btn:hover {
+            opacity: 0.8;
+        }
+
+        .social-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper d-flex align-items-center justify-content-center min-vh-100">
+        <div class="card">
+            <div class="card-body">
+                <div class="text-center mb-4">
+                    <a asp-controller="Home" asp-action="Index">
+                        <img src="~/assets/images/logo-1.png" alt="Logo">
+                    </a>
+                </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <form method="post" novalidate>
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label">Name</label>
+                        <input asp-for="Name" type="text" class="form-control" placeholder="Enter your name">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Surname" class="form-label">Surname</label>
+                        <input asp-for="Surname" type="text" class="form-control" placeholder="Enter your surname">
+                        <span asp-validation-for="Surname" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="UserName" class="form-label">User Name</label>
+                        <input asp-for="UserName" type="text" class="form-control" placeholder="Enter your user name">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="Email" class="form-label">Email Address</label>
+                        <input asp-for="Email" type="email" class="form-control" placeholder="Enter your email">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="Password" class="form-label">Password</label>
+                        <input asp-for="Password" type="password" class="form-control" placeholder="Enter your password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="mb-4">
+                        <label asp-for="ConfirmPassword" class="form-label">Confirm Password</label>
+                        <input asp-for="ConfirmPassword" type="password" class="form-control" placeholder="Confirm password">
+                        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+                    </div>
+                    <button class="btn-green">Sign Up</button>
+                    <div class="text-center mt-3">
+                        <p>Already have an Account? <a asp-controller="Account" asp-action="Login" class="text-primary">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate.unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("form").validate({
+                errorPlacement: function (error, element) {
+                    error.insertAfter(element);
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

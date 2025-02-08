@@ -15,7 +15,6 @@ namespace ModernEstate.Persistence.ServiceRegistration
             opt.UseSqlServer(configuration.GetConnectionString("Default"))
             );
             services.AddScoped<ILayoutService, LayoutService>();
-
             return services;
         }
     }

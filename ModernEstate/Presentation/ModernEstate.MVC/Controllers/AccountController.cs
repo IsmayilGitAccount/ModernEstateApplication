@@ -1,0 +1,250 @@
+﻿using System.Text.RegularExpressions;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels;
+using ModernEstate.Application.ViewModels.Account;
+using ModernEstate.Domain.Entities.Account;
+using ModernEstate.Domain.Enums;
+
+namespace ModernEstate.MVC.Controllers
+{
+    public class AccountController : Controller
+    {
+        private readonly UserManager<AppUser> _userManager;
+        private readonly SignInManager<AppUser> _signInManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+
+        public AccountController(
+            UserManager<AppUser> userManager,
+            SignInManager<AppUser> signInManager,
+            RoleManager<IdentityRole> roleManager)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _roleManager = roleManager;
+        }
+
+        [HttpGet]
+        public IActionResult Register()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Register(RegisterVM userVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(userVM);
+            }
+
+            if (!userVM.Email.Contains("@"))
+            {
+                ModelState.AddModelError("Email", "Email must contain '@'!");
+            }
+            else
+            {
+                string email = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
+                if (!Regex.IsMatch(userVM.Email, email))
+                {
+                    ModelState.AddModelError("Email", "Email format is not correct, try again!");
+                }
+                else if (userVM.Email.Any(char.IsUpper))
+                {
+                    ModelState.AddModelError("Email", "Email cannot contain uppercase letters!");
+                }
+            }
+
+            if (userVM.UserName.Any(char.IsUpper))
+            {
+                ModelState.AddModelError("UserName", "Username cannot contain uppercase letters!");
+            }
+
+            if (userVM.Name.Any(char.IsDigit))
+            {
+                ModelState.AddModelError("Name", "Name cannot contain numbers!");
+            }
+
+            if (userVM.Surname.Any(char.IsDigit))
+            {
+                ModelState.AddModelError("Surname", "Surname cannot contain numbers!");
+            }
+
+            if (!ModelState.IsValid)
+            {
+                return View(userVM);
+            }
+
+            AppUser user = new AppUser()
+            {
+                Name = userVM.Name,
+                Surname = userVM.Surname,
+                Email = userVM.Email,
+                UserName = userVM.UserName
+            };
+
+            IdentityResult result = await _userManager.CreateAsync(user, userVM.Password);
+
+            if (!result.Succeeded)
+            {
+                foreach (IdentityError error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
+                }
+                return View(userVM);
+            }
+
+            await _signInManager.SignInAsync(user, isPersistent: false);
+            return RedirectToAction("Index", "Home");
+        }
+
+
+        [HttpGet]
+        public async Task<IActionResult> Logout()
+        {
+            await _signInManager.SignOutAsync();
+
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+
+        public async Task<IActionResult> Login(LoginVM userVM, string? returnURL)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(userVM);
+            }
+
+            if (string.IsNullOrEmpty(userVM.UserNameorEmail))
+            {
+                ModelState.AddModelError("UserNameorEmail", "Username or email cannot be empty!");
+                return View(userVM);
+            }
+
+            if (userVM.UserNameorEmail.Any(char.IsUpper))
+            {
+                ModelState.AddModelError("UserNameorEmail", "Username or email cannot contain uppercase letters!");
+                return View(userVM);
+            }
+
+
+            AppUser user = await _userManager.Users
+                .FirstOrDefaultAsync(u => u.UserName.Trim() == userVM.UserNameorEmail.Trim() || u.Email == userVM.UserNameorEmail);
+
+            if (user is null)
+            {
+                ModelState.AddModelError(string.Empty, "Username, password, or email is wrong!");
+                return View(userVM);
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(user, userVM.Password, false, true);
+
+            if(result.IsLockedOut)
+            {
+                ModelState.AddModelError(string.Empty, "Your account has locked, please try later!");
+                return View(userVM);
+            }
+
+            if (!result.Succeeded)
+            {
+                ModelState.AddModelError(string.Empty, "Username, password, or email is wrong!");
+                return View(userVM);
+            }
+
+            return Redirect(returnURL ?? "/");
+        }
+
+
+        public async Task<IActionResult> CreateRoles()
+        {
+            foreach (UserRole role in Enum.GetValues(typeof(UserRole)))
+            {
+                if (!await _roleManager.RoleExistsAsync(role.ToString()))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole { Name = role.ToString() });
+                }
+            }
+            return RedirectToAction("Index", "Home");
+        }
+
+        [HttpGet]
+        public IActionResult VerifyEmail()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> VerifyEmail(VerifyEmailVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+
+                if (user == null)
+                {
+                    ModelState.AddModelError(string.Empty, "Email not found!");
+                    return View(model);
+                }
+                else
+                {
+                    return RedirectToAction("ChangePassword", "Account", new { email = user.Email });
+                }
+            }
+            return View(model);
+        }
+
+        [HttpGet]
+        public IActionResult ChangePassword(string email)
+        {
+            if (string.IsNullOrEmpty(email))
+            {
+                return RedirectToAction("VerifyEmail", "Account");
+            }
+
+            return View(new ChangePasswordVM
+            {
+                Email = email
+            });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ChangePassword(ChangePasswordVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var user = await _userManager.FindByEmailAsync(model.Email);
+                if (user != null)
+                {
+                    var result = await _userManager.RemovePasswordAsync(user);
+                    if (result.Succeeded)
+                    {
+                        ViewData["PasswordChanged"] = true;
+                        result = await _userManager.AddPasswordAsync(user, model.NewPassword);
+                        if (result.Succeeded)
+                        {
+                            return RedirectToAction("Login", "Account");
+                        }
+                    }
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
+                }
+                else
+                {
+                    ModelState.AddModelError(string.Empty, "Email not found!");
+                }
+            }
+            
+            return View(model);
+        }
+    }
+}

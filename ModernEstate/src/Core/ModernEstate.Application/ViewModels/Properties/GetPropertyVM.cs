@@ -9,7 +9,7 @@
         public int BedroomCount { get; set; }
         public int BathroomCount { get; set; }
         public int GarageCount { get; set; }
-        public int BuiltYear { get; set; }
+        public int? BuiltYear { get; set; }
         public decimal LotSize { get; set; }
         public string SchoolDistrict { get; set; }
         public int RoomCount { get; set; }
@@ -23,5 +23,6 @@
         public string ExteriorType { get; set; }
         public string Feature { get; set; }
         public string Photo { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 }

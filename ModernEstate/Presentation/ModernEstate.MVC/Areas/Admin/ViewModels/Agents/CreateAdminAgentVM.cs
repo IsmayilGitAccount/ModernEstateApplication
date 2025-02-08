@@ -34,7 +34,9 @@ namespace ModernEstate.MVC.Areas.Admin.ViewModels.Agents
 
         [Required(ErrorMessage = "Please enter linkedin link!")]
         public string LinkedinLink { get; set; }
-        public int AgencyId { get; set; }
+
+        [Required(ErrorMessage = "Agency name is required!")]
+        public int? AgencyId { get; set; }
         public List<Agency>? Agencies { get; set; }
     }
 }
