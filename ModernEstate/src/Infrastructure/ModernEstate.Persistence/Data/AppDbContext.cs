@@ -31,5 +31,7 @@ namespace ModernEstate.Persistence.Data
         public DbSet<Slide> Slides { get; set; }
         public DbSet<PropertyPhoto> PropertiesPhotos { get; set; }
         public DbSet<PropertyFeature> PropertyFeatures { get; set; }
+        public DbSet<Review> Reviews { get; set; }
+
     }
 }

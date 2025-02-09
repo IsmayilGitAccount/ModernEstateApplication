@@ -1,11 +1,13 @@
 ﻿using System.Transactions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Abstractions.Services;
 using ModernEstate.Application.ViewModels.Paginations;
 using ModernEstate.Application.ViewModels.Properties;
 using ModernEstate.Application.ViewModels.Search;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
+using ModernEstate.Persistence.Implementations.Services;
 
 namespace ModernEstate.MVC.Controllers
 {
@@ -17,7 +19,7 @@ namespace ModernEstate.MVC.Controllers
 
             int count = await _context.Properties.CountAsync();
 
-            double total = Math.Ceiling((double)count / 6);
+            double total = Math.Ceiling((double)count / 3);
 
             if (total < page) return BadRequest();
 
@@ -27,7 +29,7 @@ namespace ModernEstate.MVC.Controllers
                .Include(p => p.Agency)
                .Include(p => p.Agent)
                .Include(p => p.PropertyFeatures)
-               .Include(p => p.PropertyPhotos.Take(2).OrderByDescending(p => p.CreatedAt).Where(p => p.IsPrimary == true))
+               .Include(p => p.PropertyPhotos.Where(p => p.IsPrimary == true))
                .Select(p => new GetPropertyVM
                {
                    Id = p.Id,
@@ -53,22 +55,26 @@ namespace ModernEstate.MVC.Controllers
                    CreatedAt = p.CreatedAt,
                })
                .OrderByDescending(p => p.Id)
-               .Skip((page-1)*6)
-               .Take(6)
+               .Skip((page - 1) * 3)
+               .Take(3)
                .ToListAsync(),
                 Category = await _context.Categories
                 .Include(c => c.Properties)
                 .OrderByDescending(c => c.CreatedAt)
+                .Where(c => c.Properties.Count() != 0)
                 .Take(12)
                 .ToListAsync(),
                 Status = await _context.Status.Include(s => s.Properties).ToListAsync(),
                 Types = await _context.Types.Include(s => s.Properties).ToListAsync(),
                 Slides = await _context.Slides.Take(3).OrderByDescending(s => s.Order).ToListAsync(),
-                Agents = await _context.Agents.Take(9).Include(a => a.Agency).ToListAsync(),
+                Agents = await _context.Agents.Where(a => a.Properties.Count() != 0).Take(9).Include(a => a.Agency).ToListAsync(),
                 TotalPage = total,
                 CurrentPage = page
             };
-
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return View(propertyVMs);
+            }
             return View(propertyVMs);
         }
 

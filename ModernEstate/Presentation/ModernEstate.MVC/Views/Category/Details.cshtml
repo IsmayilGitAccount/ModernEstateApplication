@@ -44,13 +44,13 @@
 				<div class="form-group">
 					<label for="select-search-2" class="form-label">Property Status</label>
 					<select id="select-search-2" data-minimum-results-for-search="Infinity" class="form-control select-filter">
-						
+
 					</select>
 				</div>
 				<div class="form-group">
 					<label for="select-search-3" class="form-label">Property Type</label>
 					<select id="select-search-3" data-minimum-results-for-search="Infinity" class="form-control select-filter">
-						
+
 					</select>
 				</div>
 				<div class="form-group width-1">
@@ -168,71 +168,107 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-xs-12 col-sm-4 pull-xs-right text-center text-sm-right">
-				<div class="btn-group-mod-3 sorting">
-					<a href="property-catalog-list.html" class="btn btn-primary-transparent btn-sm">List</a>
-					<a href="property-catalog-grid.html" class="btn btn-primary-transparent btn-sm active">Grid</a>
-				</div>
 			</div>
 		</div>
 
-
-<div class="row">
-    <div class="col-xs-12 col-lg-12">
-        <div class="row">
-            @foreach (var propertyVM in Model.Property)
-            {
-                <div class="col-xs-12 col-sm-6 col-md-4">
-                    <div class="thumbnail thumbnail-3">
-                        <a asp-controller="SingleProperty" asp-action="Details" asp-route-Id="@propertyVM.Id" class="img-link">
-                            <img src="~/assets/images/@propertyVM.Photo" alt="" class="img-fluid" style="width: 100%; height: auto;">
-                        </a>
-                        <div class="caption">
-                            <h4>
-                                <a asp-controller="SingleProperty" asp-action="Details" asp-route-Id="@propertyVM.Id" class="text-sushi">@propertyVM.Location</a>
-                            </h4>
-                            <span class="thumbnail-price h5">
-                                $@propertyVM.Price/
-                                <span class="mon text-regular">month</span>
-                            </span>
-                            <ul class="describe-1">
-                                <li><span class="icon icon-sm icon-primary hotel-icon-10"></span>@propertyVM.BathroomCount bathrooms</li>
-                                <li><span class="icon icon-sm icon-primary hotel-icon-05"></span>@propertyVM.BedroomCount bedrooms</li>
-                                <li><span class="icon icon-sm icon-primary hotel-icon-26"></span>@propertyVM.GarageCount garages</li>
-                                <li><span class="icon icon-sm icon-primary hotel-icon-30"></span>@propertyVM.Area sq ft</li>
-                            </ul>
-                            <p>@propertyVM.Description</p>
-                        </div>
-                    </div>
-                </div>
-            }
-        </div>
-
-        <!-- Pagination -->
-				@if (Model.TotalPage > 1)
-				{
-					<div class="col-xs-12 text-center text-sm-left">
-						<ul class="pagination">
-							<li class="@(Model.CurrentPage <= 1 ? "disabled" : "")">
-								<a class="page-link" asp-action="Details" asp-route-page="@(Model.CurrentPage-1)">
-									<span class="fa-chevron-left"></span>
-								</a>
-							</li>
-							@for (int i = 1; i <= Model.TotalPage; i++)
-							{
-								<li class="@(Model.CurrentPage == i ? "active" : "")">
-									<a class="page-link" asp-action="Details" asp-route-page="@i">@i</a>
-								</li>
+		<section class="section-md text-center text-sm-left">
+	<div class="container">
+		<h2>Popular Properties</h2>
+		<hr>
+		<div class="row clearleft-custom" id="property-container">
+			@foreach (var propertyVM in Model.Property)
+			{
+				<div class="col-xs-12 col-sm-6 col-md-4">
+					<div class="thumbnail thumbnail-3">
+						<a asp-controller="SingleProperty" asp-action="Details" asp-route-Id="@propertyVM.Id" class="img-link">
+							<img src="~/assets/images/@propertyVM.Photo" alt="" class="img-fluid" style="width: 100%; height: auto;">
+						</a>
+						<div class="caption">
+							<h4>
+								<a asp-controller="SingleProperty" asp-action="Details" asp-route-Id="@propertyVM.Id" class="text-sushi">@propertyVM.Location</a>
+							</h4>
+							<span class="thumbnail-price h5">
+								$@propertyVM.Price/
+								<span class="mon text-regular">month</span>
+							</span>
+							<ul class="describe-1">
+								<li><span class="icon icon-sm icon-primary hotel-icon-10"></span>@propertyVM.BathroomCount bathrooms</li>
+								<li><span class="icon icon-sm icon-primary hotel-icon-05"></span>@propertyVM.BedroomCount bedrooms</li>
+								<li><span class="icon icon-sm icon-primary hotel-icon-26"></span>@propertyVM.GarageCount garages</li>
+								<li><span class="icon icon-sm icon-primary hotel-icon-30"></span>@propertyVM.Area sq ft</li>
+							</ul>
+							@{
+								string sentence = propertyVM.Description;
+								string description = sentence.Substring(0, sentence.IndexOf(".") + 1);
 							}
-							<li class="@(Model.CurrentPage == Model.TotalPage ? "disabled" : "")">
-								<a class="page-link" asp-action="Details" asp-route-page="@(Model.CurrentPage+1)">
-									<span class="fa-chevron-right"></span>
-								</a>
-							</li>
-						</ul>
+							<p>@description</p>
+						</div>
 					</div>
-				}
-    </div>
-</div>
+				</div>
+			}
+		</div>
 
+		<!-- AJAX Pagination -->
+		@if (Model.TotalPage > 1)
+		{
+			<div class="col-xs-12 text-center text-sm-left">
+				<ul class="pagination" id="pagination-container">
+					<li class="@(Model.CurrentPage <= 1 ? "disabled" : "")">
+						<a href="#" class="page-link" data-page="@(Model.CurrentPage - 1)" data-category="@Model.Categories.Id">
+							<span class="fa-chevron-left"></span>
+						</a>
+					</li>
+					@for (int i = 1; i <= Model.TotalPage; i++)
+					{
+						<li class="@(Model.CurrentPage == i ? "active" : "")">
+								<a href="#" class="page-link" data-page="@i" data-category="@Model.Categories.Id">@i</a>
+						</li>
+					}
+					<li class="@(Model.CurrentPage == Model.TotalPage ? "disabled" : "")">
+							<a href="#" class="page-link" data-page="@(Model.CurrentPage + 1)" data-category="@Model.Categories.Id">
+							<span class="fa-chevron-right"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		}
+	</div>
+</section>
+
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(document).on("click", ".page-link", function (e) {
+					e.preventDefault();
+
+					let page = $(this).data("page");
+					let categoryId = $(this).data("category");
+
+					if (!page || $(this).parent().hasClass("disabled") || $(this).parent().hasClass("active")) {
+						return;
+					}
+
+					$.ajax({
+						url: "/Category/Details?Id=" + categoryId + "&page=" + page,
+						type: "GET",
+						beforeSend: function () {
+							$("#property-container").css("opacity", "0.5"); 
+						},
+						success: function (data) {
+							let newHtml = $(data).find("#property-container").html(); 
+							let newPagination = $(data).find("#pagination-container").html(); 
+							$("#property-container").html(newHtml);
+							$("#pagination-container").html(newPagination);
+						},
+						complete: function () {
+							$("#property-container").css("opacity", "1");
+						},
+						error: function () {
+							alert("Something went wrong. Please try again.");
+						}
+					});
+				});
+			});
+		</script>
 </section>

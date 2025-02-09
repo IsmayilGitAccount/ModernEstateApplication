@@ -10,6 +10,7 @@ namespace ModernEstate.Application.ViewModels.Properties
         public ICollection<Types> Types { get; set; } 
         public ICollection<Slide> Slides { get; set; } 
         public ICollection<Agent> Agents { get; set; }
+        public Category Categories { get; set; }
         public double TotalPage { get; set; }
         public int CurrentPage { get; set; }
     }

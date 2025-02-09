@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Abstractions.Services;
 using ModernEstate.Application.ViewModels;
 using ModernEstate.Application.ViewModels.Account;
 using ModernEstate.Domain.Entities.Account;
@@ -14,15 +15,18 @@ namespace ModernEstate.MVC.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IEmailService _emailService;
 
         public AccountController(
             UserManager<AppUser> userManager,
             SignInManager<AppUser> signInManager,
-            RoleManager<IdentityRole> roleManager)
+            RoleManager<IdentityRole> roleManager,
+            IEmailService emailService)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _roleManager = roleManager;
+            _emailService = emailService;
         }
 
         [HttpGet]
@@ -96,6 +100,10 @@ namespace ModernEstate.MVC.Controllers
             }
 
             await _signInManager.SignInAsync(user, isPersistent: false);
+
+            TempData["SuccessMessage"] = "You have successfully registered!";
+
+            await _emailService.SendMailAsync(user.Email, "You have successfully registered!", "Welcome to our family!", false);
             return RedirectToAction("Index", "Home");
         }
 
@@ -116,7 +124,7 @@ namespace ModernEstate.MVC.Controllers
 
         [HttpPost]
 
-        public async Task<IActionResult> Login(LoginVM userVM, string? returnURL)
+        public async Task<IActionResult> Login(LoginVM userVM)
         {
             if (!ModelState.IsValid)
             {
@@ -159,7 +167,9 @@ namespace ModernEstate.MVC.Controllers
                 return View(userVM);
             }
 
-            return Redirect(returnURL ?? "/");
+            TempData["SuccessMessage"] = "You have successfully logged in!";
+
+            return RedirectToAction("Index", "Home");
         }
 
 

@@ -2729,16 +2729,16 @@
       "PackagePath": "staticwebassets\\assets\\fonts\\materialdesignicons-webfont.woff2"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\0155469f-7158-4b16-bb9e-0163e5c6afe0.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\0155469f-7158-4b16-bb9e-0163e5c6afe0.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\056442b3-b18a-4edf-a727-65a315319907.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\056442b3-b18a-4edf-a727-65a315319907.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\05748bfa-b1d0-4005-9f7c-e3e938a47123.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\05748bfa-b1d0-4005-9f7c-e3e938a47123.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\061e6ced-cfd3-4ded-931e-4377f0edbe57.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\061e6ced-cfd3-4ded-931e-4377f0edbe57.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\07aa077f-5b0e-4583-8d34-b94225780d70.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\07aa077f-5b0e-4583-8d34-b94225780d70.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\08_Agency_Page_16.jpg",
@@ -2749,16 +2749,8 @@
       "PackagePath": "staticwebassets\\assets\\images\\08ef74ef-a136-4f91-b683-f02c41b32266.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\0ac0fade-70a3-4ba0-b205-2c4f3f986bc3.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\0ac0fade-70a3-4ba0-b205-2c4f3f986bc3.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\0b0292d2-cefa-4c2f-8c58-286cf7d282a6.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\0b0292d2-cefa-4c2f-8c58-286cf7d282a6.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\0c33dcfe-77cb-4749-bd59-11e61d03212e.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\0c33dcfe-77cb-4749-bd59-11e61d03212e.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\094be3a5-2938-405b-9c40-5758d6460131.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\094be3a5-2938-405b-9c40-5758d6460131.jpeg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\0d1477a5-3981-4e83-8d94-d5887fff3283.jpg",
@@ -2773,10 +2765,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\0fd07eb5-6b8f-472e-8312-b2979c946022.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\12bd2c2b-0171-44f7-ba23-c7f630e49c68.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\12bd2c2b-0171-44f7-ba23-c7f630e49c68.jpg"
-    },
-    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\13162c0a-8479-4cb5-a9ed-471d3e5c075c.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\13162c0a-8479-4cb5-a9ed-471d3e5c075c.jpg"
     },
@@ -2785,24 +2773,40 @@
       "PackagePath": "staticwebassets\\assets\\images\\13c52fea-67b9-4e31-8040-efb64f766f6a.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\1474f1b4-3ade-4546-9251-1521d949da63.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\1474f1b4-3ade-4546-9251-1521d949da63.jpg"
-    },
-    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\1523630c-ddce-466b-85d6-e9b1bf860a4d.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\1523630c-ddce-466b-85d6-e9b1bf860a4d.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\1d2c0031-c762-424d-8c65-12088de536ee.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\1d2c0031-c762-424d-8c65-12088de536ee.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\18cb3883-3b39-468b-8bf6-49b26c85927f.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\18cb3883-3b39-468b-8bf6-49b26c85927f.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\19fe5f4c-6375-4cae-b587-65c536ca43ae.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\19fe5f4c-6375-4cae-b587-65c536ca43ae.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\1d665179-b026-41fd-9fcc-086e38640804.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\1d665179-b026-41fd-9fcc-086e38640804.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\21585f8c-112e-45e5-8004-419893b2f6bf.jpeg",
       "PackagePath": "staticwebassets\\assets\\images\\21585f8c-112e-45e5-8004-419893b2f6bf.jpeg"
     },
     {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\24ae59af-0a7b-4d6b-aa8c-fabe64cff71a.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\24ae59af-0a7b-4d6b-aa8c-fabe64cff71a.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\264e2a59-39bc-48ff-8033-04204b6a89e7.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\264e2a59-39bc-48ff-8033-04204b6a89e7.jpeg"
+    },
+    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\28469cc9-9c77-4f9c-ac8d-11426eb95ae5.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\28469cc9-9c77-4f9c-ac8d-11426eb95ae5.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\2ec15787-6f71-4c70-8985-9e649a59be1a.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\2ec15787-6f71-4c70-8985-9e649a59be1a.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\30ef434a-ca3b-4b21-bc2d-bd3b5f501dae.jpg",
@@ -2813,10 +2817,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\32bb800d-6dcb-4411-b858-d15b5d450790.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\3485b3cf-7f09-4d54-8f40-2d52dd287406.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\3485b3cf-7f09-4d54-8f40-2d52dd287406.jpg"
-    },
-    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\37802169-8d47-4d87-8d56-afd51c0952f1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\37802169-8d47-4d87-8d56-afd51c0952f1.jpg"
     },
@@ -2825,12 +2825,8 @@
       "PackagePath": "staticwebassets\\assets\\images\\3828f621-bf6a-423e-9482-87d9be7e0548.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\384ee455-a888-4d55-be65-2d413ace7f24.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\384ee455-a888-4d55-be65-2d413ace7f24.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\396cfeb1-8700-4e01-ab23-fa0dc1cb3613.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\396cfeb1-8700-4e01-ab23-fa0dc1cb3613.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\3a731854-bf27-4825-ae19-4668b096c06e.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\3a731854-bf27-4825-ae19-4668b096c06e.jpeg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\3dac1db6-ceaa-401d-96db-6a89c6e69b79.jpg",
@@ -2841,8 +2837,8 @@
       "PackagePath": "staticwebassets\\assets\\images\\41980114-2bab-4e07-ac0e-2ab7e87c95ad.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\458aa8f4-8619-45d7-8151-6f1ee8c8b19d.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\458aa8f4-8619-45d7-8151-6f1ee8c8b19d.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\4716c879-ba5b-4390-8207-e1b130c087f2.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\4716c879-ba5b-4390-8207-e1b130c087f2.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\4823d438-e92e-4434-bf12-1734de31a3c0.jpg",
@@ -2853,8 +2849,16 @@
       "PackagePath": "staticwebassets\\assets\\images\\496cad32-87fb-4d4f-85c9-fc816544b0ac.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\4b695d5e-1d36-4ee5-8d83-511ba36c2431.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\4b695d5e-1d36-4ee5-8d83-511ba36c2431.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\4aa87f3a-cece-4bca-b2d5-c8275e5bb399.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\4aa87f3a-cece-4bca-b2d5-c8275e5bb399.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\4e3fc6fe-5a4c-4caf-af9b-7d2362860508.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\4e3fc6fe-5a4c-4caf-af9b-7d2362860508.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\4feec7b1-ad7d-4920-9620-13cf0d60520d.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\4feec7b1-ad7d-4920-9620-13cf0d60520d.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\525123a3-4b41-45a0-b5f3-1f7c11c90792.jpg",
@@ -2869,6 +2873,22 @@
       "PackagePath": "staticwebassets\\assets\\images\\5797437c-3a3f-4250-98c6-f452020c7ad3.jpg"
     },
     {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\59eecc59-d9a0-489d-8259-04a86723d6ac.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\59eecc59-d9a0-489d-8259-04a86723d6ac.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\5d0b5f60-8408-4d85-879c-5d138dae109a.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\5d0b5f60-8408-4d85-879c-5d138dae109a.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\5da3717e-cfd1-433e-ad35-bd5673c553a4.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\5da3717e-cfd1-433e-ad35-bd5673c553a4.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\5dd5c24f-e553-4a4d-ad50-9fd6a02cd6ad.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\5dd5c24f-e553-4a4d-ad50-9fd6a02cd6ad.jpg"
+    },
+    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\60dbf7a8-7754-4ee1-b637-7404cb4d9a0e.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\60dbf7a8-7754-4ee1-b637-7404cb4d9a0e.jpg"
     },
@@ -2881,16 +2901,24 @@
       "PackagePath": "staticwebassets\\assets\\images\\62276aa7-39fb-42e0-8499-7e2c320db59f.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\642f3b3b-422f-4f03-893e-dec9ae5298d6.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\642f3b3b-422f-4f03-893e-dec9ae5298d6.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\630a5242-d370-42aa-a102-6760ab552e41.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\630a5242-d370-42aa-a102-6760ab552e41.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\65a142bc-4df3-4f2e-8ae7-6d6b86b51f40.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\65a142bc-4df3-4f2e-8ae7-6d6b86b51f40.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\69254918-b6f8-4897-a77f-d3da899af33f.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\69254918-b6f8-4897-a77f-d3da899af33f.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\6841dfd5-425c-4011-af1c-5a9a3e8d2e7c.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\6841dfd5-425c-4011-af1c-5a9a3e8d2e7c.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\69c4b4a7-9fb8-46a5-95c6-adcaa44b4f06.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\69c4b4a7-9fb8-46a5-95c6-adcaa44b4f06.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\6e168b70-a1b0-4acc-9950-a736daaef3e3.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\6e168b70-a1b0-4acc-9950-a736daaef3e3.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\6f0ea361-7377-449e-8cd3-e693f920cf51.jpg",
@@ -2909,8 +2937,12 @@
       "PackagePath": "staticwebassets\\assets\\images\\7284576e-5800-49e2-8a19-0f73077c5a47.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7ac4672d-8d14-4400-b004-db6621fef699.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\7ac4672d-8d14-4400-b004-db6621fef699.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\76fd515f-6428-47a9-a9fe-2791347c8829.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\76fd515f-6428-47a9-a9fe-2791347c8829.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\797ad292-fcbd-46aa-ae03-45e2b6297524.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\797ad292-fcbd-46aa-ae03-45e2b6297524.jpeg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7b1ce956-b19e-417e-900d-ba8f75a4e6cf.jpg",
@@ -2933,44 +2965,76 @@
       "PackagePath": "staticwebassets\\assets\\images\\81cd2d4e-7ec6-4f08-a917-7d12c9ce4a1b.jpg"
     },
     {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\83f57f23-4690-4971-a232-88aa30930e76.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\83f57f23-4690-4971-a232-88aa30930e76.avif"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\85d3e1f9-b53f-4ab7-aba3-e5d436057585.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\85d3e1f9-b53f-4ab7-aba3-e5d436057585.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\872770e7-e6b1-4c59-9855-df6d59f87d65.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\872770e7-e6b1-4c59-9855-df6d59f87d65.webp"
+    },
+    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\8857ed15-318c-4cf0-a541-a89bb43becd3.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\8857ed15-318c-4cf0-a541-a89bb43becd3.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\8cb5af36-4763-4d9e-bd53-14b28bfbc3cf.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\8cb5af36-4763-4d9e-bd53-14b28bfbc3cf.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\8980a4a9-729b-4dbb-ab1d-ea0745710aaf.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\8980a4a9-729b-4dbb-ab1d-ea0745710aaf.jpeg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\8d2fedd6-38c1-4071-b165-3889eb7169a6.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\8d2fedd6-38c1-4071-b165-3889eb7169a6.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\8ddbb5a3-2251-4c91-bcb2-1b6eef807066.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\8ddbb5a3-2251-4c91-bcb2-1b6eef807066.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\8f735884-c22f-4360-8b91-9df5a9f71224.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\8f735884-c22f-4360-8b91-9df5a9f71224.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\90329f8a-ca69-431e-9d49-598d0ee946af.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\90329f8a-ca69-431e-9d49-598d0ee946af.jpg"
-    },
-    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\910e5530-b24e-48f3-a163-5ec9bafa4ca9.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\910e5530-b24e-48f3-a163-5ec9bafa4ca9.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\925375b0-0a75-4b19-87c3-00dbe7db67aa.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\925375b0-0a75-4b19-87c3-00dbe7db67aa.jpeg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\938b1c71-be9d-4b52-9b94-3ecfe2761ac5.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\938b1c71-be9d-4b52-9b94-3ecfe2761ac5.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\939aa71d-1397-4ef7-b9fe-2dd44219ea42.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\939aa71d-1397-4ef7-b9fe-2dd44219ea42.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\95eb6ee5-dae4-4b2a-b50f-7d4326d45c70.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\95eb6ee5-dae4-4b2a-b50f-7d4326d45c70.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\9536423f-f2c3-406f-90eb-f79fc67553fb.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\9536423f-f2c3-406f-90eb-f79fc67553fb.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\98046569-50f6-4e81-9f23-0cae17f36409.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\98046569-50f6-4e81-9f23-0cae17f36409.webp"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\98ab5651-7c00-4368-838c-685a99522bc7.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\98ab5651-7c00-4368-838c-685a99522bc7.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\991f5f71-3ccd-45cc-8e52-449bd3dbf287.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\991f5f71-3ccd-45cc-8e52-449bd3dbf287.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\9b462c13-4525-4dcf-94b2-bae57394c301.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\9b462c13-4525-4dcf-94b2-bae57394c301.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\9ad61173-0f19-42a3-bede-426b973e47d4.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\9ad61173-0f19-42a3-bede-426b973e47d4.jpeg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\9bd61b3d-5061-4cc1-b21a-ddd89d018088.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\9bd61b3d-5061-4cc1-b21a-ddd89d018088.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\9b462c13-4525-4dcf-94b2-bae57394c301.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\9b462c13-4525-4dcf-94b2-bae57394c301.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\Thumbs.db",
@@ -2985,20 +3049,16 @@
       "PackagePath": "staticwebassets\\assets\\images\\a13013c8-946c-47ce-81a1-394512cfd525.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\a5a1a143-82a1-4fe3-8aef-13cbdd734c47.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\a5a1a143-82a1-4fe3-8aef-13cbdd734c47.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\aa268d67-c677-48e9-967b-869b4a108d2d.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\aa268d67-c677-48e9-967b-869b4a108d2d.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\abfe7ce7-64b7-4c5f-a11d-4d2e750d0305.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\abfe7ce7-64b7-4c5f-a11d-4d2e750d0305.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\a9d01356-2666-4ec1-9675-ef8adf0f267b.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\a9d01356-2666-4ec1-9675-ef8adf0f267b.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\afc00cb8-13cf-4930-b6e9-bafe8a6ee160.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\afc00cb8-13cf-4930-b6e9-bafe8a6ee160.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\afcf715c-da54-4a1e-bb60-fc35eaefa120.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\afcf715c-da54-4a1e-bb60-fc35eaefa120.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\agency-1.jpg",
@@ -3007,10 +3067,6 @@
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\agency-2.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\agency-2.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\agency-3.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\agency-3.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\agency-4.jpg",
@@ -3041,6 +3097,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\agent-2.jpg"
     },
     {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b1286ef7-bd83-4072-b40f-b4dd4e06a9c1.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\b1286ef7-bd83-4072-b40f-b4dd4e06a9c1.webp"
+    },
+    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b2f82b5d-4ec8-4928-a5ab-17c9ee655cf8.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\b2f82b5d-4ec8-4928-a5ab-17c9ee655cf8.jpg"
     },
@@ -3053,12 +3113,16 @@
       "PackagePath": "staticwebassets\\assets\\images\\b53069dc-0bd9-4991-9cfb-590ce52cdbaa.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b6383a3d-cdf1-4852-97ff-3dbe2754efcd.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\b6383a3d-cdf1-4852-97ff-3dbe2754efcd.jpg"
-    },
-    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b803dba9-d43c-4208-95c2-8d8f31d460f1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\b803dba9-d43c-4208-95c2-8d8f31d460f1.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b99a0fc4-c237-4e7b-b91a-fb6a63c998c9.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\b99a0fc4-c237-4e7b-b91a-fb6a63c998c9.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b9bb9ed7-cdcf-4575-834d-c7efc9ee2528.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\b9bb9ed7-cdcf-4575-834d-c7efc9ee2528.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\ba0a30ed-b1e0-41ff-8ad2-7d26ab70c9a2.jpg",
@@ -3073,14 +3137,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\bd49d251-468e-4e9d-8277-ec1081636f9f.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\be319a34-913f-4a79-ba63-01d6b13d3199.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\be319a34-913f-4a79-ba63-01d6b13d3199.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\bef1dc79-98c7-4550-8d50-a8129885611c.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\bef1dc79-98c7-4550-8d50-a8129885611c.jpg"
-    },
-    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\bef77ac9-b68b-4206-855b-ef63691400e6.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\bef77ac9-b68b-4206-855b-ef63691400e6.jpg"
     },
@@ -3093,6 +3149,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\bg-clients.jpg"
     },
     {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\c04da384-769a-40f6-b7d3-7ee59de83e22.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\c04da384-769a-40f6-b7d3-7ee59de83e22.jpg"
+    },
+    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\c17285a2-cf73-4eb3-b083-6324cad0669d.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\c17285a2-cf73-4eb3-b083-6324cad0669d.jpg"
     },
@@ -3101,16 +3161,12 @@
       "PackagePath": "staticwebassets\\assets\\images\\c5c98568-17ee-4c1b-b4b1-06b2b53ca630.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\c91b7f86-e2cf-4c90-a998-4a20b670ede1.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\c91b7f86-e2cf-4c90-a998-4a20b670ede1.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\c9a9298b-f36a-4e78-ad9b-47225fba4af2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\c9a9298b-f36a-4e78-ad9b-47225fba4af2.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\c9eb247a-04db-4e3f-84e2-1ef08a1c085e.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\c9eb247a-04db-4e3f-84e2-1ef08a1c085e.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\ca7eb643-f1cc-4605-b334-047b6cbcc026.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\ca7eb643-f1cc-4605-b334-047b6cbcc026.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\catalog_list-1.jpg",
@@ -3209,26 +3265,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\catalog_single-6_thumb.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\categories-1.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\categories-1.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\categories-2.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\categories-2.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\categories-3.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\categories-3.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\categories-4.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\categories-4.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\categories-5.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\categories-5.jpg"
-    },
-    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\categories-7.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\categories-7.jpg"
     },
@@ -3269,8 +3305,24 @@
       "PackagePath": "staticwebassets\\assets\\images\\d3553c07-0ca6-4b2b-856e-5586e7fcbd4c.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\d884ca1c-67bc-426d-a8cc-45bce6ac6a82.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\d884ca1c-67bc-426d-a8cc-45bce6ac6a82.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\d3936347-f152-4a8c-a90d-c90b98d4c934.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\d3936347-f152-4a8c-a90d-c90b98d4c934.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\d7758aaa-73e3-4ef0-ab2d-719d2d04990c.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\d7758aaa-73e3-4ef0-ab2d-719d2d04990c.jpeg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\d9339813-cac9-429c-a4c4-17282cc849e8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\d9339813-cac9-429c-a4c4-17282cc849e8.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\dbd6496a-ea7b-4194-8380-f1b70d1b4aae.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\dbd6496a-ea7b-4194-8380-f1b70d1b4aae.jpeg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\dcf5fee9-e6aa-4337-9c0f-6be35c4b2996.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\dcf5fee9-e6aa-4337-9c0f-6be35c4b2996.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\e00dfee6-1a5a-4cb9-a095-3e9cf15feb5a.jpg",
@@ -3285,8 +3337,20 @@
       "PackagePath": "staticwebassets\\assets\\images\\e219da53-20b2-4665-87d5-841ed3483ffb.jpeg"
     },
     {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\e444a885-06d6-49b7-bee9-6c84590f3439.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\e444a885-06d6-49b7-bee9-6c84590f3439.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\e6a3c8fb-2a37-4e6a-9d01-cfd3dd0bee61.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\e6a3c8fb-2a37-4e6a-9d01-cfd3dd0bee61.webp"
+    },
+    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\ec0dd321-69e7-4868-8384-82eae25e2933.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\ec0dd321-69e7-4868-8384-82eae25e2933.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\edaeef89-9027-41bc-bd8c-37892b78f649.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\edaeef89-9027-41bc-bd8c-37892b78f649.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\elements-1.jpg",
@@ -3301,24 +3365,28 @@
       "PackagePath": "staticwebassets\\assets\\images\\extras-1.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\f0d7a26d-6e9a-4871-8a58-2eeb6d457556.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\f0d7a26d-6e9a-4871-8a58-2eeb6d457556.jpg"
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\f22253ba-cb1e-4f09-bfe6-e49a0e7f2c9e.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\f22253ba-cb1e-4f09-bfe6-e49a0e7f2c9e.webp"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\f2d60169-a678-40bf-80ff-fa5dea95bbdf.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\f2d60169-a678-40bf-80ff-fa5dea95bbdf.jpg"
     },
     {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\f780c4b2-8559-4495-a7c3-2dc191790623.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\f780c4b2-8559-4495-a7c3-2dc191790623.jpg"
-    },
-    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\favicon.ico",
       "PackagePath": "staticwebassets\\assets\\images\\favicon.ico"
     },
     {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\fc1c5543-5ef7-4c4c-b000-2e3bf57937db.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\fc1c5543-5ef7-4c4c-b000-2e3bf57937db.jpg"
+    },
+    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\fda8e14d-7b83-49f6-954b-7053c5af6bc5.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\fda8e14d-7b83-49f6-954b-7053c5af6bc5.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\fefa1e89-d6c7-41c4-b0e4-1d0ad37a4064.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\fefa1e89-d6c7-41c4-b0e4-1d0ad37a4064.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\ff3c0744-d2ed-4d90-89d5-cc5fdba04f86.jpg",

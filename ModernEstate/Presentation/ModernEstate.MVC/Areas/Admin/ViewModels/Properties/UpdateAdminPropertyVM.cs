@@ -9,7 +9,7 @@ namespace ModernEstate.MVC.Areas.Admin.ViewModels.Properties
         public ICollection<IFormFile>? AdditionalPhoto { get; set; }
 
         [Required(ErrorMessage = "Please enter Location!")]
-        public string Location { get; set; }
+        public string? Location { get; set; }
 
         [Required(ErrorMessage = "Please enter Price!")]
         public decimal? Price { get; set; }
@@ -37,14 +37,14 @@ namespace ModernEstate.MVC.Areas.Admin.ViewModels.Properties
         public decimal? LotSize { get; set; }
 
         [Required(ErrorMessage = "Please enter district!")]
-        public string SchoolDistrict { get; set; }
+        public string? SchoolDistrict { get; set; }
 
         [Required(ErrorMessage = "Please enter count!")]
         public int? RoomCount { get; set; }
 
         [Required(ErrorMessage = "Please enter decription!")]
 
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         //Relational
         [Required(ErrorMessage = "Category is required!")]

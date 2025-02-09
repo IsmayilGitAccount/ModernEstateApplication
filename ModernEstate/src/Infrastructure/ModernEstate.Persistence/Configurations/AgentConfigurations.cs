@@ -12,7 +12,7 @@ namespace ModernEstate.Persistence.Configurations
             builder.Property(a => a.PhoneNumber).IsRequired().HasColumnType("nvarchar(50)");
             builder.Property(a => a.Email).IsRequired().HasColumnType("nvarchar(255)");
             builder.Property(a => a.Address).IsRequired().HasColumnType("nvarchar(100)");
-            builder.Property(a => a.Description).IsRequired().HasColumnType("nvarchar(200)");
+            builder.Property(a => a.Description).IsRequired().HasColumnType("nvarchar(1000)");
             builder.Property(a => a.Photo).IsRequired().HasColumnType("nvarchar(100)");
             builder.Property(a => a.FacebookLink).IsRequired().HasColumnType("nvarchar(100)");
             builder.Property(a => a.XLink).IsRequired().HasColumnType("nvarchar(100)");

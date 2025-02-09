@@ -1,103 +1,105 @@
 ﻿@model ModernEstate.Domain.Entities.Agent
-@{
-    int count = 0;
-    count++;
-}
-<div class="col-lg-12 d-flex align-items-stretch">
-    <!-- Col-lg-8 dəyərini 12 olaraq dəyişdirin -->
-    <div class="card w-100">
-        <div class="card-body p-4" style="width: 1000px; height: 800px;">
-            <!-- Burada eni artırılıb -->
-            <h5 class="card-title fw-semibold mb-4">Recent Transactions</h5>
-            <div>
-                <a asp-action="Create" class="btn btn-outline-success m-1">Add Agent</a>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="card shadow-lg mb-4 p-4 border-light">
 
-                <table class="table text-nowrap mb-0 align-middle">
-                    <thead class="text-dark fs-4">
-                        <tr>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">No</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Photo</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Agent Name</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Agency Name</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Address</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Email</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Phone number</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Facebook</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Instagram</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Twitter</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Linkedin</h6>
-                            </th>
-                            <th class="border-bottom-0">
-                                <h6 class="fw-semibold mb-0">Description</h6>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                            <tr>
-                                <td class="border-bottom-0"><h6 class="fw-semibold mb-0">@count</h6></td>
-                                <td class="border-bottom-0">
-                                    <img src="~/assets/images/@Model.Photo" style="width:50px;height:50px;border-radius:50%;transition:transform 0.3s;"
-                                         onmouseover="this.style.transform='scale(1.5)';"
-                                         onmouseout="this.style.transform='scale(1)';"
-                                         onclick="this.style.transform='scale(2)';" />
-                                </td>
-                                <td class="border-bottom-0">
-                                    <p class="mb-0 fw-normal">@Model.FullName</p>
-                                </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.Agency.AgencyName</p>
-                            </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.Address</p>
-                            </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.Email</p>
-                            </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.PhoneNumber</p>
-                            </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.FacebookLink</p>
-                            </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.InstagramLink</p>
-                            </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.XLink</p>
-                            </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.LinkedinLink</p>
-                            </td>
-                            <td class="border-bottom-0">
-                                <p class="mb-0 fw-normal">@Model.Description</p>
-                            </td>
-                            </tr>
-                    </tbody>
-                </table>
-                <a asp-action="Index" class="btn btn-outline-dark m-1">Return</a>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Agent Photo:</h6>
+                        <a href="~/assets/images/@Model.Photo" target="_blank" title="View full-size photo">
+                            <img src="~/assets/images/@Model.Photo" class="img-fluid rounded shadow-lg agent-photo" alt="Agent Photo" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Agent Name:</h6>
+                        <p style="color: #000;">@Model.FullName</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Agency Name:</h6>
+                        <p style="color: #000;">@Model.Agency.AgencyName</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Address:</h6>
+                        <p style="color: #000;">@Model.Address</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Email:</h6>
+                        <p style="color: #000;">@Model.Email</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Phone Number:</h6>
+                        <p style="color: #000;">@Model.PhoneNumber</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Facebook:</h6>
+                        <p style="color: #000;">@Model.FacebookLink</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Instagram:</h6>
+                        <p style="color: #000;">@Model.InstagramLink</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="fw-semibold" style="color: #000;">Twitter:</h6>
+                        <p style="color: #000;">@Model.XLink</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <h6 class="fw-semibold" style="color: #000;">LinkedIn:</h6>
+                        <p style="color: #000;">@Model.LinkedinLink</p>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <h6 class="fw-semibold" style="color: #000;">Description:</h6>
+                        <p style="color: #000;">@Model.Description</p>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-start">
+                    <a asp-action="Index" class="btn btn-outline-dark m-1">Return</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
+@section Styles {
+    <style>
+        .agent-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+            .agent-photo:hover {
+                transform: scale(1.1);
+            }
+
+        .btn-outline-dark {
+            transition: all 0.3s ease-in-out;
+        }
+
+            .btn-outline-dark:hover {
+                background-color: #343a40;
+                color: white;
+            }
+    </style>
+}

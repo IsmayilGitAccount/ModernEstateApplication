@@ -1,0 +1,186 @@
+﻿@using ModernEstate.Domain.Entities
+@model Property
+
+@{
+    ViewData["Title"] = "Property Details";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <h1 class="display-3 mb-4" style="font-size: 2.5rem; color: #333;">
+                <p class="fw-semibold"><strong>Location:</strong>@Model.Location</p>
+                </h1>
+
+            @if (Model.PropertyPhotos != null && Model.PropertyPhotos.Any(p => p.IsPrimary == true))
+            {
+                var primaryPhoto = Model.PropertyPhotos.FirstOrDefault(p => p.IsPrimary == true);
+                <div class="mb-4">
+                    <a href="~/assets/images/@primaryPhoto.Photo" target="_blank">
+                        <img src="~/assets/images/@primaryPhoto.Photo" class="img-fluid rounded shadow-lg property-image" alt="Property Image" />
+
+                    </a>
+                </div>
+            }
+
+            @if (Model.PropertyPhotos != null && Model.PropertyPhotos.Any(p => p.IsPrimary == false))
+            {
+                <div class="mb-4">
+                    <h4 class="text-center mb-3" style="font-size: 1.8rem; color: #333;">Additional Photos</h4>
+                    <div class="row">
+                        @foreach (var photo in Model.PropertyPhotos.Where(p => p.IsPrimary == false))
+                        {
+                            <div class="col-md-4 mb-3">
+                                <a href="~/assets/images/@photo.Photo" target="_blank">
+                                    <img src="~/assets/images/@photo.Photo" class="img-fluid rounded shadow-sm property-image" alt="Additional Photo" />
+
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+            else
+            {
+                <p class="text-muted">There are no additional photos</p>
+            }
+
+            <div class="card shadow-lg mb-4 p-4 border-light">
+                <h3 class="h4 text-center mb-3" style="color: #333;">Property Details</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p><strong>Price:</strong> $@Model.Price</p>
+                        <p><strong>Area:</strong> @Model.Area sq ft</p>
+                        <p><strong>Bedrooms:</strong> @Model.BedroomCount</p>
+                        <p><strong>Bathrooms:</strong> @Model.BathroomCount</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>Garage:</strong> @Model.GarageCount</p>
+                        <p><strong>Description:</strong> @Model.Description</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card shadow-sm mb-4 p-4 border-light">
+                <h5 class="text-center mb-3" style="color: #333;">Agency & Agent</h5>
+                <ul class="list-group">
+                    @if (Model.Agency != null)
+                    {
+                        <li class="list-group-item"><strong>Agency:</strong> @Model.Agency.AgencyName</li>
+                    }
+
+                    @if (Model.Agent != null)
+                    {
+                        <li class="list-group-item"><strong>Agent:</strong> @Model.Agent.FullName</li>
+                    }
+                </ul>
+            </div>
+
+            <div class="row mb-4">
+                @if (Model.Category != null)
+                {
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-3 mb-3 border-light">
+                            <p class="mb-0" style="color: #333;"><strong>Category:</strong> @Model.Category.CategoryName</p>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.Parking != null)
+                {
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-3 mb-3 border-light">
+                            <p class="mb-0" style="color: #333;"><strong>Parking Type:</strong> @Model.Parking.ParkingType</p>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.Roof != null)
+                {
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-3 mb-3 border-light">
+                            <p class="mb-0" style="color: #333;"><strong>Roof Type:</strong> @Model.Roof.RoofType</p>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.View != null)
+                {
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-3 mb-3 border-light">
+                            <p class="mb-0" style="color: #333;"><strong>View Type:</strong> @Model.View.ViewType</p>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.Exterior != null)
+                {
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-3 mb-3 border-light">
+                            <p class="mb-0" style="color: #333;"><strong>Exterior Type:</strong> @Model.Exterior.ExteriorType</p>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.Status != null)
+                {
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-3 mb-3 border-light">
+                            <p class="mb-0" style="color: #333;"><strong>Property Status:</strong> @Model.Status.StatusName</p>
+                        </div>
+                    </div>
+                }
+
+                @if (Model.Type != null)
+                {
+                    <div class="col-md-6">
+                        <div class="card shadow-sm p-3 mb-3 border-light">
+                            <p class="mb-0" style="color: #333;"><strong>Property Type:</strong> @Model.Type.TypeName</p>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="d-flex justify-content-start">
+                <a asp-action="Index" class="btn btn-outline-dark m-1">Return</a>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="sticky-top" style="top: 10px;">
+                <div class="card shadow-lg mb-4 p-4 border-light">
+                    <h5 class="text-center mb-3" style="color: #333;">Property Highlights</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item" style="color: #333;"><strong>Area:</strong> @Model.Area sq ft</li>
+                        <li class="list-group-item" style="color: #333;"><strong>Bedrooms:</strong> @Model.BedroomCount</li>
+                        <li class="list-group-item" style="color: #333;"><strong>Bathrooms:</strong> @Model.BathroomCount</li>
+                        <li class="list-group-item" style="color: #333;"><strong>Garage:</strong> @Model.GarageCount</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <style>
+        .card-img-top {
+            border-radius: 10px;
+        }
+
+        .property-image {
+            width: 100%; 
+            height: 300px; 
+            object-fit: cover; 
+        }
+
+        .btn-outline-primary {
+            transition: all 0.3s ease-in-out;
+        }
+
+            .btn-outline-primary:hover {
+                background-color: #007bff;
+                color: white;
+            }
+    </style>
+}

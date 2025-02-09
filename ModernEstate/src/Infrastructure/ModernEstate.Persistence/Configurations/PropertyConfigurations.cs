@@ -18,7 +18,7 @@ namespace ModernEstate.Persistence.Configurations
             builder.Property(p => p.SchoolDistrict).IsRequired().HasColumnType("nvarchar(100)");
             builder.Property(p => p.RoomCount).IsRequired().HasMaxLength(50);
             builder.Property(p => p.BuiltYear).IsRequired();
-            builder.Property(p => p.Description).IsRequired().HasColumnType("nvarchar(500)");
+            builder.Property(p => p.Description).IsRequired().HasColumnType("nvarchar(1000)");
             builder.HasOne(p => p.Agent).WithMany(a => a.Properties).HasForeignKey(p => p.AgentId).OnDelete(DeleteBehavior.Restrict);
             builder.HasOne(p => p.Agency).WithMany(a => a.Properties).HasForeignKey(p => p.AgencyId).OnDelete(DeleteBehavior.Restrict);
         }

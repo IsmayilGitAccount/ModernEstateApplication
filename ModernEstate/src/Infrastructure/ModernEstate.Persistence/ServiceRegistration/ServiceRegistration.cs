@@ -16,6 +16,7 @@ namespace ModernEstate.Persistence.ServiceRegistration
             );
 
             services.AddScoped<ILayoutService, LayoutService>();
+            services.AddScoped<IEmailService ,EmailService>();
             return services;
         }
     }

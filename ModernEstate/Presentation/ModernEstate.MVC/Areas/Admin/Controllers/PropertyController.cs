@@ -6,8 +6,6 @@ using ModernEstate.MVC.Areas.Admin.ViewModels.Properties;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Property;
 using ModernEstate.MVC.Utilities.Extensions;
 using ModernEstate.Persistence.Data;
-using Org.BouncyCastle.Bcpg.Sig;
-using Org.BouncyCastle.Security.Certificates;
 
 namespace ModernEstate.MVC.Areas.Admin.Controllers
 {
@@ -329,12 +327,15 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 return View(propertyVM);
             }
 
-            if (property.CategoryId != propertyVM.CategoryId)
-            {
-                bool result = propertyVM.Categories.Any(c => c.Id == propertyVM.CategoryId);
 
+            bool category = propertyVM.Categories.Any(c => c.Id == propertyVM.CategoryId);
+
+            if (!category)
+            {
+                ModelState.AddModelError(nameof(UpdateAdminPropertyVM.CategoryId), "Categories are wrong");
                 return View(propertyVM);
             }
+            
 
             if (property.AgencyId != propertyVM.AgencyId)
             {
@@ -512,6 +513,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             property.StatusId = propertyVM.StatusId;
             property.TypeId = propertyVM.TypeId;
             property.SchoolDistrict = propertyVM.SchoolDistrict;
+            
 
             await _context.SaveChangesAsync();
 
@@ -531,5 +533,35 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+        public async Task<IActionResult> Details(int? id)
+        {
+            if (id == null || id <= 0)
+            {
+                return BadRequest();
+            }
+
+            var property = await _context.Properties
+                .Include(p => p.Agency)              
+                .Include(p => p.Agent)               
+                .Include(p => p.Category)            
+                .Include(p => p.View)                
+                .Include(p => p.Roof)                
+                .Include(p => p.Exterior)            
+                .Include(p => p.Parking)             
+                .Include(p => p.PropertyFeatures)
+                .Include(p => p.PropertyPhotos)      
+                .Include(p => p.Status)              
+                .Include(p => p.Type)                
+                .FirstOrDefaultAsync(p => p.Id == id); 
+
+            if (property == null)
+            {
+                return NotFound();
+            }
+
+            return View(property);
+        }
+
     }
 }
