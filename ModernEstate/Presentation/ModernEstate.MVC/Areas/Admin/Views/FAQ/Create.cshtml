@@ -1,0 +1,50 @@
+﻿@using ModernEstate.MVC.Areas.Admin.ViewModels.FAQs
+@model CreateAdminFAQVM
+<div class="card mb-0">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <legend>Agent Form</legend>
+            <div class="mb-3">
+                <label asp-for="AgencyId" class="form-label">Agency Name</label>
+                <select class="form-control" asp-for="AgencyId" asp-items="new SelectList(Model.Agency, nameof(ModernEstate.Domain.Entities.Agency.Id), nameof(ModernEstate.Domain.Entities.Agency.AgencyName))">
+                    <option value="">Choose Agency</option>
+                </select>
+                <span asp-validation-for="AgencyId" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Question" class="form-label">Question</label>
+                <input asp-for="Question" class="form-control" placeholder="Enter question">
+                <span asp-validation-for="Question" class="text-danger"></span>
+            </div>
+            
+            <div class="mb-3">
+                <label asp-for="Answer" class="form-label">Answer</label>
+                <input asp-for="Answer" class="form-control" placeholder="Enter answer">
+                <span asp-validation-for="Answer" class="text-danger"></span>
+            </div>
+
+            <button class="btn btn-light m-1">Submit</button>
+            <a asp-action="Index" type="button" class="btn btn-light m-1">Cancel</a>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('input, select').on('input change', function () {
+                var field = $(this);
+                var errorSpan = field.siblings('.text-danger');
+                if (field.val().trim() !== '') {
+                    errorSpan.hide();
+                } else {
+                    errorSpan.show();
+                }
+            });
+        });
+    </script>
+}

@@ -59,7 +59,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Types type = await _context.Types.FirstOrDefaultAsync(t => t.Id == id);
-            if (type == null) return BadRequest();
+            if (type == null) return NotFound();
 
             UpdateAdminTypesVM typeVM = new UpdateAdminTypesVM()
             {
@@ -73,7 +73,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Types type = await _context.Types.FirstOrDefaultAsync(t => t.Id == id);
-            if (type == null) return BadRequest();
+            if (type == null) return NotFound();
 
             if (!ModelState.IsValid)
             {
@@ -99,7 +99,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Types type = await _context.Types.FirstOrDefaultAsync(t => t.Id == id);
-            if (type == null) return BadRequest();
+            if (type == null) return NotFound();
 
             _context.Types.Remove(type);
 
@@ -112,7 +112,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Types type = await _context.Types.FirstOrDefaultAsync(t => t.Id == id);
-            if (type == null) return BadRequest();
+            if (type == null) return NotFound();
 
             return View(type);
         }

@@ -3,68 +3,116 @@
   "WorkspaceRootPath": "C:\\Code Academy\\ModernEstate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\singleproperty\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\singleproperty\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\controllers\\singlepropertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\singlepropertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\review\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\review\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.application\\viewmodels\\reviews\\createreviewvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\viewmodels\\reviews\\createreviewvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.domain\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|solutionrelative:src\\core\\modernestate.domain\\entities\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\review\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\review\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\review\\respond.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\review\\respond.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\viewmodels\\posts\\createadminpostvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\viewmodels\\posts\\createadminpostvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|c:\\code academy\\modernestate\\src\\infrastructure\\modernestate.persistence\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|solutionrelative:src\\infrastructure\\modernestate.persistence\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.domain\\entities\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|solutionrelative:src\\core\\modernestate.domain\\entities\\property.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.domain\\entities\\account\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|solutionrelative:src\\core\\modernestate.domain\\entities\\account\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\agent\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\agent\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.application\\viewmodels\\agents\\agentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\viewmodels\\agents\\agentvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.domain\\entities\\parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|solutionrelative:src\\core\\modernestate.domain\\entities\\parking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\singleproperty\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\singleproperty\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\service\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\service\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\views\\agency\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\agency\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.application\\viewmodels\\services\\getservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\viewmodels\\services\\getservicevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.application\\viewmodels\\posts\\getpostvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\viewmodels\\posts\\getpostvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|c:\\code academy\\modernestate\\src\\core\\modernestate.domain\\modernestate.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|solutionrelative:src\\core\\modernestate.domain\\modernestate.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\faq\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\faq\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\post\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\post\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\faq\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\faq\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\agent\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\agent\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\service\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\service\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\service\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\service\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\service\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\service\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\agent\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\agent\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\agent\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\agent\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,188 +122,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 19,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SinglePropertyController.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\SinglePropertyController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\SinglePropertyController.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\SinglePropertyController.cs",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\SinglePropertyController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAAOAAAAAAAAAA==",
+              "Title": "AgencyController.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T19:14:37.19Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreateReviewVM.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Reviews\\CreateReviewVM.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ViewModels\\Reviews\\CreateReviewVM.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Reviews\\CreateReviewVM.cs",
-              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\Reviews\\CreateReviewVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T19:06:44.732Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ReviewController.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ReviewController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\ReviewController.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ReviewController.cs",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\ReviewController.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAxwBEAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T19:04:02.894Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Review.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Domain\\Entities\\Review.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Review.cs",
-              "RelativeToolTip": "src\\Core\\ModernEstate.Domain\\Entities\\Review.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T18:46:59.243Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Respond.cshtml",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Review\\Respond.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Review\\Respond.cshtml",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Review\\Respond.cshtml",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Review\\Respond.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T18:43:16.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Review\\Create.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Review\\Create.cshtml",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Review\\Create.cshtml",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Review\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T18:43:07.178Z",
+              "WhenOpened": "2025-02-10T19:11:39.449Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Review\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Review\\Index.cshtml",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Review\\Index.cshtml",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Review\\Index.cshtml",
-              "ViewState": "AgIAAA4AAAAAAAAAAADwvxYAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T18:42:24.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAFQBAAAAAAAAAAAjwKAAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T18:06:10.605Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Account\\Login.cshtml",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEQAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T18:05:43.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Program.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Program.cs",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB0AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T18:02:37.682Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml*",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml*",
-              "ViewState": "AgIAAO0AAAAAAAAAAAAAwPkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T18:00:34.074Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "AppUser.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Account\\AppUser.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Domain\\Entities\\Account\\AppUser.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Account\\AppUser.cs",
-              "RelativeToolTip": "src\\Core\\ModernEstate.Domain\\Entities\\Account\\AppUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T17:52:06.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Parking.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Parking.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Domain\\Entities\\Parking.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Parking.cs",
-              "RelativeToolTip": "src\\Core\\ModernEstate.Domain\\Entities\\Parking.cs",
+              "Title": "CreateAdminPostVM.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\ViewModels\\Posts\\CreateAdminPostVM.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\ViewModels\\Posts\\CreateAdminPostVM.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\ViewModels\\Posts\\CreateAdminPostVM.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\ViewModels\\Posts\\CreateAdminPostVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T17:47:14.804Z",
+              "WhenOpened": "2025-02-10T19:07:09.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAE8BAAAAAAAAAAAAAF4BAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T19:04:51.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T19:02:50.998Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AgentVM.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Agents\\AgentVM.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ViewModels\\Agents\\AgentVM.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Agents\\AgentVM.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\Agents\\AgentVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:54:28.987Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Infrastructure\\ModernEstate.Persistence\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "src\\Infrastructure\\ModernEstate.Persistence\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAwCEAAAAyAAAAAAAAAA==",
+              "Title": "AgentController.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AgentController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\AgentController.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AgentController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\AgentController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T17:41:50.885Z",
+              "WhenOpened": "2025-02-10T18:53:07.647Z",
               "EditorCaption": ""
             },
             {
@@ -268,28 +212,288 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Property.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Property.cs",
-              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Domain\\Entities\\Property.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Property.cs",
-              "RelativeToolTip": "src\\Core\\ModernEstate.Domain\\Entities\\Property.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAAwCYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T17:41:15.916Z",
+              "DocumentIndex": 7,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Agent\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Agent\\Details.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Agent\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Agent\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:51:52.466Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAkwKcAAAANAAAAAAAAAA==",
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Agency\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Agency\\Details.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Agency\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Agency\\Details.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAhwB8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:47:11.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:46:50.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T17:40:47.211Z",
+              "WhenOpened": "2025-02-10T18:36:45.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Service\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Service\\Details.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Service\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Service\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAChAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:35:09.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ModernEstate.Domain",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-10T18:32:48.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetPostVM.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Posts\\GetPostVM.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ViewModels\\Posts\\GetPostVM.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Posts\\GetPostVM.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\Posts\\GetPostVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:32:39.664Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "GetServiceVM.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Services\\GetServiceVM.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ViewModels\\Services\\GetServiceVM.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Services\\GetServiceVM.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\Services\\GetServiceVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAcAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:32:17.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T18:31:50.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:21:29.079Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAA4BAAAAAAAAAAAAABcBAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:19:59.454Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAD8BAAAAAAAAAAAAAE4BAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:19:07.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Post\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Post\\Details.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Post\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Post\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAB9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:14:44.935Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Details.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:14:31.023Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Details.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:13:18.289Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Create.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Create.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Create.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Create.cshtml",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAwwGEAAABUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:11:53.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Index.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agent\\Index.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAwwCsAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:10:12.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Details.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Details.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Details.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:10:06.089Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Update.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Update.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Update.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:09:57.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Create.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Create.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Create.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Create.cshtml",
+              "ViewState": "AgIAABYAAAAAAAAAAAAwwBwAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:09:50.134Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAABeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-10T18:09:40.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-10T17:46:10.623Z",
               "EditorCaption": ""
             }
           ]

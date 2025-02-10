@@ -1,0 +1,106 @@
+﻿@using ModernEstate.Application.ViewModels.Posts
+@using ModernEstate.Domain.Entities
+@model GetPostVM
+
+<section class="section-full text-left">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1>Post Page</h1>
+				<p></p>
+				<ol class="breadcrumb">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+					</li>
+					<li class="active">Post Page</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+</section>
+<!--Section Blog Post-->
+<section class="section-md text-left">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<div class="blog-post">
+
+					@foreach (Post post in Model.Posts)
+					{
+						<h2>@post.Title</h2>
+						<hr>
+						<div class="caption-meta">
+							<time datetime="2016">
+								<span class="mdi mdi-calendar"></span>
+								<span>@post.PostedAt</span>
+							</time>
+							<a href="#">
+								<span class="mdi mdi-account"></span>
+								<span>@post.Author.AuthorName</span>
+							</a>
+							<div class="post-meta">
+								<span class="mdi mdi-folder-outline"></span>
+								<a asp-controller="Agency" asp-action="Details" asp-route-id="@Model.Post.Agency.Id" class="meta-link">@post.Agency.AgencyName</a>, &nbsp;
+							</div>
+						</div>
+						<img style="width:770px;height:520px;" src="~/assets/images/@post.Photo" alt="" width="770" height="520">
+
+						<p>
+							@post.Description
+						</p>
+					}
+					<h4 class="text-center text-sm-left border-bottom">Posted By</h4>
+					<div class="media media-mod-2">
+						<div class="media-left">
+							<img style="width:170px;height:170px;" src="~/assets/images/@Model.Post.Author.Photo" alt="">
+						</div>
+						<div class="media-body">
+							<h6 class="text-sushi text-ubold">@Model.Post.Author.AuthorName</h6>
+							<p class="text-light">
+								@Model.Post.Author.Description
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<!-- Sidebar-->
+				<div class="sidebar sidebar-mod-2">
+					<div class="sidebar-module">
+						<h4>About Us</h4>
+						<p>@Model.Post.Agency.Description</p>
+						<a asp-controller="Agency" asp-action="Details" asp-route-Id="@Model.Post.Agency.Id" class="btn btn-xs btn-primary">learn more</a>
+					</div>
+					<div class="sidebar-module">
+						<h4>Recent Properties</h4>
+						@foreach (Post recent in Model.RecentlyPosts)
+						{
+							<div class="thumbnail-3">
+								<img style="width:340px; height:230px;" src="~/assets/images/@recent.Photo" alt="">
+								<div class="caption">
+									<a asp-controller="Post" asp-action="Details" asp-route-Id="@recent.Id" class="h5 text-sushi">@recent.Title</a>
+									<p class="text-abbey">
+										<span class="text-ubold">
+											@if (recent.Description.Length > 200)
+											{
+												@recent.Description.Substring(0, 200)
+											}
+											else 
+											{
+												@recent.Description
+											}
+											...
+										</span>
+									</p>
+								</div>
+							</div>
+						}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

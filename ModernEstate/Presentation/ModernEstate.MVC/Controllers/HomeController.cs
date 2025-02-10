@@ -1,13 +1,7 @@
-﻿using System.Transactions;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ModernEstate.Application.Abstractions.Services;
-using ModernEstate.Application.ViewModels.Paginations;
 using ModernEstate.Application.ViewModels.Properties;
-using ModernEstate.Application.ViewModels.Search;
-using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
-using ModernEstate.Persistence.Implementations.Services;
 
 namespace ModernEstate.MVC.Controllers
 {

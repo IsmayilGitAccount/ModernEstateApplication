@@ -327,6 +327,28 @@ namespace ModernEstate.Persistence.Migrations
                     b.ToTable("Agents");
                 });
 
+            modelBuilder.Entity("ModernEstate.Domain.Entities.Author", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("AuthorName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Photo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Authors");
+                });
+
             modelBuilder.Entity("ModernEstate.Domain.Entities.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -376,6 +398,36 @@ namespace ModernEstate.Persistence.Migrations
                     b.ToTable("Exteriors");
                 });
 
+            modelBuilder.Entity("ModernEstate.Domain.Entities.FAQ", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AgencyId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Answer")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Question")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AgencyId");
+
+                    b.ToTable("FAQs");
+                });
+
             modelBuilder.Entity("ModernEstate.Domain.Entities.Feature", b =>
                 {
                     b.Property<int>("Id")
@@ -420,6 +472,44 @@ namespace ModernEstate.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Parkings");
+                });
+
+            modelBuilder.Entity("ModernEstate.Domain.Entities.Post", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AgencyId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("AuthorId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Photo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("PostedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AgencyId");
+
+                    b.HasIndex("AuthorId");
+
+                    b.ToTable("Posts");
                 });
 
             modelBuilder.Entity("ModernEstate.Domain.Entities.Property", b =>
@@ -579,34 +669,6 @@ namespace ModernEstate.Persistence.Migrations
                     b.ToTable("PropertiesPhotos");
                 });
 
-            modelBuilder.Entity("ModernEstate.Domain.Entities.Review", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("AgentResponse")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("SubmittedAt")
-                        .HasColumnType("datetime2");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Reviews");
-                });
-
             modelBuilder.Entity("ModernEstate.Domain.Entities.Roof", b =>
                 {
                     b.Property<int>("Id")
@@ -628,6 +690,39 @@ namespace ModernEstate.Persistence.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Roofs");
+                });
+
+            modelBuilder.Entity("ModernEstate.Domain.Entities.Service", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AgencyId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Photo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AgencyId");
+
+                    b.ToTable("Services");
                 });
 
             modelBuilder.Entity("ModernEstate.Domain.Entities.Setting", b =>
@@ -759,31 +854,6 @@ namespace ModernEstate.Persistence.Migrations
                     b.ToTable("Views");
                 });
 
-            modelBuilder.Entity("ModernEstate.Domain.Entities.Wishlist", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<int>("PropertyId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PropertyId");
-
-                    b.HasIndex("UserId", "PropertyId")
-                        .IsUnique()
-                        .HasFilter("[UserId] IS NOT NULL");
-
-                    b.ToTable("Wishlist");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -847,6 +917,36 @@ namespace ModernEstate.Persistence.Migrations
                         .HasForeignKey("ModernEstate.Domain.Entities.Agent", "AgencyId1");
 
                     b.Navigation("Agency");
+                });
+
+            modelBuilder.Entity("ModernEstate.Domain.Entities.FAQ", b =>
+                {
+                    b.HasOne("ModernEstate.Domain.Entities.Agency", "Agency")
+                        .WithMany("FAQs")
+                        .HasForeignKey("AgencyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Agency");
+                });
+
+            modelBuilder.Entity("ModernEstate.Domain.Entities.Post", b =>
+                {
+                    b.HasOne("ModernEstate.Domain.Entities.Agency", "Agency")
+                        .WithMany("Posts")
+                        .HasForeignKey("AgencyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("ModernEstate.Domain.Entities.Author", "Author")
+                        .WithMany("Posts")
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Agency");
+
+                    b.Navigation("Author");
                 });
 
             modelBuilder.Entity("ModernEstate.Domain.Entities.Property", b =>
@@ -938,27 +1038,15 @@ namespace ModernEstate.Persistence.Migrations
                     b.Navigation("Property");
                 });
 
-            modelBuilder.Entity("ModernEstate.Domain.Entities.Wishlist", b =>
+            modelBuilder.Entity("ModernEstate.Domain.Entities.Service", b =>
                 {
-                    b.HasOne("ModernEstate.Domain.Entities.Property", "Property")
-                        .WithMany("Wishlists")
-                        .HasForeignKey("PropertyId")
+                    b.HasOne("ModernEstate.Domain.Entities.Agency", "Agency")
+                        .WithMany("Services")
+                        .HasForeignKey("AgencyId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ModernEstate.Domain.Entities.Account.AppUser", "AppUser")
-                        .WithMany("Wishlists")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade);
-
-                    b.Navigation("AppUser");
-
-                    b.Navigation("Property");
-                });
-
-            modelBuilder.Entity("ModernEstate.Domain.Entities.Account.AppUser", b =>
-                {
-                    b.Navigation("Wishlists");
+                    b.Navigation("Agency");
                 });
 
             modelBuilder.Entity("ModernEstate.Domain.Entities.Agency", b =>
@@ -967,12 +1055,23 @@ namespace ModernEstate.Persistence.Migrations
 
                     b.Navigation("Agents");
 
+                    b.Navigation("FAQs");
+
+                    b.Navigation("Posts");
+
                     b.Navigation("Properties");
+
+                    b.Navigation("Services");
                 });
 
             modelBuilder.Entity("ModernEstate.Domain.Entities.Agent", b =>
                 {
                     b.Navigation("Properties");
+                });
+
+            modelBuilder.Entity("ModernEstate.Domain.Entities.Author", b =>
+                {
+                    b.Navigation("Posts");
                 });
 
             modelBuilder.Entity("ModernEstate.Domain.Entities.Category", b =>
@@ -1000,8 +1099,6 @@ namespace ModernEstate.Persistence.Migrations
                     b.Navigation("PropertyFeatures");
 
                     b.Navigation("PropertyPhotos");
-
-                    b.Navigation("Wishlists");
                 });
 
             modelBuilder.Entity("ModernEstate.Domain.Entities.Roof", b =>

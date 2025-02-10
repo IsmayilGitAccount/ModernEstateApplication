@@ -1,0 +1,52 @@
+﻿@using ModernEstate.Application.ViewModels.Posts
+@using ModernEstate.Domain.Entities
+@model GetPostVM
+
+<section class="section-full text-center text-lg-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Grid Padding Gallery</h1>
+                <p></p>
+                <ol class="breadcrumb">
+                    <li>
+                        <a asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="active">Grid Padding Gallery</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section Isotop-->
+<section class="section-md text-center text-lg-left">
+    <div class="container">
+        <div class="btn-group-isotope isotope-filters isotope-filters-horizontal">
+            <button data-isotope-filter="*" data-isotope-group="gallery" class="btn active">All Posts</button>
+        </div>
+        <div data-isotope-layout="masonry" data-isotope-group="gallery" class="isotope offset-1 row masonry-gallery custom-hover">
+            @foreach (Post post in Model.Posts)
+            {
+                <div data-filter="type-1" class="isotope-item col-xs-12 col-sm-6 col-md-4">
+                    <div class="thumbnail-gallery">
+                        <img src="~/assets/images/@post.Photo" alt="" width="370" height="250">
+                        <div class="caption"></div>
+                        <div class="caption-wrapper">
+                            <h5 class="text-white">@post.Title</h5>
+                            <p class="text-white">@{
+                                    string sentence = @post.Description;
+                                    string description = sentence.Substring(0, sentence.IndexOf(".") + 1);
+                                }
+                                @description
+                            </p>
+                            <a asp-controller="Post" asp-action="Details" asp-route-Id="@post.Id" class="icon icon-yellow icon-xxs fa-link"></a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>

@@ -59,7 +59,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             View view = await _context.Views.FirstOrDefaultAsync(v => v.Id == id);
-            if (view == null) return BadRequest();
+            if (view == null) return NotFound();
 
             UpdateAdminViewVM viewVM = new UpdateAdminViewVM()
             {
@@ -74,7 +74,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             View view = await _context.Views.FirstOrDefaultAsync(v => v.Id == id);
-            if (view == null) return BadRequest();
+            if (view == null) return NotFound();
 
             if (!ModelState.IsValid)
             {
@@ -100,7 +100,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             View view = await _context.Views.FirstOrDefaultAsync(v => v.Id == id);
-            if (view == null) return BadRequest();
+            if (view == null) return NotFound();
 
             _context.Views.Remove(view);
 
@@ -113,7 +113,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             View view = await _context.Views.FirstOrDefaultAsync(v => v.Id == id);
-            if (view == null) return BadRequest();
+            if (view == null) return NotFound();
 
             return View(view);
         }

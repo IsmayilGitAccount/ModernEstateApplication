@@ -59,7 +59,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Roof roof = await _context.Roofs.FirstOrDefaultAsync(r => r.Id == id);
-            if (roof == null) return BadRequest();
+            if (roof == null) return NotFound();
 
             UpdateAdminRoofVM roofVM = new UpdateAdminRoofVM()
             {
@@ -74,7 +74,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Roof roof = await _context.Roofs.FirstOrDefaultAsync(r => r.Id == id);
-            if (roof == null) return BadRequest();
+            if (roof == null) return NotFound();
 
             if (!ModelState.IsValid)
             {
@@ -100,7 +100,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Roof roof = await _context.Roofs.FirstOrDefaultAsync(r => r.Id == id);
-            if (roof == null) return BadRequest();
+            if (roof == null) return NotFound();
 
             _context.Roofs.Remove(roof);
 
@@ -113,7 +113,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Roof roof = await _context.Roofs.FirstOrDefaultAsync(r => r.Id == id);
-            if (roof == null) return BadRequest();
+            if (roof == null) return NotFound();
 
             return View(roof);
         }

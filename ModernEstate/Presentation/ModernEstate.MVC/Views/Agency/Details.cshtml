@@ -31,9 +31,14 @@
                 <p class="inset-3">
                     @Model.Agency.Description
                 </p>
+                <br />
+                <a asp-controller="Service" asp-action="Details" asp-route-Id="@Model.Agency.Id" class="btn btn-primary btn-sm btn-min-width-md btn-full-width offset-10">
+                    View More
+                </a>
             </div>
         </div>
     </div>
+    
 </section>
 <!--Section Our Achievements-->
 <section class="section-sm bg-gray text-left">

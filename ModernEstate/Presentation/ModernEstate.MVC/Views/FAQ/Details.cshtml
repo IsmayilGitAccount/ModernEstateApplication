@@ -1,0 +1,51 @@
+﻿@using ModernEstate.Application.ViewModels.FAQs
+@using ModernEstate.Domain.Entities
+@model GetFAQVM
+
+<section class="section-full text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>FAQ</h1>
+                <p></p>
+                <ol class="breadcrumb">
+                    <li>
+                        <a asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Pages</a>
+                    </li>
+                    <li class="active">FAQ</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Section Some of your questions-->
+<section class="section-md text-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <h2>Accordion FAQ</h2>
+                <hr>
+                <p>If you need help, we have a list of frequently asked questions and answers. We strive to give you the best buying experience possible. Click a question below to view the answer.</p>
+                <div class="accordion-custom" id="accordion-1">
+                    @foreach (FAQ faq in Model.FAQs)
+                    {
+                        <div class="accordion-item">
+                            <a data-toggle="collapse" data-parent="#accordion-1" href="#collapseOne-1" class="accordion-item-title">@faq.Question</a>
+                            <div id="collapseOne-1" class="collapse in">
+                                <div class="accordion-item-content">
+                                    <p>
+                                        @faq.Answer
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

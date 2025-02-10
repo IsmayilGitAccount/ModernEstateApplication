@@ -29,9 +29,11 @@ namespace ModernEstate.Persistence.Data
         public DbSet<Status> Status { get; set; }
         public DbSet<Types> Types { get; set; }
         public DbSet<Slide> Slides { get; set; }
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Post> Posts { get; set; }
+        public DbSet<FAQ> FAQs { get; set; }
+        public DbSet<Service> Services { get; set; }
         public DbSet<PropertyPhoto> PropertiesPhotos { get; set; }
         public DbSet<PropertyFeature> PropertyFeatures { get; set; }
-        public DbSet<Review> Reviews { get; set; }
-
     }
 }

@@ -80,7 +80,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            if (category == null) return BadRequest();
+            if (category == null) return NotFound();
 
             UpdateAdminCategoryVM categoryVM = new UpdateAdminCategoryVM()
             {
@@ -95,7 +95,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            if (category == null) return BadRequest();
+            if (category == null) return NotFound();
             if (!ModelState.IsValid)
             {
                 return View(categoryVM);
@@ -136,7 +136,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            if (category == null) return BadRequest();
+            if (category == null) return NotFound();
 
            if(category.CategoryPhoto is not null)
             {
@@ -154,7 +154,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
-            if (category == null) return BadRequest();
+            if (category == null) return NotFound();
 
             return View(category);
         }

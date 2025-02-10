@@ -18,9 +18,9 @@
 		opacity: 1;
 		transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
 		transform: translateX(100%);
-		background-color: #f8f9fa; /* Açıq boz-ağ fon */
-		color: #333; /* Qara-yaxın tünd boz yazı */
-		border-left: 6px solid #b0b0b0; /* Zövqlü tünd boz border */
+		background-color: #f8f9fa; 
+		color: #333; 
+		border-left: 6px solid #b0b0b0; 
 	}
 
 	.show {
@@ -38,8 +38,7 @@
 
 <script>
 	document.addEventListener("DOMContentLoaded", function () {
-		var message = "@TempData["SuccessMessage"]" || "@TempData["ErrorMessage"]"; // Hər ikisi üçün eyni stil
-
+		var message = "@TempData["SuccessMessage"]" || "@TempData["ErrorMessage"]"; 
 		if (message) {
 			showNotification(message);
 		}
@@ -58,8 +57,8 @@
 			setTimeout(function () {
 				notification.style.display = "none";
 				notification.classList.remove("fade-out", "show");
-			}, 1000); // 1 saniyəyə tam itəcək
-		}, 5000); // 5 saniyə qalsın, sonra yavaş-yavaş yox olsun
+			}, 1000); 
+		}, 5000); 
 	}
 </script>
 
@@ -72,17 +71,14 @@
 <html lang="en" class="wide wow-animation">
 
 <head>
-	<!-- Site Title-->
 	<title>Home</title>
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="utf-8">
 	<link rel="icon" href="~/assets/images/favicon.ico" type="image/x-icon">
-	<!-- Stylesheets-->
 	<link rel="stylesheet" type="text/css" href="~/assets/fonts.googleapis.com/css?family=Lato:400,700,900,400italic">
 	<link rel="stylesheet" href="~/assets/css/style.css">
-	<!--[if lt IE 10]><div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="~/assets/images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div><script src="~/assets/js/html5shiv.min.js"></script><![endif]-->
 </head>
 
 <body>
@@ -95,7 +91,6 @@
 				<!--RD Navbar Panel-->
 				<div class="rd-navbar-top-panel">
 					<div class="rd-navbar-top-panel-wrap">
-
 						<div class="top-panel-inner">
 							<dl class="dl-horizontal-mod-1">
 								<dt>
@@ -105,6 +100,7 @@
 									<a href="callto:#">@settings["PhoneNumber"]</a>
 								</dd>
 							</dl>
+
 							<dl class="dl-horizontal-mod-1">
 								<dt>
 									@Html.Raw(settings["EmailIcon"])
@@ -113,6 +109,7 @@
 									<a href="mailto:#">@settings["Email"]</a>
 								</dd>
 							</dl>
+
 							<address>
 								<dl class="dl-horizontal-mod-1">
 									<dt>
@@ -124,6 +121,7 @@
 								</dl>
 							</address>
 						</div>
+
 
 						<div class="top-panel-inner" style="display: flex; justify-content: flex-end; align-items: center; padding: 10px;">
 							<!-- Sosyal Medya İkonları -->
@@ -249,7 +247,7 @@
 										<p>Pages 1</p>
 										<ul>
 											<li>
-												<a asp-controller="Favourites" asp-action="Index">Wishlist</a>
+												<a asp-controller="Post" asp-action="Index">Post</a>
 											</li>
 											<li>
 												<a href="agency-page.html">Agency Page</a>
@@ -325,9 +323,24 @@
 									</li>
 								</ul>
 							</li>
-							<li>
-								<a asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Panel</a>
-							</li>
+							@if(User.IsInRole("Admin"))
+							{
+								<li>
+									<a asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Panel</a>
+								</li>
+							}
+							else if(User.IsInRole("Author"))
+							{
+								<li>
+									<a asp-area="Admin" asp-controller="Post" asp-action="Index">Author Panel</a>
+								</li>
+							}
+							else if(User.IsInRole("Agent"))
+							{
+								<li>
+									<a asp-area="Admin" asp-controller="Service" asp-action="Index">Agent Panel</a>
+								</li>
+							}
 							<li class="link-group">
 								<a href="submit-property.html" class="btn btn-sm btn-primary">Submit Property</a>
 							</li>

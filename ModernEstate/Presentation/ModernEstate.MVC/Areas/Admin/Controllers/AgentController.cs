@@ -1,6 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels.Agencies;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Agents;
@@ -69,6 +70,13 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 return View(agentVM);
             }
 
+
+            if (agentVM.Description.Length > 1000)
+            {
+                ModelState.AddModelError(nameof(agentVM.Description), "Description must be less than 1000 characters!");
+                return View(agentVM);
+            }
+
             Agent agent = new Agent()
             {
                 Address = agentVM.Address,
@@ -111,7 +119,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id == null || id <= 0) return BadRequest();
             Agent agent = await _context.Agents.Include(a => a.Agency).FirstOrDefaultAsync(a => a.Id == id);
-            if (agent == null) return BadRequest();
+            if (agent == null) return NotFound();
 
             UpdateAdminAgentVM agentVM = new UpdateAdminAgentVM
             {
@@ -138,7 +146,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
             if (id == null || id <= 0) return BadRequest();
             Agent agent = await _context.Agents.Include(a => a.Agency).FirstOrDefaultAsync(a => a.Id == id);
-            if (agent == null) return BadRequest();
+            if (agent == null) return NotFound();
 
             if (!ModelState.IsValid)
             {
@@ -168,6 +176,12 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             agent.XLink = agentVM.XLink;
             agent.InstagramLink = agentVM.InstagramLink;
             agent.FullName = agentVM.FullName;
+
+            if (agentVM.Description.Length > 1000)
+            {
+                ModelState.AddModelError(nameof(agentVM.Description), "Description must be less than 1000 characters!");
+                return View(agentVM);
+            }
             agent.Description = agentVM.Description;
             agent.AgencyId = agentVM.AgencyId;
 
@@ -196,7 +210,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id == null || id <= 0) return BadRequest();
             Agent agent = await _context.Agents.Include(a => a.Agency).FirstOrDefaultAsync(a => a.Id == id);
-            if (agent == null) return BadRequest();
+            if (agent == null) return NotFound();
 
             agent.Photo.DeleteFile(_env.WebRootPath, Root);
             _context.Remove(agent);
@@ -209,7 +223,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id == null || id <= 0) return BadRequest();
             Agent agent = await _context.Agents.Include(a => a.Agency).FirstOrDefaultAsync(a => a.Id == id);
-            if (agent == null) return BadRequest();
+            if (agent == null) return NotFound();
 
             return View(agent);
         }

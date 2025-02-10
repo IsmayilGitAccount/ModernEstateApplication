@@ -1,0 +1,72 @@
+﻿@using ModernEstate.MVC.Areas.Admin.ViewModels.Posts
+@model UpdateAgentServiceVM
+<div class="card mb-0">
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data">
+            <legend>Post Form</legend>
+            <div class="mb-3">
+                <label asp-for="Photo" class="form-label">Photo</label>
+                <input asp-for="Photo" class="form-control">
+                <span asp-validation-for="Photo" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label">Title</label>
+                <input asp-for="Title" class="form-control" placeholder="Enter title">
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="AgencyId" class="form-label">Agency Name</label>
+                <select class="form-control" asp-for="AgencyId" asp-items="new SelectList(Model.Agency, nameof(ModernEstate.Domain.Entities.Agency.Id), nameof(ModernEstate.Domain.Entities.Agency.AgencyName))">
+                    <option value="">Choose Agency</option>
+                </select>
+                <span asp-validation-for="AgencyId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="AuthorId" class="form-label">Author Name</label>
+                <select class="form-control" asp-for="AuthorId" asp-items="new SelectList(Model.Author, nameof(ModernEstate.Domain.Entities.Author.Id), nameof(ModernEstate.Domain.Entities.Author.AuthorName))">
+                    <option value="">Choose Agency</option>
+                </select>
+                <span asp-validation-for="AuthorId" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="PostedAt" class="form-label">Posted Date</label>
+                <input asp-for="PostedAt" class="form-control" type="text"
+                       value="@(Model.PostedAt.ToString("dd/MM/yyyy HH:mm:ss") ?? "")">
+
+                <span asp-validation-for="PostedAt" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="UpdatedAt" class="form-label">Updated Date</label>
+                <input asp-for="UpdatedAt" class="form-control">
+                <span asp-validation-for="UpdatedAt" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label">Description</label>
+                <input asp-for="Description" class="form-control" placeholder="Enter description">
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <button class="btn btn-light m-1">Submit</button>
+            <a asp-action="Index" type="button" class="btn btn-light m-1">Cancel</a>
+        </form>
+    </div>
+</div>
+@section Scripts {
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('input, select').on('input change', function () {
+                var field = $(this);
+                var errorSpan = field.siblings('.text-danger');
+                if (field.val().trim() !== '') {
+                    errorSpan.hide();
+                } else {
+                    errorSpan.show();
+                }
+            });
+        });
+    </script>
+}

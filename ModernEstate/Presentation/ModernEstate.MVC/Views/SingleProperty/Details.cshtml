@@ -13,9 +13,6 @@
                     <li>
                         <a asp-controller="Home" asp-action="Index">Home</a>
                     </li>
-                    <li>
-                        <a href="#">Property Catalog</a>
-                    </li>
                     <li class="active">Single Property Page</li>
                 </ol>
             </div>
@@ -151,7 +148,6 @@
                         <p>
                             @Model.Property.Description
                         </p>
-
                     </div>
                 </div>
             </div>
@@ -173,81 +169,27 @@
                         <a href="#" class="btn btn-primary btn-sm btn-min-width-md btn-full-width offset-10">
                             <span class="icon icon-left icon-sm fa-heart"></span> Add to Favorites
                         </a>
+                        <a asp-controller="Review" asp-action="Index" asp-route-Id="@Model.Property.Id" class="btn btn-primary btn-sm btn-min-width-md btn-full-width offset-10">
+                             Write Review
+                        </a>
                     </div>
                     <div class="sidebar-module">
-                        <h4 class="border-bottom">Request a Showing</h4>
-                        <p>You can contact us any way that is convenient for you. We would be happy to answer your questions.</p>
-                        <!-- RD Mailform-->
-                        <form data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php" class="rd-mailform text-left offset-11">
-                            <div class="form-group">
-                                <label for="contact-name2" class="form-label">Your name</label>
-                                <input id="contact-name2" type="text" name="name" data-constraints="Required" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-phone2" class="form-label">Your phone</label>
-                                <input id="contact-phone2" type="text" name="phone" data-constraints="Required Numeric" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-email2" class="form-label">Your e-mail</label>
-                                <input id="contact-email2" type="email" name="email" data-constraints="Required Email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-message2" class="form-label">Message</label>
-                                <textarea id="contact-message2" name="message" data-constraints="Required" placeholder="Hello! I`m interested in 7758 Laguna heights Court, San Francisco, MA 02127. Please contact me with more information." class="form-control min-height"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-sushi btn-sm">Send message</button>
-                        </form>
-                    </div>
-                    <div class="sidebar-module">
-                        <h4 class="border-bottom">Agent Information</h4>
-                        <div class="media media-mod-3">
-                            <div class="media-left img-width-auto">
-                                <img style="width:100px;height:100px;" src="~/assets/images/@Model.Property.Agent.Photo" alt="">
-                            </div>
-                            <div class="media-body">
-                                <h5 class="text-sushi">@Model.Property.Agent.FullName</h5>
-                                <p>Founder, Listing Agent</p>
-                                <dl class="dl-horizontal-mod-1 text-ubold text-abbey">
-                                    <dt>Tel.</dt>
-                                    <dd>
-                                        <a href="callto:#">@Model.Property.Agent.PhoneNumber</a>
-                                    </dd>
-                                </dl>
-                            </div>
-                        </div>
-                        <p>@Model.Property.Agent.Description</p>
-                        <a asp-controller="Agent" asp-action="Details" asp-route-Id="@Model.Property.Agent.Id" class="btn btn-primary btn-sm">Get in touch</a>
-                    </div>
-                    <div class="sidebar-module">
-                        <h4 class="border-bottom">Share</h4>
-                        <div class="icon-group">
-                            <a href="@Model.Property.Agent.FacebookLink" class="icon icon-sm icon-social fa-facebook"></a>
-                            <a href="@Model.Property.Agent.XLink" class="icon icon-sm icon-social fa-twitter"></a>
-                            <a href="@Model.Property.Agent.LinkedinLink" class="icon icon-sm icon-social fa-linkedin"></a>
-                        </div>
-                    </div>
-                    <!-- Sidebar Module for Recent Properties-->
-                    <div class="sidebar-module">
-                        <h4 class="border-bottom">Recent Properties</h4>
-                        <div class="row">
-                            @foreach (Property property in Model.RecentlyProperties)
-                            {
-                                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-                                    <div class="thumbnail-3">
-                                        <img src="~/assets/images/@property.PropertyPhotos.FirstOrDefault(p=>p.IsPrimary==true)?.Photo" alt="" width="340" height="230" class="img-responsive">
-                                        <div class="caption">
-                                            <a asp-controller="SingleProperty" asp-action="Details" asp-route-Id="@property.Id" class="h5 text-sushi">@property.Location</a>
-                                            <p class="text-abbey">
-                                                <span class="text-ubold">$@property.Price</span>
-                                                <span>/month</span>
-                                            </p>
-                                        </div>
-                                    </div>
+                        <h4>Recent Properties</h4>
+                        @foreach (Property property in Model.RecentlyProperties)
+                        {
+                            <div class="thumbnail-3">
+                                <img style="width:340px;height:230px;" src="~/assets/images/@property.PropertyPhotos.FirstOrDefault(p=>p.IsPrimary==true)?.Photo" alt="" width="340" height="230">
+                                <div class="caption">
+                                    <a asp-controller="SingleProperty" asp-action="Details" asp-route-Id="@property.Id" class="h5 text-sushi">@property.Location</a>
+                                    <p class="text-abbey">
+                                        <span class="text-ubold">$@property.Price</span>
+                                        <span>/month</span>
+                                    </p>
                                 </div>
-                            }
-                        </div>
+                            </div>
+                        }
                     </div>
-
+                </div>
             </div>
         </div>
     </div>

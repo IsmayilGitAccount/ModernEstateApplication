@@ -12,7 +12,7 @@ namespace ModernEstate.MVC.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
 
-            Agent agent = await _context.Agents.Include(a => a.Properties).FirstOrDefaultAsync(a => a.Id == id);
+            Agent agent = await _context.Agents.Include(a => a.Properties).Include(a=>a.Agency).FirstOrDefaultAsync(a => a.Id == id);
 
             if (agent == null) return BadRequest();
 

@@ -59,7 +59,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Parking parking = await _context.Parkings.FirstOrDefaultAsync(p => p.Id == id);
-            if (parking == null) return BadRequest();
+            if (parking == null) return NotFound();
 
             UpdateAdminParkingVM parkingVM = new UpdateAdminParkingVM()
             {
@@ -74,7 +74,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Parking parking = await _context.Parkings.FirstOrDefaultAsync(p => p.Id == id);
-            if (parking == null) return BadRequest();
+            if (parking == null) return NotFound();
 
             if (!ModelState.IsValid)
             {
@@ -100,7 +100,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Parking parking = await _context.Parkings.FirstOrDefaultAsync(p => p.Id == id);
-            if (parking == null) return BadRequest();
+            if (parking == null) return NotFound();
 
             _context.Parkings.Remove(parking);
 
@@ -113,7 +113,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Parking parking = await _context.Parkings.FirstOrDefaultAsync(p => p.Id == id);
-            if (parking == null) return BadRequest();
+            if (parking == null) return NotFound();
 
             return View(parking);
         }

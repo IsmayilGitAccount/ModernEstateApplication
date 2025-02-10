@@ -103,7 +103,7 @@ namespace ModernEstate.MVC.Controllers
 
             TempData["SuccessMessage"] = "You have successfully registered!";
 
-            await _emailService.SendMailAsync(user.Email, "You have successfully registered!", "Welcome to our family!", false);
+            await _emailService.SendMailAsync(user.Email, "You have successfully registered!", $"Dear {user.Name}, welcome to our family!", false);
             return RedirectToAction("Index", "Home");
         }
 
@@ -168,6 +168,8 @@ namespace ModernEstate.MVC.Controllers
             }
 
             TempData["SuccessMessage"] = "You have successfully logged in!";
+
+            await _emailService.SendMailAsync(user.Email, "You have successfully logged in!", $"Dear {user.Name}, nice to see you again!", false); 
 
             return RedirectToAction("Index", "Home");
         }

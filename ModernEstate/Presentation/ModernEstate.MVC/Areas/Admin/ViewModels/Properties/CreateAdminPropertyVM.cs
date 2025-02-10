@@ -44,6 +44,7 @@ namespace ModernEstate.MVC.Areas.Admin.ViewModels.Properties
         public int? RoomCount { get; set; }
 
         [Required(ErrorMessage = "Please enter decription!")]
+        [MaxLength(1000)]
         public string Description { get; set; }
 
         //Relational

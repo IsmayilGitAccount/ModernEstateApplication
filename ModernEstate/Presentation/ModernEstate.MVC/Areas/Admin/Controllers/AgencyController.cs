@@ -49,6 +49,12 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 IsDeleted = false
             };
 
+            if(agencyVM.Description.Length > 1000)
+            {
+                ModelState.AddModelError(nameof(agencyVM.Description), "Description must be less than 1000 characters!");
+                return View(agencyVM);
+            }
+
             await _context.Agencies.AddAsync(agency);
 
             await _context.SaveChangesAsync();
@@ -60,7 +66,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Agency agency = await _context.Agencies.FirstOrDefaultAsync(a => a.Id == id);
-            if (agency == null) return BadRequest();
+            if (agency == null) return NotFound();
 
             UpdateAdminAgencyVM agencyVM = new UpdateAdminAgencyVM()
             {
@@ -76,7 +82,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Agency agency = await _context.Agencies.FirstOrDefaultAsync(a => a.Id == id);
-            if (agency == null) return BadRequest();
+            if (agency == null) return NotFound();
 
             if (!ModelState.IsValid)
             {
@@ -92,6 +98,12 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             }
 
             agency.AgencyName = agencyVM.AgencyName;
+
+            if (agencyVM.Description.Length > 1000)
+            {
+                ModelState.AddModelError(nameof(agencyVM.Description), "Description must be less than 1000 characters!");
+                return View(agencyVM);
+            }
             agency.Description = agencyVM.Description;
 
             await _context.SaveChangesAsync();
@@ -103,7 +115,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Agency agency = await _context.Agencies.FirstOrDefaultAsync(a => a.Id == id);
-            if (agency == null) return BadRequest();
+            if (agency == null) return NotFound();
 
             _context.Agencies.Remove(agency);
 
@@ -116,7 +128,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Agency agency = await _context.Agencies.FirstOrDefaultAsync(a => a.Id == id);
-            if (agency == null) return BadRequest();
+            if (agency == null) return NotFound();
 
             return View(agency);
         }

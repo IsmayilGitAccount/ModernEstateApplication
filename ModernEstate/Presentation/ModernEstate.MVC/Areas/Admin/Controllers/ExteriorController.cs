@@ -74,7 +74,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Exterior exterior = await _context.Exteriors.FirstOrDefaultAsync(e => e.Id == id);
-            if (exterior == null) return BadRequest();
+            if (exterior == null) return NotFound();
             if (!ModelState.IsValid)
             {
                 return View(exteriorVM);
@@ -99,7 +99,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Exterior exterior = await _context.Exteriors.FirstOrDefaultAsync(e => e.Id == id);
-            if (exterior == null) return BadRequest();
+            if (exterior == null) return NotFound();
 
             _context.Exteriors.Remove(exterior);
 
@@ -112,7 +112,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Exterior exterior = await _context.Exteriors.FirstOrDefaultAsync(e => e.Id == id);
-            if (exterior == null) return BadRequest();
+            if (exterior == null) return NotFound();
 
             return View(exterior);
         }

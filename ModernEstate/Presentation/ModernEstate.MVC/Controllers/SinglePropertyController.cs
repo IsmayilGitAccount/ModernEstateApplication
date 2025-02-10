@@ -37,6 +37,7 @@ namespace ModernEstate.MVC.Controllers
                 .Where(p => p.CategoryId == property.Id || p.Id != id)
                 .Include(p => p.PropertyPhotos)
                 .Take(3)
+                .OrderByDescending(p=>p.Id)
                 .ToListAsync()
             };
             return View(productVM);

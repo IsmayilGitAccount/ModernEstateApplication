@@ -59,7 +59,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Feature feature = await _context.Features.FirstOrDefaultAsync(f => f.Id == id);
-            if (feature == null) return BadRequest();
+            if (feature == null) return NotFound();
 
             UpdateAdminFeatureVM featureVM = new UpdateAdminFeatureVM()
             {
@@ -74,7 +74,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Feature feature = await _context.Features.FirstOrDefaultAsync(f => f.Id == id);
-            if (feature == null) return BadRequest();
+            if (feature == null) return NotFound();
             if (!ModelState.IsValid)
             {
                 return View(featureVM);
@@ -99,7 +99,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Feature feature = await _context.Features.FirstOrDefaultAsync(f => f.Id == id);
-            if (feature == null) return BadRequest();
+            if (feature == null) return NotFound();
 
             _context.Features.Remove(feature);
 
@@ -112,7 +112,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             if (id is null || id <= 0) return BadRequest();
             Feature feature = await _context.Features.FirstOrDefaultAsync(f => f.Id == id);
-            if (feature == null) return BadRequest();
+            if (feature == null) return NotFound();
 
             return View(feature);
         }

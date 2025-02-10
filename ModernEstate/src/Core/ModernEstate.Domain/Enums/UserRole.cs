@@ -4,6 +4,7 @@
     {
         Admin,
         Agent,
+        Author,
         User
     }
 }

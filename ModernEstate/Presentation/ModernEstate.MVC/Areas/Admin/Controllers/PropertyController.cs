@@ -258,7 +258,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 .Include(p => p.PropertyPhotos)
                 .Include(p => p.PropertyFeatures).FirstOrDefaultAsync(p => p.Id == id);
 
-            if (property == null) return BadRequest();
+            if (property == null) return NotFound();
 
             UpdateAdminPropertyVM propertyVM = new UpdateAdminPropertyVM()
             {
@@ -306,7 +306,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
             Property property = await _context.Properties.Include(p => p.PropertyPhotos).Include(p => p.PropertyFeatures).FirstOrDefaultAsync(p => p.Id == id);
 
-            if (property == null) return BadRequest();
+            if (property == null) return NotFound();
 
             propertyVM.Agencies = await _context.Agencies.ToListAsync();
             propertyVM.Agents = await _context.Agents.ToListAsync();
