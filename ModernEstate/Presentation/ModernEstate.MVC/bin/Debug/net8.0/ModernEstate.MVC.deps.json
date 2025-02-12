@@ -8,6 +8,9 @@
     ".NETCoreApp,Version=v8.0": {
       "ModernEstate.MVC/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
+          "AutoMapper.Collection": "10.0.0",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "MailKit": "4.10.0",
           "Microsoft.AspNetCore.Identity.UI": "8.0.11",
           "Microsoft.EntityFrameworkCore.Design": "8.0.11",

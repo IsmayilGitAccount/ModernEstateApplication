@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Extensions;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Properties;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Property;
-using ModernEstate.MVC.Utilities.Extensions;
 using ModernEstate.Persistence.Data;
 
 namespace ModernEstate.MVC.Areas.Admin.Controllers

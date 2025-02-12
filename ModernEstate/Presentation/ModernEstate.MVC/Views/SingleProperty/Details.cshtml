@@ -166,9 +166,13 @@
                             </div>
                         </div>
                         <a asp-controller="Agent" asp-action="Details" asp-route-Id="@Model.Property.Agent.Id" class="btn btn-sushi btn-sm offset-11 btn-full-width">Contact an Agent</a>
-                        <a href="#" class="btn btn-primary btn-sm btn-min-width-md btn-full-width offset-10">
-                            <span class="icon icon-left icon-sm fa-heart"></span> Add to Favorites
-                        </a>
+                        <form method="post" asp-action="AddToWishlist" asp-controller="Wishlist">
+                            <input type="hidden" name="propertyId" value="@Model.Property.Id" />
+                            <input type="hidden" name="userId" value="@User.Identity.Name" />
+                            <button type="submit" class="btn btn-primary btn-sm btn-min-width-md btn-full-width offset-10">
+                                <span class="icon icon-left icon-sm fa-heart"></span> Add to Favorites
+                            </button>
+                        </form>
                         <a asp-controller="Review" asp-action="Index" asp-route-Id="@Model.Property.Id" class="btn btn-primary btn-sm btn-min-width-md btn-full-width offset-10">
                              Write Review
                         </a>

@@ -1,0 +1,95 @@
+﻿@using ModernEstate.Domain.Entities
+@model IEnumerable<Wishlist>
+
+<section class="section-full text-center text-lg-left">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>My Wishlist</h1>
+                <p></p>
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Gallery</a>
+                    </li>
+                    <li class="active">My Wishlist</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-md text-center text-lg-left">
+    <div class="container">
+        <form asp-action="ClearWishlist" method="post">
+            <input type="hidden" name="userId" value="@User.Identity.Name" />
+            <button type="submit" class="btn btn-danger custom-button">Clear Wishlist</button>
+        </form>
+
+        <style>
+            .custom-button {
+                background: linear-gradient(to right, #ffffff, #f2f2f2);
+                color: black;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+            }
+
+                .custom-button:hover {
+                    background: linear-gradient(to right, #e6e6e6, #cccccc);
+                    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+                }
+        </style>
+        <div data-isotope-layout="masonry" data-isotope-group="wishlist" class="isotope offset-1 row masonry-gallery custom-hover">
+            @if (!Model.Any())
+            {
+                <div class="col-xs-12">
+                    <p>Your wishlist is empty.</p>
+                </div>
+            }
+            else
+            {
+                @foreach (var item in Model)
+                {
+                    <div data-filter="type-@item.Property.Id" class="isotope-item col-xs-12 col-sm-6 col-md-4">
+                        <div class="thumbnail-gallery">
+                            <img src="~/assets/images/@item.Property.PropertyPhotos.FirstOrDefault(p=>p.IsPrimary==true).Photo" alt="@item.Property.Location" width="370" height="250">
+                            <div class="caption"></div>
+                            <div class="caption-wrapper">
+                                <h5 class="text-white">@item.Property.Location</h5>
+                                <p class="text-white">@item.Property.Description</p>
+                                <form method="post" asp-action="RemoveFromWishlist" asp-controller="Wishlist">
+                                    <input type="hidden" name="propertyId" value="@item.Property.Id" />
+                                    <input type="hidden" name="userId" value="@item.UserId" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+        </div>
+    </div>
+</section>
+<style>
+    .btn-danger {
+        background-color: #dc3545;
+        border-color: #dc3545;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+        }
+
+    .btn-sm {
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        border-radius: .2rem;
+    }
+</style>

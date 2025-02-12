@@ -1,11 +1,11 @@
 ﻿using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ModernEstate.Application.ViewModels.Agencies;
+using ModernEstate.Application.Utilities.Extensions;
+using ModernEstate.Application.ViewModels.AdminAgents;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Agents;
-using ModernEstate.MVC.Utilities.Extensions;
 using ModernEstate.Persistence.Data;
 namespace ModernEstate.MVC.Areas.Admin.Controllers
 {
@@ -189,12 +189,12 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             {
                 if (!agentVM.Photo.ValidateType("image/"))
                 {
-                    ModelState.AddModelError(nameof(CreateAdminAgentVM.Photo), "File type is incorrect, please try again!");
+                    ModelState.AddModelError(nameof(UpdateAdminAgentVM.Photo), "File type is incorrect, please try again!");
                     return View(agentVM);
                 }
                 if (!agentVM.Photo.ValidateSize(FileSize.MB, 2))
                 {
-                    ModelState.AddModelError(nameof(CreateAdminAgentVM.Photo), "File size is incorrect, please try again!");
+                    ModelState.AddModelError(nameof(UpdateAdminAgentVM.Photo), "File size is incorrect, please try again!");
                     return View(agentVM);
                 }
                 agent.Photo.DeleteFile(_env.WebRootPath, Root);

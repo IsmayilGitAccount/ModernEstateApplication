@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ModernEstate.Areas.Admin.ViewModels.Roofs;
+using ModernEstate.Application.ViewModels.AdminRoofs;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
 

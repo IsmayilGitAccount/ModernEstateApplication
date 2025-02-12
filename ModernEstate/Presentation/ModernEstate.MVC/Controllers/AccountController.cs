@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Security.Cryptography;
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -16,6 +17,7 @@ namespace ModernEstate.MVC.Controllers
         private readonly SignInManager<AppUser> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IEmailService _emailService;
+        private static Dictionary<string, string> _verificationCodes = new Dictionary<string, string>();
 
         public AccountController(
             UserManager<AppUser> userManager,
@@ -196,20 +198,52 @@ namespace ModernEstate.MVC.Controllers
         [HttpPost]
         public async Task<IActionResult> VerifyEmail(VerifyEmailVM model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(model.Email);
-
-                if (user == null)
-                {
-                    ModelState.AddModelError(string.Empty, "Email not found!");
-                    return View(model);
-                }
-                else
-                {
-                    return RedirectToAction("ChangePassword", "Account", new { email = user.Email });
-                }
+                return View(model);
             }
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, "Email not found!");
+                return View(model);
+            }
+
+            string verificationCode = GenerateVerificationCode();
+            _verificationCodes[user.Email] = verificationCode;
+
+            await _emailService.SendMailAsync(user.Email, "Verification Code", $"Your verification code is: {verificationCode}", false);
+
+            return RedirectToAction("ConfirmVerification", new { email = user.Email });
+        }
+
+        [HttpGet]
+        public IActionResult ConfirmVerification(string email)
+        {
+            if (string.IsNullOrEmpty(email) || !_verificationCodes.ContainsKey(email))
+            {
+                return RedirectToAction("VerifyEmail");
+            }
+
+            return View(new ConfirmVerificationVM { Email = email });
+        }
+
+        [HttpPost]
+        public IActionResult ConfirmVerification(ConfirmVerificationVM model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            if (_verificationCodes.TryGetValue(model.Email, out var code) && code == model.VerificationCode)
+            {
+                _verificationCodes.Remove(model.Email);
+                return RedirectToAction("ChangePassword", new { email = model.Email });
+            }
+
+            ModelState.AddModelError(string.Empty, "Verification code is not correct!");
             return View(model);
         }
 
@@ -218,45 +252,51 @@ namespace ModernEstate.MVC.Controllers
         {
             if (string.IsNullOrEmpty(email))
             {
-                return RedirectToAction("VerifyEmail", "Account");
+                return RedirectToAction("VerifyEmail");
             }
 
-            return View(new ChangePasswordVM
-            {
-                Email = email
-            });
+            return View(new ChangePasswordVM { Email = email });
         }
 
         [HttpPost]
         public async Task<IActionResult> ChangePassword(ChangePasswordVM model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                var user = await _userManager.FindByEmailAsync(model.Email);
-                if (user != null)
+                return View(model);
+            }
+
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                ModelState.AddModelError(string.Empty, "Email not found!");
+                return View(model);
+            }
+
+            var result = await _userManager.RemovePasswordAsync(user);
+            if (result.Succeeded)
+            {
+                result = await _userManager.AddPasswordAsync(user, model.NewPassword);
+                if (result.Succeeded)
                 {
-                    var result = await _userManager.RemovePasswordAsync(user);
-                    if (result.Succeeded)
-                    {
-                        ViewData["PasswordChanged"] = true;
-                        result = await _userManager.AddPasswordAsync(user, model.NewPassword);
-                        if (result.Succeeded)
-                        {
-                            return RedirectToAction("Login", "Account");
-                        }
-                    }
-                    foreach (var error in result.Errors)
-                    {
-                        ModelState.AddModelError(string.Empty, error.Description);
-                    }
-                }
-                else
-                {
-                    ModelState.AddModelError(string.Empty, "Email not found!");
+                    return RedirectToAction("Login");
                 }
             }
-            
+
+            foreach (var error in result.Errors)
+            {
+                ModelState.AddModelError(string.Empty, error.Description);
+            }
+
             return View(model);
         }
+
+        private string GenerateVerificationCode()
+        {
+            Random random = new Random();
+            int value = random.Next(1000000, 9999999); 
+            return value.ToString();
+        }
+
     }
 }

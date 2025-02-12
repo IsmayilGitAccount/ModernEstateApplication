@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Abstractions.Services;
 using ModernEstate.Areas.Admin.ViewModels.Status;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
