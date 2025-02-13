@@ -1,6 +1,4 @@
-﻿using ModernEstate.Application.ViewModels.Properties;
-
-namespace ModernEstate.Application.ViewModels.Paginations
+﻿namespace ModernEstate.Application.ViewModels.AdminPaginations
 {
     public class PaginationVM<T>
     {

@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Azure;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
+using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
+using ModernEstate.MVC.Areas.Admin.ViewModels.Posts;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Properties;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Property;
 using ModernEstate.Persistence.Data;
@@ -12,8 +15,16 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class PropertyController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Properties.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var propertyVMs = await _context.Properties
                 .Include(p => p.Agency)
                 .Include(p => p.Agent)
@@ -28,9 +39,16 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                     Price = p.Price,
                     CategoryName = p.Category.CategoryName,
                     Photo = p.PropertyPhotos.FirstOrDefault(pp => pp.IsPrimary == true).Photo
-                }).ToListAsync();
+                }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(propertyVMs);
+            PaginationVM<GetAdminPropertyVM> paginationVM = new PaginationVM<GetAdminPropertyVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = propertyVMs
+            };
+
+            return View(paginationVM);
         }
 
         public async Task<IActionResult> Create()

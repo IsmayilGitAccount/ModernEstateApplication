@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ModernEstate.Application.ViewModels.Paginations;
 using ModernEstate.Application.ViewModels.Properties;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;

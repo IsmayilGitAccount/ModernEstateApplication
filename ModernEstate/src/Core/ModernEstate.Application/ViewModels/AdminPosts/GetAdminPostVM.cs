@@ -1,6 +1,6 @@
 ﻿namespace ModernEstate.MVC.Areas.Admin.ViewModels.Posts
 {
-    public class GetAgentServiceVM
+    public class GetAdminPostVM
     {
         public int Id { get; set; }
         public string Title { get; set; }

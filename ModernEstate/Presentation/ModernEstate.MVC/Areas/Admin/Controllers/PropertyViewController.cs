@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels.AdminPaginations;
+using ModernEstate.Areas.Admin.ViewModels.Types;
 using ModernEstate.Areas.Admin.ViewModels.Views;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
@@ -9,15 +11,30 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class PropertyViewController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Views.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var viewVMs = await _context.Views.Select(v => new GetAdminViewVM
             {
                 Id = v.Id,
                 ViewType = v.ViewType,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(viewVMs);
+            PaginationVM<GetAdminViewVM> paginationVM = new PaginationVM<GetAdminViewVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = viewVMs
+            };
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()

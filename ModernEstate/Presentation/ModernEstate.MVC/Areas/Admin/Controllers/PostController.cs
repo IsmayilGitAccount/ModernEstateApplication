@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
+using ModernEstate.Application.ViewModels.AdminPaginations;
+using ModernEstate.Application.ViewModels.Posts;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
+using ModernEstate.MVC.Areas.Admin.ViewModels.Parkings;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Posts;
 using ModernEstate.Persistence.Data;
 
@@ -11,22 +14,38 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class PostController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            var postVMs = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).Select(p => new GetAgentServiceVM
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Posts.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
+
+            var postVMs = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).Select(p => new GetAdminPostVM
             {
                 Id = p.Id,
                 Title = p.Title,
                 Photo = p.Photo,
                 PostedBy = p.Author.AuthorName,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(postVMs);
+            PaginationVM<GetAdminPostVM> paginationVM = new PaginationVM<GetAdminPostVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = postVMs
+            };
+
+            return View(paginationVM);
         }
 
         public async Task<IActionResult> Create()
         {
-            CreateAgentServiceVM postVM = new CreateAgentServiceVM()
+            CreateAdminPostVM postVM = new CreateAdminPostVM()
             {
                 Agency = await _context.Agencies.ToListAsync(),
                 Author = await _context.Authors.ToListAsync(),
@@ -36,7 +55,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create(CreateAgentServiceVM postVM)
+        public async Task<IActionResult> Create(CreateAdminPostVM postVM)
         {
             postVM.Agency = await _context.Agencies.ToListAsync();
             postVM.Author = await _context.Authors.ToListAsync();
@@ -50,7 +69,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
             if (!agency)
             {
-                ModelState.AddModelError(nameof(CreateAgentServiceVM.AgencyId), "Agency is not exist");
+                ModelState.AddModelError(nameof(CreateAdminPostVM.AgencyId), "Agency is not exist");
                 return View(postVM);
             }
 
@@ -58,7 +77,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
             if (!author)
             {
-                ModelState.AddModelError(nameof(CreateAgentServiceVM.AuthorId), "Author is not exist");
+                ModelState.AddModelError(nameof(CreateAdminPostVM.AuthorId), "Author is not exist");
                 return View(postVM);
             }
 
@@ -75,12 +94,12 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             {
                 if (!postVM.Photo.ValidateType("image/"))
                 {
-                    ModelState.AddModelError(nameof(CreateAgentServiceVM.Photo), "File type is incorrect, please try again!");
+                    ModelState.AddModelError(nameof(CreateAdminPostVM.Photo), "File type is incorrect, please try again!");
                     return View(postVM);
                 }
                 if (!postVM.Photo.ValidateSize(FileSize.MB, 2))
                 {
-                    ModelState.AddModelError(nameof(CreateAgentServiceVM.Photo), "File size is incorrect, please try again!");
+                    ModelState.AddModelError(nameof(CreateAdminPostVM.Photo), "File size is incorrect, please try again!");
                     return View(postVM);
                 }
                 post.Photo = await postVM.Photo.CreatFileAsync(_env.WebRootPath, "assets", "images");
@@ -101,7 +120,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
             if (post is null) return NotFound();
 
-            UpdateAgentServiceVM postVM = new UpdateAgentServiceVM()
+            UpdateAdminPostVM postVM = new UpdateAdminPostVM()
             {
                 Agency = await _context.Agencies.ToListAsync(),
                 Author = await _context.Authors.ToListAsync(),
@@ -117,7 +136,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Update(int? id, UpdateAgentServiceVM postVM)
+        public async Task<IActionResult> Update(int? id, UpdateAdminPostVM postVM)
         {
             postVM.Agency = await _context.Agencies.ToListAsync();
             postVM.Author = await _context.Authors.ToListAsync();
@@ -137,7 +156,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
             if (!agency)
             {
-                ModelState.AddModelError(nameof(UpdateAgentServiceVM.AgencyId), "Agency is not exist");
+                ModelState.AddModelError(nameof(UpdateAdminPostVM.AgencyId), "Agency is not exist");
                 return View(postVM);
             }
 
@@ -145,7 +164,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
             if (!author)
             {
-                ModelState.AddModelError(nameof(UpdateAgentServiceVM.AuthorId), "Author is not exist");
+                ModelState.AddModelError(nameof(UpdateAdminPostVM.AuthorId), "Author is not exist");
                 return View(postVM);
             }
 
@@ -153,12 +172,12 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             {
                 if (!postVM.Photo.ValidateType("image/"))
                 {
-                    ModelState.AddModelError(nameof(UpdateAgentServiceVM.Photo), "File type is incorrect, please try again!");
+                    ModelState.AddModelError(nameof(UpdateAdminPostVM.Photo), "File type is incorrect, please try again!");
                     return View(postVM);
                 }
                 if (!postVM.Photo.ValidateSize(FileSize.MB, 2))
                 {
-                    ModelState.AddModelError(nameof(UpdateAgentServiceVM.Photo), "File size is incorrect, please try again!");
+                    ModelState.AddModelError(nameof(UpdateAdminPostVM.Photo), "File size is incorrect, please try again!");
                     return View(postVM);
                 }
                 post.Photo.DeleteFile(_env.WebRootPath, "assets", "images");

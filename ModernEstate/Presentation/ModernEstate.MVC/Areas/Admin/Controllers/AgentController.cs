@@ -3,8 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
 using ModernEstate.Application.ViewModels.AdminAgents;
+using ModernEstate.Application.ViewModels.AdminPaginations;
+using ModernEstate.Application.ViewModels.Agencies;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
+using ModernEstate.MVC.Areas.Admin.ViewModels.Agencies;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Agents;
 using ModernEstate.Persistence.Data;
 namespace ModernEstate.MVC.Areas.Admin.Controllers
@@ -14,8 +17,16 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     {
         string Root = Path.Combine("assets", "images");
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Agents.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var agentVMs = await _context.Agents.Include(a => a.Agency).Select(a => new GetAdminAgentVM
             {
                 Id = a.Id,
@@ -30,9 +41,16 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 XLink = a.XLink,
                 PhoneNumber = a.PhoneNumber,
                 Photo = a.Photo,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(agentVMs);
+            PaginationVM<GetAdminAgentVM> paginationVM = new PaginationVM<GetAdminAgentVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = agentVMs
+            };
+
+            return View(paginationVM);
         }
 
         public async Task<IActionResult> Create()

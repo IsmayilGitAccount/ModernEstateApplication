@@ -1,6 +1,6 @@
 ﻿namespace ModernEstate.MVC.Areas.Admin.ViewModels.Services
 {
-    public class GetAgentServiceVM
+    public class GetAdminServiceVM
     {
         public int Id { get; set; }
         public string Photo { get; set; }

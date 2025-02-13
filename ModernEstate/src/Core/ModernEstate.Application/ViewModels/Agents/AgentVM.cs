@@ -1,5 +1,4 @@
-﻿using ModernEstate.Application.ViewModels.Paginations;
-using ModernEstate.Domain.Entities;
+﻿using ModernEstate.Domain.Entities;
 
 namespace ModernEstate.Application.ViewModels.Agents
 {

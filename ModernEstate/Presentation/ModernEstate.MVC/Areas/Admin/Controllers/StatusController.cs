@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using ModernEstate.Application.Abstractions.Services;
+using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Areas.Admin.ViewModels.Status;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
@@ -10,15 +10,30 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class StatusController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Status.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var statusVMs = await _context.Status.Select(s => new GetAdminStatusVM
             {
                 Id = s.Id,
                 StatusName = s.StatusName,
-            }).ToListAsync();
+            }).Skip((page - 1) * 3).Take(3).ToListAsync();
 
-            return View(statusVMs);
+            PaginationVM<GetAdminStatusVM> paginationVM = new PaginationVM<GetAdminStatusVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = statusVMs
+            };
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()

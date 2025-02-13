@@ -57,7 +57,7 @@
                 {
                     <div data-filter="type-@item.Property.Id" class="isotope-item col-xs-12 col-sm-6 col-md-4">
                         <div class="thumbnail-gallery">
-                            <img src="~/assets/images/@item.Property.PropertyPhotos.FirstOrDefault(p=>p.IsPrimary==true).Photo" alt="@item.Property.Location" width="370" height="250">
+                            <img style="width:370px;height:250px;" src="~/assets/images/@item.Property.PropertyPhotos.FirstOrDefault(p=>p.IsPrimary==true).Photo" alt="@item.Property.Location">
                             <div class="caption"></div>
                             <div class="caption-wrapper">
                                 <h5 class="text-white">@item.Property.Location</h5>

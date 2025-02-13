@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
+using ModernEstate.Application.ViewModels.AdminPaginations;
+using ModernEstate.Application.ViewModels.Agencies;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
+using ModernEstate.MVC.Areas.Admin.ViewModels.Agencies;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Categories;
 using ModernEstate.Persistence.Data;
 
@@ -12,17 +15,33 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     public class CategoryController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
         string Root = Path.Combine("assets", "images");
-        public async Task<IActionResult> Index()
+
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Categories.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var categoryVMs = await _context.Categories.Include(c => c.Properties).Select(c => new GetAdminCategoryVM
             {
                 Id = c.Id,
                 CategoryName = c.CategoryName,
                 Photo = c.CategoryPhoto,
                 PropertyCount = c.Properties.Count,
-            }).ToListAsync();
+            }).Skip((page - 1) * 3).Take(3).ToListAsync();
 
-            return View(categoryVMs);
+            PaginationVM<GetAdminCategoryVM> paginationVM = new PaginationVM<GetAdminCategoryVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = categoryVMs
+            };
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()
@@ -138,7 +157,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             if (category == null) return NotFound();
 
-           if(category.CategoryPhoto is not null)
+            if (category.CategoryPhoto is not null)
             {
                 category.CategoryPhoto.DeleteFile(_env.WebRootPath, Root);
             }

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Application.ViewModels.AdminRoofs;
+using ModernEstate.Areas.Admin.ViewModels.Views;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
 
@@ -9,15 +11,30 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class RoofController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Roofs.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var roofVMs = await _context.Roofs.Select(r => new GetAdminRoofVM
             {
                 Id = r.Id,
                 RoofType = r.RoofType,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(roofVMs);
+            PaginationVM<GetAdminRoofVM> paginationVM = new PaginationVM<GetAdminRoofVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = roofVMs
+            };
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()

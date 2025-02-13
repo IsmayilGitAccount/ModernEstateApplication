@@ -1,7 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Azure;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
 using ModernEstate.Application.ViewModels.AdminAgents;
+using ModernEstate.Application.ViewModels.AdminPaginations;
+using ModernEstate.Application.ViewModels.AdminRoofs;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Services;
@@ -12,16 +15,31 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class ServiceController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
-            var serviceVMs = await _context.Services.Include(s=>s.Agency).Select(s=>new GetAgentServiceVM
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Services.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
+            var serviceVMs = await _context.Services.Include(s=>s.Agency).Select(s=>new GetAdminServiceVM
             {
                 Id = s.Id,
                 Photo = s.Photo,
                 Title = s.Title,
-            }).ToListAsync();
+            }).Skip((page - 1) * 3).Take(3).ToListAsync();
 
-            return View(serviceVMs);
+            PaginationVM<GetAdminServiceVM> paginationVM = new PaginationVM<GetAdminServiceVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = serviceVMs
+            };
+
+            return View(paginationVM);
         }
 
         public async Task<IActionResult> Create()

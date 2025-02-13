@@ -151,7 +151,7 @@
 										<div id="dropdownMenu" style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; border-radius: 4px; padding: 10px; right: 0; top: 40px; z-index: 1000;">
 											@if (User.Identity.IsAuthenticated)
 											{
-												<a href="#" style="display: block; padding: 5px 10px;">@User.Identity.Name</a>
+												<a asp-controller="Account" asp-action="MyProfile" style="display: block; padding: 5px 10px;">@User.Identity.Name</a>
 												<a asp-controller="Account" asp-action="Logout" style="display: block; padding: 5px 10px;">Logout</a>
 											}
 											else

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Domain.Entities;
+using ModernEstate.MVC.Areas.Admin.ViewModels.FAQs;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Features;
 using ModernEstate.Persistence.Data;
 
@@ -9,15 +11,30 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class FeatureController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Features.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var featureVMs = await _context.Features.Select(f => new GetAdminFeatureVM
             {
                 Id = f.Id,
                 FeatureName = f.FeatureName,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(featureVMs);
+            PaginationVM<GetAdminFeatureVM> paginationVM = new PaginationVM<GetAdminFeatureVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = featureVMs
+            };
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()

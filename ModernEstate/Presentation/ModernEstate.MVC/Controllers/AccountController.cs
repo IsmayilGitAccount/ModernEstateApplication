@@ -298,5 +298,26 @@ namespace ModernEstate.MVC.Controllers
             return value.ToString();
         }
 
+        public IActionResult MyProfile()
+        {
+            var user = _userManager.GetUserAsync(User).Result;
+
+            if (user == null)
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var model = new UserVM
+            {
+                UserName = user.UserName,
+                Name = user.Name,
+                Surname = user.Surname,
+            };
+
+            return View(model);
+        }
+
     }
+
 }
+

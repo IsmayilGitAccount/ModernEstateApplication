@@ -4,7 +4,7 @@ using ModernEstate.Domain.Entities;
 
 namespace ModernEstate.MVC.Areas.Admin.ViewModels.Posts
 {
-    public class CreateAgentServiceVM
+    public class CreateAdminPostVM
     {
         [Required(ErrorMessage = "Please enter title!")]
         public string Title { get; set; }

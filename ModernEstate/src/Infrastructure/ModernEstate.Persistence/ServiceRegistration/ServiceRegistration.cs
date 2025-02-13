@@ -14,6 +14,7 @@ namespace ModernEstate.Persistence.ServiceRegistration
             services.AddDbContext<AppDbContext>(opt =>
             opt.UseSqlServer(configuration.GetConnectionString("Default"))
             );
+
             services.AddScoped<ILayoutService, LayoutService>();
             services.AddScoped<IEmailService ,EmailService>();
             return services;

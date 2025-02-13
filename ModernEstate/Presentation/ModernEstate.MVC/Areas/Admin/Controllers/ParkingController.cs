@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Domain.Entities;
+using ModernEstate.MVC.Areas.Admin.ViewModels.Features;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Parkings;
 using ModernEstate.Persistence.Data;
 
@@ -9,15 +11,30 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class ParkingController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Parkings.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var parkingVMs = await _context.Parkings.Select(p => new GetAdminParkingVM
             {
                 Id = p.Id,
                 ParkingType = p.ParkingType,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(parkingVMs);
+            PaginationVM<GetAdminParkingVM> paginationVM = new PaginationVM<GetAdminParkingVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = parkingVMs
+            };
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()

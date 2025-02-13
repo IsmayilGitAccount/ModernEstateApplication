@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Numerics;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.ViewModels.AdminAgencies;
+using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Domain.Entities;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Agencies;
 using ModernEstate.Persistence.Data;
@@ -10,15 +12,33 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class AgencyController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if( page < 1) return BadRequest();
+
+            int count = await _context.Agencies.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var agencyVMs = await _context.Agencies.Select(a => new GetAdminAgencyVM
             {
                 Id = a.Id,
                 AgencyName = a.AgencyName,
-            }).ToListAsync();
+                TotalPage = total,
+                CurrentPage = page,
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(agencyVMs);
+
+            PaginationVM<GetAdminAgencyVM> paginationVM = new PaginationVM<GetAdminAgencyVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = agencyVMs
+            };
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()

@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Domain.Entities;
+using ModernEstate.MVC.Areas.Admin.ViewModels.Authors;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Exteriors;
 using ModernEstate.Persistence.Data;
 
@@ -9,15 +11,30 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class ExteriorController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Exteriors.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var exteriorVMs = await _context.Exteriors.Select(e => new GetAdminExteriorVM
             {
                 Id = e.Id,
                 ExteriorName = e.ExteriorType,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(exteriorVMs);
+            PaginationVM<GetAdminExteriorVM> paginationVM = new PaginationVM<GetAdminExteriorVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = exteriorVMs
+            };
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()

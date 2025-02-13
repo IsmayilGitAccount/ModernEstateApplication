@@ -1,8 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
+using ModernEstate.Application.ViewModels.AdminPaginations;
+using ModernEstate.Application.ViewModels.Agencies;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
+using ModernEstate.MVC.Areas.Admin.ViewModels.Agencies;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Authors;
 using ModernEstate.Persistence.Data;
 
@@ -11,17 +14,32 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class AuthorController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.Authors.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var authorVMs = await _context.Authors.Include(a=>a.Posts).Select(a=>new GetAdminAuthorVM
             {
                 Id = a.Id,
                 AuthorName = a.AuthorName,
                 Photo = a.Photo,
                 PostCount = a.Posts.Count,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(authorVMs);
+            PaginationVM<GetAdminAuthorVM> paginationVM = new PaginationVM<GetAdminAuthorVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = authorVMs
+            };  
+
+            return View(paginationVM);
         }
 
         public IActionResult Create()

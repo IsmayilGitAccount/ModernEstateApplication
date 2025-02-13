@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Domain.Entities;
+using ModernEstate.MVC.Areas.Admin.ViewModels.Categories;
 using ModernEstate.MVC.Areas.Admin.ViewModels.FAQs;
 using ModernEstate.Persistence.Data;
 
@@ -9,16 +11,31 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class FAQController(AppDbContext _context) : Controller
     {
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int page = 1)
         {
+            if (page < 1) return BadRequest();
+
+            int count = await _context.FAQs.CountAsync();
+
+            double total = Math.Ceiling((double)count / 3);
+
+            if (page > total) return BadRequest();
+
             var faqVMs = await _context.FAQs.Include(f=>f.Agency).Select(f=>new GetAdminFAQVM
             {
                 Id = f.Id,
                 Question = f.Question,
                 AgencyName = f.Agency.AgencyName,
-            }).ToListAsync();
+            }).Skip((page-1)*3).Take(3).ToListAsync();
 
-            return View(faqVMs);
+            PaginationVM<GetAdminFAQVM> paginationVM = new PaginationVM<GetAdminFAQVM>()
+            {
+                TotalPage = total,
+                CurrentPage = page,
+                Items = faqVMs
+            };
+
+            return View(paginationVM);
         }
 
         public async Task<IActionResult> Create()
