@@ -14922,24 +14922,6 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\categories-8.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\ce5f5e9c-92b8-47e4-96aa-974a6d34cb66.jpg'))">
-      <SourceType>Package</SourceType>
-      <SourceId>ModernEstate.MVC</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/ModernEstate.MVC</BasePath>
-      <RelativePath>assets/images/ce5f5e9c-92b8-47e4-96aa-974a6d34cb66.jpg</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>All</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName></AssetTraitName>
-      <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>9krclk7k82</Fingerprint>
-      <Integrity>iYuOSDqpaGgvXznrWJNhVU4R1wC0F/0wHThXJ4XeQxk=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\ce5f5e9c-92b8-47e4-96aa-974a6d34cb66.jpg'))</OriginalItemSpec>
-    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\assets\images\certifikate-1.jpg'))">
       <SourceType>Package</SourceType>
       <SourceId>ModernEstate.MVC</SourceId>

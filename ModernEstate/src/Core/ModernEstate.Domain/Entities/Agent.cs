@@ -17,5 +17,6 @@ namespace ModernEstate.Domain.Entities
         public int? AgencyId { get; set; }
         public Agency Agency { get; set; }
         public ICollection<Property> Properties { get; set; }
+        public ICollection<Chat> Chats { get; set; }
     }
 }

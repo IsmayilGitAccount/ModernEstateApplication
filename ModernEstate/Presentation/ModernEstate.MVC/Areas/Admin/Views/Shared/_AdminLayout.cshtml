@@ -22,6 +22,7 @@
               {
                     <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
                         <ul id="sidebarnav">
+                            <!-- Home -->
                             <li class="nav-small-cap">
                                 <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
                                 <span class="hide-menu">Home</span>
@@ -35,22 +36,29 @@
                                 </a>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Index" aria-expanded="false">
+                                <a class="sidebar-link" asp-controller="Assignment" asp-action="Index" aria-expanded="false">
                                     <span>
                                         <i class="ti ti-pin"></i>
+                                    </span>
+                                    <span class="hide-menu">Assignment</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" asp-area="" asp-controller="Home" asp-action="Index" aria-expanded="false">
+                                    <span>
+                                        <i class="ti ti-home"></i>
                                     </span>
                                     <span class="hide-menu">Main Home</span>
                                 </a>
                             </li>
                             <li class="nav-small-cap">
                                 <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                                <span class="hide-menu">Components</span>
+                                <span class="hide-menu">Agency Components</span>
                             </li>
                             <li class="sidebar-item">
                                 <a class="sidebar-link" asp-controller="Agency" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-edit"></i>
-
+                                        <i class="ti ti-brand-office"></i>
                                     </span>
                                     <span class="hide-menu">Agency</span>
                                 </a>
@@ -59,52 +67,35 @@
                                 <a class="sidebar-link" asp-controller="Agent" asp-action="Index" aria-expanded="false">
                                     <span>
                                         <i class="ti ti-user-plus"></i>
-
                                     </span>
                                     <span class="hide-menu">Agent</span>
                                 </a>
                             </li>
-                            <li class="sidebar-item">
-                                <a class="sidebar-link" asp-controller="Author" asp-action="Index" aria-expanded="false">
-                                    <span>
-                                        <i class="ti ti-user-plus"></i>
-
-                                    </span>
-                                    <span class="hide-menu">Author</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a class="sidebar-link" asp-controller="Category" asp-action="Index" aria-expanded="false">
-                                    <span>
-                                        <i class="ti ti-edit"></i>
-
-                                    </span>
-                                    <span class="hide-menu">Category</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a class="sidebar-link" asp-controller="FAQ" asp-action="Index" aria-expanded="false">
-                                    <span>
-                                        <i class="ti ti-edit"></i>
-
-                                    </span>
-                                    <span class="hide-menu">FAQ</span>
-                                </a>
+                            <!-- Property Components -->
+                            <li class="nav-small-cap">
+                                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                                <span class="hide-menu">Property Components</span>
                             </li>
                             <li class="sidebar-item">
                                 <a class="sidebar-link" asp-controller="Property" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-edit"></i>
-
+                                        <i class="ti ti-home"></i>
                                     </span>
                                     <span class="hide-menu">Property</span>
                                 </a>
                             </li>
                             <li class="sidebar-item">
+                                <a class="sidebar-link" asp-controller="Category" asp-action="Index" aria-expanded="false">
+                                    <span>
+                                        <i class="ti ti-tag"></i>
+                                    </span>
+                                    <span class="hide-menu">Category</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
                                 <a class="sidebar-link" asp-controller="Roof" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-edit"></i>
-
+                                        <i class="ti ti-umbrella"></i>
                                     </span>
                                     <span class="hide-menu">Roof</span>
                                 </a>
@@ -112,8 +103,7 @@
                             <li class="sidebar-item">
                                 <a class="sidebar-link" asp-controller="Exterior" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-edit"></i>
-
+                                        <i class="ti ti-paint"></i>
                                     </span>
                                     <span class="hide-menu">Exterior</span>
                                 </a>
@@ -121,43 +111,15 @@
                             <li class="sidebar-item">
                                 <a class="sidebar-link" asp-controller="PropertyView" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-edit"></i>
-
+                                        <i class="ti ti-eye"></i>
                                     </span>
                                     <span class="hide-menu">View</span>
                                 </a>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" asp-controller="Post" asp-action="Index" aria-expanded="false">
-                                    <span>
-                                        <i class="ti ti-edit"></i>
-
-                                    </span>
-                                    <span class="hide-menu">Post</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a class="sidebar-link" asp-controller="Feature" asp-action="Index" aria-expanded="false">
-                                    <span>
-                                        <i class="ti ti-edit"></i>
-
-                                    </span>
-                                    <span class="hide-menu">Features</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
-                                <a class="sidebar-link" asp-controller="Service" asp-action="Index" aria-expanded="false">
-                                    <span>
-                                        <i class="ti ti-edit"></i>
-
-                                    </span>
-                                    <span class="hide-menu">Service</span>
-                                </a>
-                            </li>
-                            <li class="sidebar-item">
                                 <a class="sidebar-link" asp-controller="Parking" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-edit"></i>
+                                        <i class="ti ti-car"></i>
                                     </span>
                                     <span class="hide-menu">Parking Type</span>
                                 </a>
@@ -165,8 +127,7 @@
                             <li class="sidebar-item">
                                 <a class="sidebar-link" asp-controller="PropertyType" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-edit"></i>
-
+                                        <i class="ti ti-home-heart"></i>
                                     </span>
                                     <span class="hide-menu">Property Types</span>
                                 </a>
@@ -174,42 +135,53 @@
                             <li class="sidebar-item">
                                 <a class="sidebar-link" asp-controller="Status" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-edit"></i>
+                                        <i class="ti ti-home-heart"></i>
                                     </span>
                                     <span class="hide-menu">Property Status</span>
                                 </a>
                             </li>
-                            <li class="nav-small-cap">
-                                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-                                <span class="hide-menu">AUTH</span>
-                            </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="./authentication-login.html" aria-expanded="false">
+                                <a class="sidebar-link" asp-controller="FAQ" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-login"></i>
+                                        <i class="ti ti-help"></i>
                                     </span>
-                                    <span class="hide-menu">Login</span>
+                                    <span class="hide-menu">FAQ</span>
                                 </a>
                             </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="./authentication-register.html" aria-expanded="false">
+                                <a class="sidebar-link" asp-controller="Service" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-user-plus"></i>
+                                        <i class="ti ti-settings"></i>
                                     </span>
-                                    <span class="hide-menu">Register</span>
+                                    <span class="hide-menu">Service</span>
                                 </a>
                             </li>
 
+                            <!-- Post Components -->
+                            <li class="nav-small-cap">
+                                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                                <span class="hide-menu">Post Components</span>
+                            </li>
                             <li class="sidebar-item">
-                                <a class="sidebar-link" href="./sample-page.html" aria-expanded="false">
+                                <a class="sidebar-link" asp-controller="Author" asp-action="Index" aria-expanded="false">
                                     <span>
-                                        <i class="ti ti-abacus-off"></i>
+                                        <i class="ti ti-user-plus"></i>
                                     </span>
-                                    <span class="hide-menu">Sample Page</span>
+                                    <span class="hide-menu">Author</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
+                                <a class="sidebar-link" asp-controller="Post" asp-action="Index" aria-expanded="false">
+                                    <span>
+                                        <i class="ti ti-pencil"></i>
+                                    </span>
+                                    <span class="hide-menu">Post</span>
                                 </a>
                             </li>
                         </ul>
                     </nav>
+
+
               }
               else if(User.IsInRole("Author"))
               {

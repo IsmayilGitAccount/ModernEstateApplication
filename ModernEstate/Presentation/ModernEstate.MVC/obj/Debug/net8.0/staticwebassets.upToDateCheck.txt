@@ -828,7 +828,6 @@ wwwroot\assets\images\catalog_single-6_original.jpg
 wwwroot\assets\images\catalog_single-6_thumb.jpg
 wwwroot\assets\images\categories-7.jpg
 wwwroot\assets\images\categories-8.jpg
-wwwroot\assets\images\ce5f5e9c-92b8-47e4-96aa-974a6d34cb66.jpg
 wwwroot\assets\images\certifikate-1.jpg
 wwwroot\assets\images\client-1.jpg
 wwwroot\assets\images\clients-1.jpg

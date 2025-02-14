@@ -10,5 +10,4 @@ namespace ModernEstate.Application.ViewModels.Agents
         public int CurrentPage { get; set; }
 
     }
-
 }

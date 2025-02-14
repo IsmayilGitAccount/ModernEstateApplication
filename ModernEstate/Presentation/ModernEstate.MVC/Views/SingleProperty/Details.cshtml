@@ -165,7 +165,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <a asp-controller="Agent" asp-action="Details" asp-route-Id="@Model.Property.Agent.Id" class="btn btn-sushi btn-sm offset-11 btn-full-width">Contact an Agent</a>
+                        <a asp-controller="Chat" asp-action="Create" asp-route-agentId="@Model.Property.Agent.Id" class="btn btn-sushi btn-sm offset-11 btn-full-width">Contact an Agent</a>
                         <form method="post" asp-action="AddToWishlist" asp-controller="Wishlist">
                             <input type="hidden" name="propertyId" value="@Model.Property.Id" />
                             <input type="hidden" name="userId" value="@User.Identity.Name" />

@@ -166,6 +166,7 @@
 										<p class="mb-0 fw-normal">@postVM.PostedBy</p>
 									</td>
 									<td class="border-bottom-0">
+										<a asp-action="Delete" asp-route-Id="@postVM.Id" class="btn btn-outline-danger m-1">Delete</a>
 										<a asp-action="Details" asp-route-Id="@postVM.Id" class="btn btn-outline-info m-1">More</a>
 									</td>
 								</tr>

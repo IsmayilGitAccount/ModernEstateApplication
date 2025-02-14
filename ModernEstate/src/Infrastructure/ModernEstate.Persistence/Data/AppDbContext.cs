@@ -18,12 +18,14 @@ namespace ModernEstate.Persistence.Data
 
         public DbSet<Agency> Agencies { get; set; }
         public DbSet<Agent> Agents { get; set; }
+        public DbSet<Chat> Chats { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Property> Properties { get; set; }
         public DbSet<Setting> Settings { get; set; }
         public DbSet<View> Views { get; set; }
         public DbSet<Exterior> Exteriors { get; set; }
         public DbSet<Roof> Roofs { get; set; }
+        public DbSet<Assignment> Assignments { get; set; }
         public DbSet<Parking> Parkings { get; set; }
         public DbSet<Feature> Features { get; set; }
         public DbSet<Status> Status { get; set; }

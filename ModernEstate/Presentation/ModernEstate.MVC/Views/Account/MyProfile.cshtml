@@ -3,15 +3,20 @@
 @{
     Layout = null;
 }
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Profile</title>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <title>Admin Profile</title>
+    }
+    else
+    {
+        <title>User Profile</title>
+    }
     <link rel="icon" href="~/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="~/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="~/assets/fonts.googleapis.com/css?family=Lato:400,700,900,400italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="~/assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
@@ -21,6 +26,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
+            position: relative;
         }
 
         .profile-card {
@@ -31,7 +37,21 @@
             text-align: center;
             max-width: 350px;
             width: 100%;
+            position: relative;
         }
+
+        .back-arrow {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 20px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .back-arrow:hover {
+                color: #0056b3;
+            }
 
         .profile-img {
             width: 100px;
@@ -61,12 +81,16 @@
 </head>
 <body>
     <div class="profile-card">
+        <a asp-controller="Home" asp-action="Index" class="back-arrow">
+            <i class="fas fa-arrow-left"></i>
+        </a>
         <img src="~/assets/images/avatar.webp" class="profile-img" alt="Profile Image">
         <div class="name">@Model.Name @Model.Surname</div>
         <div class="username">@Model.UserName</div>
-        <a asp-controller="Home" asp-action="Index" class="btn btn-primary btn-custom">Back</a> <br />  <br />
+        @if (User.IsInRole("Admin"))
+        {
+            <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="btn btn-primary btn-custom">Admin Panel</a>
+        } <br /> <br />
         <a asp-controller="Account" asp-action="Logout" class="btn btn-primary btn-custom">Logout</a>
-
     </div>
 </body>
-</html>

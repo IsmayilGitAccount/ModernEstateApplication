@@ -1,4 +1,6 @@
-﻿namespace ModernEstate.Application.ViewModels.Agencies
+﻿using ModernEstate.Domain.Entities;
+
+namespace ModernEstate.Application.ViewModels.Agencies
 {
     public class GetAgencyVM
     {

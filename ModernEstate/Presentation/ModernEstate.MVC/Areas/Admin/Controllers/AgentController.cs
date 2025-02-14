@@ -4,10 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
 using ModernEstate.Application.ViewModels.AdminAgents;
 using ModernEstate.Application.ViewModels.AdminPaginations;
-using ModernEstate.Application.ViewModels.Agencies;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Enums;
-using ModernEstate.MVC.Areas.Admin.ViewModels.Agencies;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Agents;
 using ModernEstate.Persistence.Data;
 namespace ModernEstate.MVC.Areas.Admin.Controllers

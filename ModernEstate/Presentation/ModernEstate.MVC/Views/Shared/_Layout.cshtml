@@ -131,216 +131,260 @@
 								<li>@Html.Raw(settings["InstagramIcon"])</li>
 								<li>@Html.Raw(settings["LinkedinIcon"])</li>
 								<li style="position: relative;">
-									<button id="menuButton" type="button" class="smaller-button" aria-expanded="false" aria-label="Main navigation menu"
-											style="padding: 6px 10px; border-radius: 8px; border: 1px solid #DDDDDD; display: flex; align-items: center; gap: 8px; background: white;">
-										<div>
-											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
-												 style="display: block; fill: none; height: 14px; width: 14px; stroke: currentcolor; stroke-width: 2;">
-												<g fill="none">
-													<path d="M3 16h26M3 24h26M3 8h26"></path>
-												</g>
-											</svg>
-										</div>
+									<!-- Profile Button -->
+									<div id="profileButton" style="width: 40px; height: 40px; border-radius: 50%; background-color: #b0b0b0; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.3s;">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false"
+											 style="display: block; height: 22px; width: 22px; fill: white;">
+											<path d="M16 .7C7.56.7.7 7.56.7 16S7.56 31.3 16 31.3 31.3 24.44 31.3 16 24.44.7 16 .7zm0 28c-4.02 0-7.6-1.88-9.93-4.81a12.43 12.43 0 0 1 6.45-4.4A6.5 6.5 0 0 1 9.5 14a6.5 6.5 0 0 1 13 0 6.51 6.51 0 0 1-3.02 5.5 12.42 12.42 0 0 1 6.45 4.4A12.67 12.67 0 0 1 16 28.7z"></path>
+										</svg>
+									</div>
 
-										<div style="width: 30px; height: 30px; border-radius: 50%; background-color: #717171; display: flex; align-items: center; justify-content: center; cursor: pointer;" id="profileButton">
-											<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation" focusable="false" style="display: block; height: 18px; width: 18px; fill: white;">
-												<path d="M16 .7C7.56.7.7 7.56.7 16S7.56 31.3 16 31.3 31.3 24.44 31.3 16 24.44.7 16 .7zm0 28c-4.02 0-7.6-1.88-9.93-4.81a12.43 12.43 0 0 1 6.45-4.4A6.5 6.5 0 0 1 9.5 14a6.5 6.5 0 0 1 13 0 6.51 6.51 0 0 1-3.02 5.5 12.42 12.42 0 0 1 6.45 4.4A12.67 12.67 0 0 1 16 28.7z"></path>
-											</svg>
-										</div>
+									<!-- Dropdown Menu -->
+									<div id="dropdownMenu" style="display: none; position: absolute; background: white; border: 1px solid #ccc; border-radius: 8px; padding: 10px;
+        right: 0; top: 50px; z-index: 1000; box-shadow: 0px 2px 6px rgba(0,0,0,0.1); min-width: 160px; font-family: Arial, sans-serif; opacity: 0; transform: translateY(-8px); transition: opacity 0.2s ease, transform 0.2s ease;">
 
-										<div id="dropdownMenu" style="display: none; position: absolute; background-color: white; border: 1px solid #ccc; border-radius: 4px; padding: 10px; right: 0; top: 40px; z-index: 1000;">
-											@if (User.Identity.IsAuthenticated)
-											{
-												<a asp-controller="Account" asp-action="MyProfile" style="display: block; padding: 5px 10px;">@User.Identity.Name</a>
-												<a asp-controller="Account" asp-action="Logout" style="display: block; padding: 5px 10px;">Logout</a>
-											}
-											else
-											{
-												<a asp-controller="Account" asp-action="Login" style="display: block; padding: 5px 10px;">Login</a>
-												<a asp-controller="Account" asp-action="Register" style="display: block; padding: 5px 10px;">Register</a>
-											}
-										</div>
+										@if (User.Identity.IsAuthenticated)
+										{
+											<div style="padding: 10px; border-bottom: 1px solid #ddd; text-align: center; font-weight: bold; color: #333;">
+												@User.Identity.Name
+											</div>
+											<a asp-controller="Account" asp-action="MyProfile" class="dropdown-item">Account</a>
+											<a asp-controller="Account" asp-action="Logout" class="dropdown-item logout">Logout</a>
+										}
+										else
+										{
+											<a asp-controller="Account" asp-action="Login" class="dropdown-item">Login</a>
+											<a asp-controller="Account" asp-action="Register" class="dropdown-item">Register</a>
+										}
+									</div>
 
-										<script>
-											document.getElementById('profileButton').addEventListener('click', function (event) {
-												var dropdownMenu = document.getElementById('dropdownMenu');
-												dropdownMenu.style.display = (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') ? 'block' : 'none';
-												event.stopPropagation(); 
-											});
-
-											document.addEventListener('click', function (event) {
-												var dropdownMenu = document.getElementById('dropdownMenu');
-												var profileButton = document.getElementById('profileButton');
-
-												if (!profileButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+									<script>
+										document.getElementById('profileButton').addEventListener('click', function (event) {
+											var dropdownMenu = document.getElementById('dropdownMenu');
+											if (dropdownMenu.style.display === 'none' || dropdownMenu.style.display === '') {
+												dropdownMenu.style.display = 'block';
+												setTimeout(() => {
+													dropdownMenu.style.opacity = '1';
+													dropdownMenu.style.transform = 'translateY(0)';
+												}, 10);
+											} else {
+												dropdownMenu.style.opacity = '0';
+												dropdownMenu.style.transform = 'translateY(-8px)';
+												setTimeout(() => {
 													dropdownMenu.style.display = 'none';
-												}
-											});
-										</script>
-									</button>
+												}, 200);
+											}
+											event.stopPropagation();
+										});
+
+										document.addEventListener('click', function (event) {
+											var dropdownMenu = document.getElementById('dropdownMenu');
+											var profileButton = document.getElementById('profileButton');
+
+											if (!profileButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+												dropdownMenu.style.opacity = '0';
+												dropdownMenu.style.transform = 'translateY(-8px)';
+												setTimeout(() => {
+													dropdownMenu.style.display = 'none';
+												}, 200);
+											}
+										});
+									</script>
+
+									<style>
+										.dropdown-item {
+											display: block;
+											padding: 10px;
+											text-decoration: none;
+											color: #444;
+											font-size: 14px;
+											transition: background 0.2s, color 0.2s;
+											border-radius: 4px;
+										}
+
+											.dropdown-item:hover {
+												background: #e0e0e0;
+											}
+
+										.logout {
+											color: red;
+										}
+
+											.logout:hover {
+												background: #ffebeb;
+											}
+
+										#profileButton:hover {
+											background: #a0a0a0;
+										}
+									</style>
 								</li>
+
+
+
 
 
 							</ul>
 						</div>
 
-						<script>
-							document.getElementById("menuButton").addEventListener("click", function () {
-								var menu = document.getElementById("dropdownMenu");
-								if (menu.style.display === "none") {
-									menu.style.display = "block";
-								} else {
-									menu.style.display = "none";
-								}
-							});
-
-						</script>
 					</div>
 				</div>
 				<div class="rd-navbar-inner inner-wrap">
 					<div class="rd-navbar-nav-wrap">
 						<!-- RD Navbar Nav-->
 						<ul class="rd-navbar-nav">
-							<li class="active">
-								<a asp-controller="Home" asp-action="Index">Home</a>
-							</li>
-							<li>
-								<a href="#">Extras</a>
-								<!-- RD Navbar Dropdown-->
-								<ul class="rd-navbar-dropdown">
-									<li>
-										<a href="404.html">404</a>
-									</li>
-									<li>
-										<a href="coming-soon.html">Coming soon</a>
-									</li>
-									<li>
-										<a href="login.html">Login page</a>
-									</li>
-									<li>
-										<a href="maintenance.html">Maintenance page</a>
-									</li>
-									<li>
-										<a href="terms-of-service.html">Terms of Use</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Property catalog</a>
-								<ul class="rd-navbar-dropdown">
-									<li>
-										<a href="property-catalog-grid.html">Property catalog grid</a>
-									</li>
-									<li>
-										<a href="property-catalog-list.html">Property catalog list</a>
-									</li>
-									<li>
-										<a href="single-property-page.html">Property catalog single</a>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<a href="#">Pages</a>
-								<!-- RD Navbar Megamenu-->
-								<ul class="rd-navbar-megamenu">
-									<li>
-										<p>Pages 1</p>
-										<ul>
-											<li>
-												<a asp-controller="Post" asp-action="Index">Post</a>
-											</li>
-											<li>
-												<a href="agency-page.html">Agency Page</a>
-											</li>
-											<li>
-												<a href="our-team.html">Our Team</a>
-											</li>
-											<li>
-												<a href="personal-page.html">Agent Personal Page</a>
-											</li>
-											<li>
-												<a href="contact-us.html">Contact Us</a>
-											</li>
-											<li>
-												<a href="pricing.html">Pricing</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<p>Pages 2</p>
-										<ul>
-											<li>
-												<a href="categories.html">Categories</a>
-											</li>
-											<li>
-												<a href="clients.html">Client Page</a>
-											</li>
-											<li>
-												<a href="faq.html">FAQ Page</a>
-											</li>
-											<li>
-												<a href="services.html">Services</a>
-											</li>
-											<li>
-												<a href="services-2.html">Services 2</a>
-											</li>
-											<li>
-												<a href="submit-property.html">Submit Property</a>
-											</li>
-											<li>
-												<a href="make-an-appointment.html">Make an Appointment</a>
-											</li>
-										</ul>
-									</li>
-									<li>
-										<p>Blog</p>
-										<ul>
-											<li>
-												<a href="2-columns-blog.html">2 Columns Blog</a>
-											</li>
-											<li>
-												<a href="2-columns-blog-masonry.html">2 Columns Blog Masonry</a>
-											</li>
-											<li>
-												<a href="3-columns-grid-blog.html">3 Columns Blog</a>
-											</li>
-											<li>
-												<a href="3-columns-masonry-layout.html">3 Columns Blog Masonry</a>
-											</li>
-											<li>
-												<a href="left-sidebar.html">Blog Left Sidebar</a>
-											</li>
-											<li>
-												<a href="right-sidebar.html">Blog Right Sidebar</a>
-											</li>
-											<li>
-												<a href="post-page.html">Post Page</a>
-											</li>
-											<li>
-												<a href="timeline.html">Timeline</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							@if(User.IsInRole("Admin"))
+							@if (User.IsInRole("Admin"))
 							{
+								<li class="active">
+									<a asp-controller="Home" asp-action="Index">Home</a>
+								</li>
 								<li>
-									<a asp-area="Admin" asp-controller="Home" asp-action="Index">Admin Panel</a>
+									<a asp-controller="Post" asp-action="Index">Post Page</a>
+								</li>
+								<li>
+									<a href="terms-of-service.html">Terms of Use</a>
 								</li>
 							}
-							else if(User.IsInRole("Author"))
+							else if (User.IsInRole("Author"))
 							{
+								<li class="active">
+									<a asp-controller="Home" asp-action="Index">Home</a>
+								</li>
 								<li>
 									<a asp-area="Admin" asp-controller="Post" asp-action="Index">Author Panel</a>
 								</li>
 							}
-							else if(User.IsInRole("Agent"))
+							else if (User.IsInRole("Agent"))
 							{
 								<li>
 									<a asp-area="Admin" asp-controller="Service" asp-action="Index">Agent Panel</a>
 								</li>
 							}
+							else {
+								<li class="active">
+									<a asp-controller="Home" asp-action="Index">Home</a>
+								</li>
+								<li>
+									<a href="#">Extras</a>
+									<!-- RD Navbar Dropdown-->
+									<ul class="rd-navbar-dropdown">
+										<li>
+											<a href="404.html">404</a>
+										</li>
+										<li>
+											<a href="coming-soon.html">Coming soon</a>
+										</li>
+										<li>
+											<a href="login.html">Login page</a>
+										</li>
+										<li>
+											<a href="maintenance.html">Maintenance page</a>
+										</li>
+										<li>
+											<a href="terms-of-service.html">Terms of Use</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Property catalog</a>
+									<ul class="rd-navbar-dropdown">
+										<li>
+											<a href="property-catalog-grid.html">Property catalog grid</a>
+										</li>
+										<li>
+											<a href="property-catalog-list.html">Property catalog list</a>
+										</li>
+										<li>
+											<a href="single-property-page.html">Property catalog single</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<a href="#">Pages</a>
+									<!-- RD Navbar Megamenu-->
+									<ul class="rd-navbar-megamenu">
+										<li>
+											<p>Pages 1</p>
+											<ul>
+												<li>
+													<a asp-controller="Post" asp-action="Index">Post</a>
+												</li>
+												<li>
+													<a href="agency-page.html">Agency Page</a>
+												</li>
+												<li>
+													<a href="our-team.html">Our Team</a>
+												</li>
+												<li>
+													<a href="personal-page.html">Agent Personal Page</a>
+												</li>
+												<li>
+													<a href="contact-us.html">Contact Us</a>
+												</li>
+												<li>
+													<a href="pricing.html">Pricing</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<p>Pages 2</p>
+											<ul>
+												<li>
+													<a href="categories.html">Categories</a>
+												</li>
+												<li>
+													<a href="clients.html">Client Page</a>
+												</li>
+												<li>
+													<a href="faq.html">FAQ Page</a>
+												</li>
+												<li>
+													<a href="services.html">Services</a>
+												</li>
+												<li>
+													<a href="services-2.html">Services 2</a>
+												</li>
+												<li>
+													<a href="submit-property.html">Submit Property</a>
+												</li>
+												<li>
+													<a href="make-an-appointment.html">Make an Appointment</a>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<p>Blog</p>
+											<ul>
+												<li>
+													<a href="2-columns-blog.html">2 Columns Blog</a>
+												</li>
+												<li>
+													<a href="2-columns-blog-masonry.html">2 Columns Blog Masonry</a>
+												</li>
+												<li>
+													<a href="3-columns-grid-blog.html">3 Columns Blog</a>
+												</li>
+												<li>
+													<a href="3-columns-masonry-layout.html">3 Columns Blog Masonry</a>
+												</li>
+												<li>
+													<a href="left-sidebar.html">Blog Left Sidebar</a>
+												</li>
+												<li>
+													<a href="right-sidebar.html">Blog Right Sidebar</a>
+												</li>
+												<li>
+													<a href="post-page.html">Post Page</a>
+												</li>
+												<li>
+													<a href="timeline.html">Timeline</a>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							}
+
 							<li class="link-group">
 								<a href="submit-property.html" class="btn btn-sm btn-primary">Submit Property</a>
 							</li>
