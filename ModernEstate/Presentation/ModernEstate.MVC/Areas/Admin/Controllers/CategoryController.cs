@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
 using ModernEstate.Application.ViewModels.AdminPaginations;
@@ -15,9 +16,22 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     public class CategoryController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
         string Root = Path.Combine("assets", "images");
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
+            }
 
+            base.OnActionExecuting(context);
+        }
         public async Task<IActionResult> Index(int page = 1)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (page < 1) return BadRequest();
 
             int count = await _context.Categories.CountAsync();
@@ -46,12 +60,21 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(CreateAdminCategoryVM categoryVM)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (!ModelState.IsValid)
             {
                 return View(categoryVM);
@@ -97,6 +120,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id is null || id <= 0) return BadRequest();
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             if (category == null) return NotFound();
@@ -112,6 +140,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateAdminCategoryVM categoryVM)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id is null || id <= 0) return BadRequest();
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             if (category == null) return NotFound();
@@ -153,6 +186,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id is null || id <= 0) return BadRequest();
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             if (category == null) return NotFound();
@@ -171,6 +209,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id is null || id <= 0) return BadRequest();
             Category category = await _context.Categories.FirstOrDefaultAsync(c => c.Id == id);
             if (category == null) return NotFound();

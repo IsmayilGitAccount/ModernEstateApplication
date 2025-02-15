@@ -739,6 +739,7 @@ wwwroot\assets\images\6e168b70-a1b0-4acc-9950-a736daaef3e3.jpg
 wwwroot\assets\images\6f0ea361-7377-449e-8cd3-e693f920cf51.jpg
 wwwroot\assets\images\6f9d20b7-05ef-4da7-a737-8c4352c294a0.jpg
 wwwroot\assets\images\71a5b935-3967-4900-9b0c-7809935c335b.jpg
+wwwroot\assets\images\7232225c-38d5-4744-ae54-e76387951948.jpg
 wwwroot\assets\images\7284576e-5800-49e2-8a19-0f73077c5a47.jpg
 wwwroot\assets\images\76fd515f-6428-47a9-a9fe-2791347c8829.webp
 wwwroot\assets\images\797ad292-fcbd-46aa-ae03-45e2b6297524.jpeg
@@ -787,6 +788,7 @@ wwwroot\assets\images\b2f82b5d-4ec8-4928-a5ab-17c9ee655cf8.jpg
 wwwroot\assets\images\b4585edd-7a0e-459b-8d12-d9cb36ce8b21.png
 wwwroot\assets\images\b53069dc-0bd9-4991-9cfb-590ce52cdbaa.jpg
 wwwroot\assets\images\b803dba9-d43c-4208-95c2-8d8f31d460f1.jpg
+wwwroot\assets\images\b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg
 wwwroot\assets\images\b99a0fc4-c237-4e7b-b91a-fb6a63c998c9.jpg
 wwwroot\assets\images\b9bb9ed7-cdcf-4575-834d-c7efc9ee2528.webp
 wwwroot\assets\images\ba0a30ed-b1e0-41ff-8ad2-7d26ab70c9a2.jpg
@@ -958,8 +960,6 @@ wwwroot\assets\images\services-5.jpg
 wwwroot\assets\images\services-6.jpg
 wwwroot\assets\images\services-7.jpg
 wwwroot\assets\images\services-8.jpg
-wwwroot\assets\images\slide-1.jpg
-wwwroot\assets\images\slide-2.jpg
 wwwroot\assets\images\slide-3.jpg
 wwwroot\assets\images\team-1.jpg
 wwwroot\assets\images\team-2.jpg

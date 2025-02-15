@@ -60,10 +60,10 @@ namespace ModernEstate.MVC.Controllers
                 .ToListAsync(),
                 Status = await _context.Status.Include(s => s.Properties).ToListAsync(),
                 Types = await _context.Types.Include(s => s.Properties).ToListAsync(),
-                Slides = await _context.Slides.Take(3).OrderByDescending(s => s.Order).ToListAsync(),
+                Slides = await _context.Slides.Take(3).OrderBy(s => s.Order).ToListAsync(),
                 Agents = await _context.Agents.Where(a => a.Properties.Count() != 0).Take(9).Include(a => a.Agency).ToListAsync(),
                 TotalPage = total,
-                CurrentPage = page
+                CurrentPage = page,
             };
             if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
             {

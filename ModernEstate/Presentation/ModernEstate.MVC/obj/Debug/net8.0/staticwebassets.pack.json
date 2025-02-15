@@ -2961,6 +2961,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\71a5b935-3967-4900-9b0c-7809935c335b.jpg"
     },
     {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7232225c-38d5-4744-ae54-e76387951948.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\7232225c-38d5-4744-ae54-e76387951948.jpg"
+    },
+    {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7284576e-5800-49e2-8a19-0f73077c5a47.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\7284576e-5800-49e2-8a19-0f73077c5a47.jpg"
     },
@@ -3159,6 +3163,10 @@
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b803dba9-d43c-4208-95c2-8d8f31d460f1.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\b803dba9-d43c-4208-95c2-8d8f31d460f1.jpg"
+    },
+    {
+      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b99a0fc4-c237-4e7b-b91a-fb6a63c998c9.jpg",
@@ -3843,14 +3851,6 @@
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\services-8.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\services-8.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-1.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\slide-1.jpg"
-    },
-    {
-      "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-2.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\slide-2.jpg"
     },
     {
       "Id": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-3.jpg",

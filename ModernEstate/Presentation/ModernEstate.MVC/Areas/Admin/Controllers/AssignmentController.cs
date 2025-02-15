@@ -1,5 +1,7 @@
 ﻿using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.ViewModels.AdminAssignments;
 using ModernEstate.Application.ViewModels.AdminPaginations;
@@ -11,10 +13,24 @@ using ModernEstate.Persistence.Data;
 namespace ModernEstate.MVC.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class AssignmentController(AppDbContext _context) : Controller
     {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
+            }
+
+            base.OnActionExecuting(context);
+        }
         public async Task<IActionResult> Index(int page = 1)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             if (page < 1) return BadRequest();
 
             int count = await _context.Assignments.CountAsync();
@@ -43,13 +59,23 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(CreateAdminAssignmentVM assignmentVM)
         {
-            if(!ModelState.IsValid)
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            if (!ModelState.IsValid)
             {
                 return View(assignmentVM);
             }
@@ -79,6 +105,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id is null || id <= 0) return BadRequest();
 
             Assignment assignment = await _context.Assignments.FirstOrDefaultAsync(a => a.Id == id);
@@ -99,6 +130,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateAdminAssignmentVM assignmentVM)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id is null || id <= 0) return BadRequest();
 
             Assignment assignment = await _context.Assignments.FirstOrDefaultAsync(a => a.Id == id);
@@ -129,6 +165,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id is null || id <= 0) return BadRequest();
 
             Assignment assignment = await _context.Assignments.FirstOrDefaultAsync(a => a.Id == id);
@@ -140,6 +181,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id is null || id <= 0) return BadRequest();
 
             Assignment assignment = await _context.Assignments.FirstOrDefaultAsync(a => a.Id == id);

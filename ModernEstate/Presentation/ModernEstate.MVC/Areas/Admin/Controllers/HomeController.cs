@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.ViewModels.AdminAssignments;
 using ModernEstate.Application.ViewModels.AdminPaginations;
@@ -10,6 +12,15 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class HomeController(AppDbContext _context) : Controller
     {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
+            }
+
+            base.OnActionExecuting(context);
+        }
         public async Task<IActionResult> Index(int page = 1)
         {
             if (page < 1) return BadRequest();
@@ -40,6 +51,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
+           
             if (id is null || id <= 0) return BadRequest();
 
             Assignment assignment = await _context.Assignments.FirstOrDefaultAsync(a => a.Id == id);

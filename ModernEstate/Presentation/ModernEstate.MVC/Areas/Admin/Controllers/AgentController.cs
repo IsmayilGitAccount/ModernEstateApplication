@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.Utilities.Extensions;
 using ModernEstate.Application.ViewModels.AdminAgents;
@@ -14,9 +15,23 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     public class AgentController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
         string Root = Path.Combine("assets", "images");
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
+            }
+
+            base.OnActionExecuting(context);
+        }
 
         public async Task<IActionResult> Index(int page = 1)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (page < 1) return BadRequest();
 
             int count = await _context.Agents.CountAsync();
@@ -53,6 +68,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Create()
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             CreateAdminAgentVM agentVM = new CreateAdminAgentVM()
             {
                 Agencies = await _context.Agencies.ToListAsync()
@@ -64,6 +84,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateAdminAgentVM agentVM)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             agentVM.Agencies = await _context.Agencies.ToListAsync();
 
             if (!ModelState.IsValid)
@@ -133,6 +158,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id == null || id <= 0) return BadRequest();
             Agent agent = await _context.Agents.Include(a => a.Agency).FirstOrDefaultAsync(a => a.Id == id);
             if (agent == null) return NotFound();
@@ -158,6 +188,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateAdminAgentVM agentVM)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             agentVM.Agencies = await _context.Agencies.ToListAsync();
 
             if (id == null || id <= 0) return BadRequest();
@@ -224,6 +259,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id == null || id <= 0) return BadRequest();
             Agent agent = await _context.Agents.Include(a => a.Agency).FirstOrDefaultAsync(a => a.Id == id);
             if (agent == null) return NotFound();
@@ -237,6 +277,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
             if (id == null || id <= 0) return BadRequest();
             Agent agent = await _context.Agents.Include(a => a.Agency).FirstOrDefaultAsync(a => a.Id == id);
             if (agent == null) return NotFound();

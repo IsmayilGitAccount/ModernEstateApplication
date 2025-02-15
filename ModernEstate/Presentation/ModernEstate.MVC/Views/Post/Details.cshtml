@@ -35,7 +35,7 @@
 						<div class="caption-meta">
 							<time datetime="2016">
 								<span class="mdi mdi-calendar"></span>
-								<span>@post.PostedAt</span>
+								<span>@post.PostedAt.ToString("D")</span>
 							</time>
 							<a href="#">
 								<span class="mdi mdi-account"></span>
@@ -75,7 +75,7 @@
 						<a asp-controller="Agency" asp-action="Details" asp-route-Id="@Model.Post.Agency.Id" class="btn btn-xs btn-primary">learn more</a>
 					</div>
 					<div class="sidebar-module">
-						<h4>Recent Properties</h4>
+						<h4>Recent Posts</h4>
 						@foreach (Post recent in Model.RecentlyPosts)
 						{
 							<div class="thumbnail-3">

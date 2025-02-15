@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X7jVvW7ixghVD48kFGKuNck4+z7J2liL7cDeriGZrxw=",
+  "Hash": "pC+clEaOd9WtQvVelZkqpTMfG+zyn1vuUfEbFAufzYk=",
   "Source": "ModernEstate.MVC",
   "BasePath": "_content/ModernEstate.MVC",
   "Mode": "Default",
@@ -15578,6 +15578,27 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\71a5b935-3967-4900-9b0c-7809935c335b.jpg"
     },
     {
+      "Identity": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7232225c-38d5-4744-ae54-e76387951948.jpg",
+      "SourceId": "ModernEstate.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\",
+      "BasePath": "_content/ModernEstate.MVC",
+      "RelativePath": "assets/images/7232225c-38d5-4744-ae54-e76387951948#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8k6dgctltr",
+      "Integrity": "iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\7232225c-38d5-4744-ae54-e76387951948.jpg"
+    },
+    {
       "Identity": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7284576e-5800-49e2-8a19-0f73077c5a47.jpg",
       "SourceId": "ModernEstate.MVC",
       "SourceType": "Discovered",
@@ -16584,6 +16605,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\b803dba9-d43c-4208-95c2-8d8f31d460f1.jpg"
+    },
+    {
+      "Identity": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg",
+      "SourceId": "ModernEstate.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\",
+      "BasePath": "_content/ModernEstate.MVC",
+      "RelativePath": "assets/images/b8c4f50c-c66c-4240-a0d6-70cad19926d8#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7io33m03ln",
+      "Integrity": "z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg"
     },
     {
       "Identity": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b99a0fc4-c237-4e7b-b91a-fb6a63c998c9.jpg",
@@ -20175,48 +20217,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\services-8.jpg"
-    },
-    {
-      "Identity": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-1.jpg",
-      "SourceId": "ModernEstate.MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\",
-      "BasePath": "_content/ModernEstate.MVC",
-      "RelativePath": "assets/images/slide-1#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "7io33m03ln",
-      "Integrity": "z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\slide-1.jpg"
-    },
-    {
-      "Identity": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-2.jpg",
-      "SourceId": "ModernEstate.MVC",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\",
-      "BasePath": "_content/ModernEstate.MVC",
-      "RelativePath": "assets/images/slide-2#[.{fingerprint}]?.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "8k6dgctltr",
-      "Integrity": "iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\slide-2.jpg"
     },
     {
       "Identity": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-3.jpg",
@@ -82789,6 +82789,88 @@
       ]
     },
     {
+      "Route": "assets/images/7232225c-38d5-4744-ae54-e76387951948.8k6dgctltr.jpg",
+      "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7232225c-38d5-4744-ae54-e76387951948.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "401096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:29:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8k6dgctltr"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/7232225c-38d5-4744-ae54-e76387951948.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/7232225c-38d5-4744-ae54-e76387951948.jpg",
+      "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7232225c-38d5-4744-ae54-e76387951948.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "401096"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:29:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ="
+        }
+      ]
+    },
+    {
       "Route": "assets/images/7284576e-5800-49e2-8a19-0f73077c5a47.jpg",
       "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\7284576e-5800-49e2-8a19-0f73077c5a47.jpg",
       "Selectors": [],
@@ -86721,6 +86803,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-9lfzVmhcXO4LxjeHQhGP6XTEcBrM+2K6blqbPjkQe0k="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/b8c4f50c-c66c-4240-a0d6-70cad19926d8.7io33m03ln.jpg",
+      "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "187149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:29:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7io33m03ln"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg",
+      "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\b8c4f50c-c66c-4240-a0d6-70cad19926d8.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "187149"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 14 Feb 2025 15:29:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I="
         }
       ]
     },
@@ -100743,170 +100907,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-moDZPj5+CKaREwoEPOTJD3+gobMRoZdswX1zziN8Dko="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/slide-1.7io33m03ln.jpg",
-      "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "187149"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 21 Feb 2018 10:46:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7io33m03ln"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/images/slide-1.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/slide-1.jpg",
-      "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-1.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "187149"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 21 Feb 2018 10:46:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-z1mlHlYJN1tAdy+NM2a6IjqCaXdiM4uKBxu+2NoFF5I="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/slide-2.8k6dgctltr.jpg",
-      "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "401096"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 21 Feb 2018 10:46:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "8k6dgctltr"
-        },
-        {
-          "Name": "label",
-          "Value": "assets/images/slide-2.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ="
-        }
-      ]
-    },
-    {
-      "Route": "assets/images/slide-2.jpg",
-      "AssetFile": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\slide-2.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "401096"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 21 Feb 2018 10:46:48 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=3600, must-revalidate"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-iM2TTQf7RlGiGA9uzdSeK5bm5YV+lWcoMN7GEU9XhDQ="
         }
       ]
     },

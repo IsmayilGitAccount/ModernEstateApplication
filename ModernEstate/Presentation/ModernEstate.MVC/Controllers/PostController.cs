@@ -12,7 +12,8 @@ namespace ModernEstate.MVC.Controllers
         {
             GetPostVM postVM = new GetPostVM()
             {
-                Posts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).OrderByDescending(p=>p.Id).ToListAsync()
+                Posts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).OrderByDescending(p=>p.Id).ToListAsync(),
+                RecentlyPosts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).Take(2).ToListAsync(),
             };
             return View(postVM);
         }

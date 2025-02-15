@@ -48,7 +48,6 @@ public class ChatController : Controller
             return BadRequest("Agent ID and Message text are required.");
         }
 
-        // Agenti tapırıq
         var agent = await _context.Agents.FirstOrDefaultAsync(a => a.Id == chatVM.AgentId);
         if (agent == null)
         {

@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
 using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Domain.Entities;
@@ -11,8 +12,21 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class FAQController(AppDbContext _context) : Controller
     {
+        public override void OnActionExecuting(ActionExecutingContext context)
+        {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
+            }
+
+            base.OnActionExecuting(context);
+        }
         public async Task<IActionResult> Index(int page = 1)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             if (page < 1) return BadRequest();
 
             int count = await _context.FAQs.CountAsync();
@@ -40,6 +54,10 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Create()
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             CreateAdminFAQVM faqVM = new CreateAdminFAQVM()
             {
                 Agency = await _context.Agencies.ToListAsync(),
@@ -51,6 +69,10 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateAdminFAQVM faqVM)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             faqVM.Agency = await _context.Agencies.ToListAsync();
 
             if (!ModelState.IsValid)
@@ -84,6 +106,10 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             if (id is null || id <= 0) return BadRequest();
 
             FAQ faq = await _context.FAQs.FirstOrDefaultAsync(f=>f.Id == id);
@@ -104,6 +130,10 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateAdminFAQVM faqVM)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             faqVM.Agency = await _context.Agencies.ToListAsync();
 
             if (id is null || id <= 0) return BadRequest();
@@ -131,6 +161,10 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             if (id is null || id <= 0) return BadRequest();
 
             FAQ faq = await _context.FAQs.FirstOrDefaultAsync(f => f.Id == id);
@@ -146,6 +180,10 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
+            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
+            {
+                return RedirectToAction("Login", "Account");
+            }
             if (id is null || id <= 0) return BadRequest();
 
             FAQ faq = await _context.FAQs.Include(f=>f.Agency).FirstOrDefaultAsync(f => f.Id == id);
