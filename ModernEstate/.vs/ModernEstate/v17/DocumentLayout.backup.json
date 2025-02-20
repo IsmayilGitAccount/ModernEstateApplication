@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Code Academy\\ModernEstate\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -39,19 +47,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAgwHsAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T09:35:15.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AgencyController.cs",
+              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T09:34:47.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PropertyController.cs",
               "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
               "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs*",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs*",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABgAAAAWAAAAAAAAAA==",
+              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-15T09:30:30.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AuthorController.cs",
               "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
               "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
@@ -64,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
               "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
@@ -76,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
               "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
