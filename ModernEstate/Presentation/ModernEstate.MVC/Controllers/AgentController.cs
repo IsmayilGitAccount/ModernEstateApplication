@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.ViewModels.Agents;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Entities.Account;
@@ -11,19 +12,19 @@ namespace ModernEstate.MVC.Controllers
     {
         public async Task<IActionResult> Details(int? id, int page = 1)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException($"{id} is wrong!");
 
             Agent agent = await _context.Agents.Include(a => a.Properties).Include(a => a.Agency).FirstOrDefaultAsync(a => a.Id == id);
 
-            if (agent == null) return BadRequest();
+            if (agent == null) throw new BadRequestException($"Agent not found!");
 
-            if (page < 1) return BadRequest();
+            if (page < 1) throw new BadRequestException($"{page}th page is not found!");
 
             int count = await _context.Properties.Where(p => p.AgentId == id).CountAsync();
 
             double total = Math.Ceiling((double)count / 2);
 
-            if (total < page) return BadRequest();
+            if (total < page) throw new NotFoundException($"Not found!");
 
             AgentVM agentVM = new AgentVM()
             {

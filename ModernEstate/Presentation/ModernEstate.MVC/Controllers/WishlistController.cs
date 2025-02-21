@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
 
@@ -38,7 +39,7 @@ namespace ModernEstate.MVC.Controllers
             var property = await _context.Properties.FindAsync(propertyId);
             if (property == null)
             {
-                return NotFound("Property not found");
+                throw new NotFoundException($"Property was not found!");
             }
 
             var wishlistItem = new Wishlist
@@ -68,7 +69,7 @@ namespace ModernEstate.MVC.Controllers
 
             if (wishlistItem == null)
             {
-                return NotFound("Wishlist item not found");
+                throw new NotFoundException("Wishlist item not found!");
             }
 
             _context.Wishlist.Remove(wishlistItem);

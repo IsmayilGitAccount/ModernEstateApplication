@@ -16,21 +16,8 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class ServiceController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
-        public override void OnActionExecuting(ActionExecutingContext context)
-        {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
-            }
-
-            base.OnActionExecuting(context);
-        }
         public async Task<IActionResult> Index(int page = 1)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             if (page < 1) return BadRequest();
 
             int count = await _context.Services.CountAsync();
@@ -58,10 +45,6 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Create()
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             CreateAdminServiceVM serviceVM = new CreateAdminServiceVM()
             {
                 Agencies = await _context.Agencies.ToListAsync()
@@ -73,10 +56,6 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateAdminServiceVM serviceVM)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             serviceVM.Agencies = await _context.Agencies.ToListAsync();
 
             if (!ModelState.IsValid)
@@ -127,10 +106,6 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             if (id is null || id <= 0) return BadRequest();
 
             Service service = await _context.Services.FirstOrDefaultAsync(s => s.Id == id);
@@ -151,10 +126,6 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateAdminServiceVM serviceVM)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             serviceVM.Agencies = await _context.Agencies.ToListAsync();
 
             if (id is null || id <= 0) return BadRequest();
@@ -204,10 +175,6 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             if (id is null || id <= 0) return BadRequest();
 
             Service service = await _context.Services.FirstOrDefaultAsync(s => s.Id == id);
@@ -228,10 +195,6 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             if (id is null || id <= 0) return BadRequest();
 
             Service service = await _context.Services.Include(s=>s.Agency).FirstOrDefaultAsync(s => s.Id == id);

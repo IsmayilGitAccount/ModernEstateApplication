@@ -34,6 +34,7 @@ namespace ModernEstate.Persistence.Data
         public DbSet<Author> Authors { get; set; }
         public DbSet<Post> Posts { get; set; }
         public DbSet<FAQ> FAQs { get; set; }
+        public DbSet<Contact> Contacts { get; set; }
         public DbSet<Wishlist> Wishlist { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<PropertyPhoto> PropertiesPhotos { get; set; }

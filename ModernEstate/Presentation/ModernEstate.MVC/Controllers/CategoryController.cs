@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.ViewModels.Properties;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
@@ -10,24 +11,24 @@ namespace ModernEstate.MVC.Controllers
     {
         public async Task<IActionResult> Details(int? id, int page = 1)
         {
-            if (page < 1) return BadRequest();
+            if (page < 1) throw new NotFoundException($"{page}th is not found!");
 
             int count = await _context.Properties.Where(p => p.CategoryId == id).CountAsync();
 
             double total = Math.Ceiling((double)count / 2);
 
-            if (total < page) return BadRequest();
+            if (total < page) throw new NotFoundException($"Not found!");
 
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException($"{id} is wrong!");
 
             Category category = await _context.Categories.Include(a => a.Properties).FirstOrDefaultAsync(a => a.Id == id);
 
-            if (category == null) return BadRequest();
+            if (category == null) throw new NotFoundException("Category not found!");
 
             var propertyVMs = new PropertyVM()
             {
                 Property = await _context.Properties
-                .Where(p=>p.CategoryId == id)
+                .Where(p => p.CategoryId == id)
                .Include(p => p.Agency)
                .Include(p => p.Agent)
                .Include(p => p.PropertyFeatures)
@@ -76,7 +77,7 @@ namespace ModernEstate.MVC.Controllers
 
             if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
             {
-                return View(propertyVMs); 
+                return View(propertyVMs);
             }
             return View(propertyVMs);
         }

@@ -100,6 +100,7 @@ namespace ModernEstate.MVC.Controllers
                 }
                 return View(userVM);
             }
+            await _userManager.AddToRoleAsync(user, UserRole.User.ToString());
 
             await _signInManager.SignInAsync(user, isPersistent: false);
 

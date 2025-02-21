@@ -1,30 +1,198 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Code Academy\\ModernEstate\\",
+  "WorkspaceRootPath": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\property\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\faqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\faqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.domain\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32F74F91-8716-4E42-8F2A-7A830729458B}|src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj|solutionrelative:src\\core\\modernestate.domain\\entities\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\message\\sendmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\message\\sendmessage.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\exterior\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\exterior\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.application\\viewmodels\\contacts\\sendmessagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\viewmodels\\contacts\\sendmessagevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.application\\viewmodels\\contacts\\getcontactvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\viewmodels\\contacts\\getcontactvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.application\\middleware\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\middleware\\globalexceptionhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.application\\viewmodels\\contacts\\createcontactvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\viewmodels\\contacts\\createcontactvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\views\\chat\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\chat\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\chatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\agency\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\agency\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\home\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\propertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\views\\account\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\account\\myprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\faqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\faqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\infrastructure\\modernestate.persistence\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|solutionrelative:src\\infrastructure\\modernestate.persistence\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\wishlistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\singlepropertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\singlepropertycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\servicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\postcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\agentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\controllers\\agencycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.application\\utilities\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\utilities\\exceptions\\badrequestexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.application\\utilities\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\utilities\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.application\\serviceregistration\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\serviceregistration\\serviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\core\\modernestate.application\\viewmodels\\adminposts\\createadminpostvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BEB2720-308D-4974-959D-B0B0A89C1344}|src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj|solutionrelative:src\\core\\modernestate.application\\viewmodels\\adminposts\\createadminpostvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\controllers\\authorcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\service\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\code academy\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\faq\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\presentation\\modernestate.mvc\\areas\\admin\\views\\faq\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{8C4E1284-37BD-4EA9-82B9-328C890095BF}|Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj|solutionrelative:presentation\\modernestate.mvc\\areas\\admin\\views\\faq\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\infrastructure\\modernestate.persistence\\migrations\\20250221174010_changecontactstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|solutionrelative:src\\infrastructure\\modernestate.persistence\\migrations\\20250221174010_changecontactstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\infrastructure\\modernestate.persistence\\migrations\\20250221173119_addcontactstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|solutionrelative:src\\infrastructure\\modernestate.persistence\\migrations\\20250221173119_addcontactstable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\infrastructure\\modernestate.persistence\\migrations\\20250221204618_changetablecontacttables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|solutionrelative:src\\infrastructure\\modernestate.persistence\\migrations\\20250221204618_changetablecontacttables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\infrastructure\\modernestate.persistence\\migrations\\20250221203353_changetablecontacttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|solutionrelative:src\\infrastructure\\modernestate.persistence\\migrations\\20250221203353_changetablecontacttable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|c:\\users\\asus tuf\\desktop\\modernestatedemo\\modernestate\\src\\infrastructure\\modernestate.persistence\\migrations\\20250221202631_changetablecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BFDF8BC4-22E8-4D3D-B0DC-B03B9CC4717F}|src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj|solutionrelative:src\\infrastructure\\modernestate.persistence\\migrations\\20250221202631_changetablecontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +202,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 17,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,63 +214,564 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAgwHsAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T09:35:15.231Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgencyController.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
-              "ViewState": "AgIAAKoAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T09:34:47.655Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PropertyController.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T09:30:30.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AuthorController.cs",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
-              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
-              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-14T16:18:21.672Z",
-              "EditorCaption": ""
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Property\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Property\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Property\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Property\\Index.cshtml",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAtwKUAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T21:00:59.207Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "FAQController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\FAQController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\FAQController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\FAQController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\FAQController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:53:43.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAL8AAAAAAAAAAAAswMQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:53:14.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20250221204618_ChangeTableContactTables.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221204618_ChangeTableContactTables.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221204618_ChangeTableContactTables.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221204618_ChangeTableContactTables.cs",
+              "RelativeToolTip": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221204618_ChangeTableContactTables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:46:18.901Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20250221203353_ChangeTableContactTable.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221203353_ChangeTableContactTable.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221203353_ChangeTableContactTable.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221203353_ChangeTableContactTable.cs",
+              "RelativeToolTip": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221203353_ChangeTableContactTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:33:54.037Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20250221202631_ChangeTableCOntact.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221202631_ChangeTableCOntact.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221202631_ChangeTableCOntact.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221202631_ChangeTableCOntact.cs",
+              "RelativeToolTip": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221202631_ChangeTableCOntact.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T20:26:31.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Exterior\\Create.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Exterior\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Exterior\\Create.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Exterior\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T19:57:50.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SendMessage.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Message\\SendMessage.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Message\\SendMessage.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Message\\SendMessage.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Message\\SendMessage.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T18:55:06.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SendMessageVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\SendMessageVM.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\SendMessageVM.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\SendMessageVM.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\SendMessageVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T18:49:17.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Chat\\Create.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Chat\\Create.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Chat\\Create.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Chat\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T18:48:21.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChatController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ChatController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\ChatController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ChatController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\ChatController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T18:33:18.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agency\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agency\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agency\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Agency\\Index.cshtml",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAiwGYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T18:22:09.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Message\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Message\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Message\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Message\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T18:21:52.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "MyProfile.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Account\\MyProfile.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Account\\MyProfile.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Account\\MyProfile.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Account\\MyProfile.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAcwF8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T18:08:47.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAAMBAAAAAAAAAAAtwAwBAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T18:05:01.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\MessageController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\MessageController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T18:03:53.941Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AgentController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgentController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgentController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgentController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgentController.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAYwCUBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:59:43.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "GetContactVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\GetContactVM.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\GetContactVM.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\GetContactVM.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\GetContactVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:58:11.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20250221174010_ChangeContactsTable.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221174010_ChangeContactsTable.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221174010_ChangeContactsTable.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221174010_ChangeContactsTable.cs",
+              "RelativeToolTip": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221174010_ChangeContactsTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:40:11.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CreateContactVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\CreateContactVM.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\CreateContactVM.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\CreateContactVM.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\CreateContactVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:39:10.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGMBAAAAAAAAAAAAwHEBAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T17:34:32.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Contact\\Index.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Contact\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Contact\\Index.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Contact\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAcwBsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T17:32:39.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ContactController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ContactController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\ContactController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ContactController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\ContactController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:32:20.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20250221173119_AddContactsTable.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221173119_AddContactsTable.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221173119_AddContactsTable.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221173119_AddContactsTable.cs",
+              "RelativeToolTip": "src\\Infrastructure\\ModernEstate.Persistence\\Migrations\\20250221173119_AddContactsTable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:31:20.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Infrastructure\\ModernEstate.Persistence\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Infrastructure\\ModernEstate.Persistence\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAA4wCQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:30:32.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Contact.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Contact.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Domain\\Entities\\Contact.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Domain\\Entities\\Contact.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Domain\\Entities\\Contact.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAwA4AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:29:59.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "WishlistController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\WishlistController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\WishlistController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\WishlistController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\WishlistController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:27:52.751Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "SinglePropertyController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\SinglePropertyController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\SinglePropertyController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\SinglePropertyController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\SinglePropertyController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwB8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:27:40.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ServiceController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAwB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:27:34.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "PostController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\PostController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\PostController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\PostController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\PostController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:27:25.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FAQController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\FAQController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\FAQController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\FAQController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\FAQController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:27:05.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAwD8AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:26:57.039Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "AgentController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AgentController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\AgentController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AgentController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\AgentController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:26:38.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "AgencyController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AgencyController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\AgencyController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AgencyController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\AgencyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:26:28.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "BadRequestException.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\Utilities\\Exceptions\\BadRequestException.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\Utilities\\Exceptions\\BadRequestException.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\Utilities\\Exceptions\\BadRequestException.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\Utilities\\Exceptions\\BadRequestException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:25:54.369Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "NotFoundException.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\Utilities\\Exceptions\\NotFoundException.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\Utilities\\Exceptions\\NotFoundException.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\Utilities\\Exceptions\\NotFoundException.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\Utilities\\Exceptions\\NotFoundException.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:25:25.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Home\\Error.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Views\\Home\\Error.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Views\\Home\\Error.cshtml",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Home\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-21T17:24:52.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAANUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:24:05.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Program.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Program.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Program.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:22:31.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "ServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ServiceRegistration\\ServiceRegistration.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ServiceRegistration\\ServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ServiceRegistration\\ServiceRegistration.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ServiceRegistration\\ServiceRegistration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:22:22.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "CreateAdminPostVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\AdminPosts\\CreateAdminPostVM.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\ViewModels\\AdminPosts\\CreateAdminPostVM.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ViewModels\\AdminPosts\\CreateAdminPostVM.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\AdminPosts\\CreateAdminPostVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:21:20.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "GlobalExceptionHandlerMiddleware.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeDocumentMoniker": "src\\Core\\ModernEstate.Application\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
+              "RelativeToolTip": "src\\Core\\ModernEstate.Application\\Middleware\\GlobalExceptionHandlerMiddleware.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA4wBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-21T17:20:29.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAgwGYAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T09:35:15.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "AgencyController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T09:34:47.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PropertyController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADACAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-15T09:30:30.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "AuthorController.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
+              "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
+              "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T16:18:21.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
               "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
               "ViewState": "AgIAAF0AAAAAAAAAAAAAAHUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -110,11 +779,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 42,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
               "RelativeDocumentMoniker": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
-              "ToolTip": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",

@@ -10,3 +10,16 @@ C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\refin
 C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.pdb
 C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ref\ModernEstate.Domain.dll
 C:\Code Academy\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\bin\Debug\net8.0\ModernEstate.Domain.deps.json
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\bin\Debug\net8.0\ModernEstate.Domain.dll
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\bin\Debug\net8.0\ModernEstate.Domain.pdb
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.csproj.AssemblyReference.cache
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.AssemblyInfo.cs
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.sourcelink.json
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.dll
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\refint\ModernEstate.Domain.dll
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ModernEstate.Domain.pdb
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Core\ModernEstate.Domain\obj\Debug\net8.0\ref\ModernEstate.Domain.dll

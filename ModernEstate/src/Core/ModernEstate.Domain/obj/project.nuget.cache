@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/dm9nfjqCxs=",
+  "dgSpecHash": "uxkTHcoNdSA=",
   "success": true,
-  "projectFilePath": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj",
+  "projectFilePath": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS TUF\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.11\\microsoft.aspnetcore.cryptography.internal.8.0.11.nupkg.sha512",
     "C:\\Users\\ASUS TUF\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.11\\microsoft.aspnetcore.cryptography.keyderivation.8.0.11.nupkg.sha512",

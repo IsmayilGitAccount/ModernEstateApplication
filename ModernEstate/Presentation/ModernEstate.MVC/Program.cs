@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using ModernEstate.Domain.Entities.Account;
 using ModernEstate.Persistence.Data;
 using ModernEstate.Persistence.ServiceRegistration;
-
+using ModernEstate.Application.ServiceRegistration;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPersistenceServices(builder.Configuration);
@@ -23,6 +23,7 @@ builder.Services
 
 var app = builder.Build();
 
+app.UseCustomMiddlewares();
 app.UseStaticFiles();
 app.UseRouting();
 app.UseAuthentication();

@@ -54,7 +54,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 XLink = a.XLink,
                 PhoneNumber = a.PhoneNumber,
                 Photo = a.Photo,
-            }).Skip((page-1)*3).Take(3).ToListAsync();
+            }).Skip((page - 1) * 3).Take(3).ToListAsync();
 
             PaginationVM<GetAdminAgentVM> paginationVM = new PaginationVM<GetAdminAgentVM>()
             {

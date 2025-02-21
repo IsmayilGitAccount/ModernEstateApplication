@@ -9,3 +9,15 @@ C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\
 C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\refint\ModernEstate.Infrastructure.dll
 C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.pdb
 C:\Code Academy\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ref\ModernEstate.Infrastructure.dll
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\bin\Debug\net8.0\ModernEstate.Infrastructure.deps.json
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\bin\Debug\net8.0\ModernEstate.Infrastructure.dll
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\bin\Debug\net8.0\ModernEstate.Infrastructure.pdb
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.AssemblyInfo.cs
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.sourcelink.json
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.dll
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\refint\ModernEstate.Infrastructure.dll
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ModernEstate.Infrastructure.pdb
+C:\Users\ASUS TUF\Desktop\ModernEstateDemo\ModernEstate\src\Infrastructure\ModernEstate.Infrastructure\obj\Debug\net8.0\ref\ModernEstate.Infrastructure.dll

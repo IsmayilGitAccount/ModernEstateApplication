@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.ViewModels.Properties;
 using ModernEstate.Application.ViewModels.Reviews;
 using ModernEstate.Domain.Entities;
@@ -11,7 +12,7 @@ namespace ModernEstate.MVC.Controllers
     {
         public async Task<IActionResult> Details(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException($"{id} is wrong!");
             Property property = await _context.Properties
                 .Include(p => p.Agency)
                 .Include(p => p.Agent)
@@ -26,7 +27,7 @@ namespace ModernEstate.MVC.Controllers
                 .Include(p => p.Parking)
                 .FirstOrDefaultAsync(p => p.Id == id);
 
-            if (property == null) return NotFound();
+            if (property == null) throw new NotFoundException("Not found!");
 
             SinglePropertyVM productVM = new SinglePropertyVM()
             {
@@ -37,7 +38,7 @@ namespace ModernEstate.MVC.Controllers
                 .Where(p => p.CategoryId == property.Id || p.Id != id)
                 .Include(p => p.PropertyPhotos)
                 .Take(3)
-                .OrderByDescending(p=>p.Id)
+                .OrderByDescending(p => p.Id)
                 .ToListAsync()
             };
             return View(productVM);

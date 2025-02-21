@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.ViewModels.Properties;
 using ModernEstate.Persistence.Data;
 
@@ -9,13 +10,13 @@ namespace ModernEstate.MVC.Controllers
     {
         public async Task<IActionResult> Index(int page = 1)
         {
-            if (page < 1) return BadRequest();
+            if (page < 1) throw new NotFoundException($"{page}th page is not found!");
 
             int count = await _context.Properties.CountAsync();
 
             double total = Math.Ceiling((double)count / 3);
 
-            if (total < page) return BadRequest();
+            if (total < page) throw new BadRequestException("Not found!");
 
             var propertyVMs = new PropertyVM()
             {
@@ -72,6 +73,10 @@ namespace ModernEstate.MVC.Controllers
             return View(propertyVMs);
         }
 
+        public IActionResult Error(string errorMessage)
+        {
+            return View(model: errorMessage);
+        }
     }
 }
 

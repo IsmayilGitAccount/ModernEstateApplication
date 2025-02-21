@@ -1,0 +1,70 @@
+﻿@using ModernEstate.Application.ViewModels.Contacts
+@model SendMessageVM
+
+<h2 style="text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Chat Room</h2>
+
+<div class="chat-container" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+    <div class="message-history" style="max-height: 400px; overflow-y: auto; margin-bottom: 20px; padding: 10px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px;">
+        <!-- Messages -->
+        @foreach (var message in Model.Messages)
+        {
+            <div class="message-item received"
+                 style="margin-bottom: 10px; padding: 10px; border-radius: 8px; max-width: 75%; word-wrap: break-word;
+                background-color: #e9ecef; color: #333;">
+
+                <strong>@(message.Name)</strong>
+                <p style="font-size: 14px;">@message.Message</p>
+            </div>
+        }
+    </div>
+
+    <!-- New Message Form -->
+    <form method="post" style="display: flex; flex-direction: column;">
+        <textarea asp-for="Message" placeholder="Your message..." style="width: 100%; height: 100px; padding: 10px; border: 1px solid #ddd; border-radius: 8px; resize: none; font-size: 14px;"></textarea>
+        <span asp-validation-for="Message" class="text-danger"></span>
+        <button type="submit" style="margin-top: 10px; padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 8px; font-size: 14px; cursor: pointer;">
+            Send Message
+        </button>
+    </form>
+</div>
+
+<style>
+    .message-history {
+        padding: 10px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+
+    .message-item {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 8px;
+        max-width: 75%;
+        word-wrap: break-word;
+    }
+
+        .message-item strong {
+            font-size: 14px;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .message-item p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .message-item.received {
+            background-color: #e9ecef;
+            color: #333;
+        }
+
+        .message-item.sent {
+            background-color: #007bff;
+            color: white;
+            margin-left: auto;
+            text-align: right;
+        }
+</style>

@@ -14,21 +14,9 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class PropertyController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
-        public override void OnActionExecuting(ActionExecutingContext context)
-        {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
-            }
-
-            base.OnActionExecuting(context);
-        }
         public async Task<IActionResult> Index(int page = 1)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
+            
 
             if (page < 1) return BadRequest();
 
@@ -52,7 +40,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                     Price = p.Price,
                     CategoryName = p.Category.CategoryName,
                     Photo = p.PropertyPhotos.FirstOrDefault(pp => pp.IsPrimary == true).Photo
-                }).Skip((page-1)*3).Take(3).ToListAsync();
+                }).Skip((page - 1) * 3).Take(3).ToListAsync();
 
             PaginationVM<GetAdminPropertyVM> paginationVM = new PaginationVM<GetAdminPropertyVM>()
             {
@@ -66,10 +54,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Create()
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
+            
             CreateAdminPropertyVM propertyVM = new CreateAdminPropertyVM()
             {
                 Categories = await _context.Categories.ToListAsync(),
@@ -90,10 +75,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CreateAdminPropertyVM propertyVM)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
+           
             propertyVM.Agencies = await _context.Agencies.ToListAsync();
             propertyVM.Agents = await _context.Agents.ToListAsync();
             propertyVM.Roofs = await _context.Roofs.ToListAsync();
@@ -291,10 +273,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
+           
             if (id is null || id <= 0) return BadRequest();
 
             Property property = await _context.Properties
@@ -345,10 +324,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateAdminPropertyVM propertyVM)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
+           
             if (id is null || id <= 0) return BadRequest();
 
             Property property = await _context.Properties.Include(p => p.PropertyPhotos).Include(p => p.PropertyFeatures).FirstOrDefaultAsync(p => p.Id == id);
@@ -382,7 +358,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 ModelState.AddModelError(nameof(UpdateAdminPropertyVM.CategoryId), "Categories are wrong");
                 return View(propertyVM);
             }
-            
+
 
             if (property.AgencyId != propertyVM.AgencyId)
             {
@@ -560,7 +536,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
             property.StatusId = propertyVM.StatusId;
             property.TypeId = propertyVM.TypeId;
             property.SchoolDistrict = propertyVM.SchoolDistrict;
-            
+
 
             await _context.SaveChangesAsync();
 
@@ -570,10 +546,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
+           
             if (id is null || id <= 0) return BadRequest();
             Property property = await _context.Properties.FirstOrDefaultAsync(p => p.Id == id);
             if (property == null) return NotFound();
@@ -587,28 +560,25 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
+           
             if (id == null || id <= 0)
             {
                 return BadRequest();
             }
 
             var property = await _context.Properties
-                .Include(p => p.Agency)              
-                .Include(p => p.Agent)               
-                .Include(p => p.Category)            
-                .Include(p => p.View)                
-                .Include(p => p.Roof)                
-                .Include(p => p.Exterior)            
-                .Include(p => p.Parking)             
+                .Include(p => p.Agency)
+                .Include(p => p.Agent)
+                .Include(p => p.Category)
+                .Include(p => p.View)
+                .Include(p => p.Roof)
+                .Include(p => p.Exterior)
+                .Include(p => p.Parking)
                 .Include(p => p.PropertyFeatures)
-                .Include(p => p.PropertyPhotos)      
-                .Include(p => p.Status)              
-                .Include(p => p.Type)                
-                .FirstOrDefaultAsync(p => p.Id == id); 
+                .Include(p => p.PropertyPhotos)
+                .Include(p => p.Status)
+                .Include(p => p.Type)
+                .FirstOrDefaultAsync(p => p.Id == id);
 
             if (property == null)
             {

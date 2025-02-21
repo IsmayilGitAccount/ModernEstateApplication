@@ -435,6 +435,45 @@ namespace ModernEstate.Persistence.Migrations
                     b.ToTable("Chats");
                 });
 
+            modelBuilder.Entity("ModernEstate.Domain.Entities.Contact", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Message")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Contacts");
+                });
+
             modelBuilder.Entity("ModernEstate.Domain.Entities.Exterior", b =>
                 {
                     b.Property<int>("Id")
@@ -1007,6 +1046,15 @@ namespace ModernEstate.Persistence.Migrations
                         .HasForeignKey("UserId");
 
                     b.Navigation("Agent");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ModernEstate.Domain.Entities.Contact", b =>
+                {
+                    b.HasOne("ModernEstate.Domain.Entities.Account.AppUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId");
 
                     b.Navigation("User");
                 });

@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.ViewModels.Posts;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Persistence.Data;
@@ -12,7 +13,7 @@ namespace ModernEstate.MVC.Controllers
         {
             GetPostVM postVM = new GetPostVM()
             {
-                Posts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).OrderByDescending(p=>p.Id).ToListAsync(),
+                Posts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).OrderByDescending(p => p.Id).ToListAsync(),
                 RecentlyPosts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).Take(2).ToListAsync(),
             };
             return View(postVM);
@@ -20,16 +21,16 @@ namespace ModernEstate.MVC.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException($"{id} is wrong!");
 
             Post post = await _context.Posts.FirstOrDefaultAsync(p => p.Id == id);
 
-            if (post == null) return NotFound();
+            if (post == null) throw new NotFoundException("Not found!");
 
             GetPostVM postVM = new GetPostVM()
             {
-                Posts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).Where(p=>p.Id ==id).ToListAsync(),
-                RecentlyPosts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).Where(p=>p.Id!=id).Take(2).ToListAsync(),
+                Posts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).Where(p => p.Id == id).ToListAsync(),
+                RecentlyPosts = await _context.Posts.Include(p => p.Agency).Include(p => p.Author).Where(p => p.Id != id).Take(2).ToListAsync(),
                 Post = post
             };
 

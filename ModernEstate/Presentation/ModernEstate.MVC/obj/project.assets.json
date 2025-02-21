@@ -741,6 +741,23 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Abstractions/2.3.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.3.0",
+          "System.Text.Encodings.Web": "8.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Http.Features/5.0.17": {
         "type": "package",
         "dependencies": {
@@ -3041,15 +3058,15 @@
           }
         }
       },
-      "System.Text.Encodings.Web/7.0.0": {
+      "System.Text.Encodings.Web/8.0.0": {
         "type": "package",
         "compile": {
-          "lib/net7.0/System.Text.Encodings.Web.dll": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net7.0/System.Text.Encodings.Web.dll": {
+          "lib/net8.0/System.Text.Encodings.Web.dll": {
             "related": ".xml"
           }
         },
@@ -3057,7 +3074,7 @@
           "buildTransitive/net6.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll": {
+          "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll": {
             "assetType": "runtime",
             "rid": "browser"
           }
@@ -3241,6 +3258,7 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "AutoMapper.Collection": "10.0.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.3.0",
           "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "ModernEstate.Domain": "1.0.0"
         },
@@ -4211,6 +4229,19 @@
         "lib/netstandard2.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.xml",
         "microsoft.aspnetcore.cryptography.keyderivation.8.0.11.nupkg.sha512",
         "microsoft.aspnetcore.cryptography.keyderivation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.3.0": {
+      "sha512": "39r9PPrjA6s0blyFv5qarckjNkaHRA5B+3b53ybuGGNTXEj1/DStQJ4NWjFL6QTRQpL9zt7nDyKxZdJOlcnq+Q==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Http.Features/5.0.17": {
@@ -9070,10 +9101,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Text.Encodings.Web/7.0.0": {
-      "sha512": "OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
+    "System.Text.Encodings.Web/8.0.0": {
+      "sha512": "yev/k9GHAEGx2Rg3/tU6MQh4HGBXJs70y7j1LaM1i/ER9po+6nnQ6RRqTJn1E7Xu0fbIFK80Nh5EoODxrbxwBQ==",
       "type": "package",
-      "path": "system.text.encodings.web/7.0.0",
+      "path": "system.text.encodings.web/8.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -9090,13 +9121,17 @@
         "lib/net6.0/System.Text.Encodings.Web.xml",
         "lib/net7.0/System.Text.Encodings.Web.dll",
         "lib/net7.0/System.Text.Encodings.Web.xml",
+        "lib/net8.0/System.Text.Encodings.Web.dll",
+        "lib/net8.0/System.Text.Encodings.Web.xml",
         "lib/netstandard2.0/System.Text.Encodings.Web.dll",
         "lib/netstandard2.0/System.Text.Encodings.Web.xml",
         "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll",
         "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.xml",
         "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll",
         "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.7.0.0.nupkg.sha512",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.dll",
+        "runtimes/browser/lib/net8.0/System.Text.Encodings.Web.xml",
+        "system.text.encodings.web.8.0.0.nupkg.sha512",
         "system.text.encodings.web.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -9547,11 +9582,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj",
       "projectName": "ModernEstate.MVC",
-      "projectPath": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj",
+      "projectPath": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\ModernEstate.MVC.csproj",
       "packagesPath": "C:\\Users\\ASUS TUF\\.nuget\\packages\\",
-      "outputPath": "C:\\Code Academy\\ModernEstate\\Presentation\\ModernEstate.MVC\\obj\\",
+      "outputPath": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -9572,14 +9607,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj": {
-              "projectPath": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj"
+            "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj": {
+              "projectPath": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Application\\ModernEstate.Application.csproj"
             },
-            "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj": {
-              "projectPath": "C:\\Code Academy\\ModernEstate\\src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj"
+            "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj": {
+              "projectPath": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Core\\ModernEstate.Domain\\ModernEstate.Domain.csproj"
             },
-            "C:\\Code Academy\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj": {
-              "projectPath": "C:\\Code Academy\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj"
+            "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj": {
+              "projectPath": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\src\\Infrastructure\\ModernEstate.Persistence\\ModernEstate.Persistence.csproj"
             }
           }
         }
