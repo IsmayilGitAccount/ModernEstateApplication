@@ -5,15 +5,14 @@
 
 <div class="chat-container" style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f4f4f9; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
     <div class="message-history" style="max-height: 400px; overflow-y: auto; margin-bottom: 20px; padding: 10px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px;">
-        <!-- Messages -->
         @foreach (var message in Model.Messages)
         {
             <div class="message-item received"
                  style="margin-bottom: 10px; padding: 10px; border-radius: 8px; max-width: 75%; word-wrap: break-word;
-                background-color: #e9ecef; color: #333;">
-
+            background-color: #e9ecef; color: #333;">
                 <strong>@(message.Name)</strong>
                 <p style="font-size: 14px;">@message.Message</p>
+                <small style="font-size: 12px; color: #888;">@message.CreatedAt.ToString("dd MMM yyyy HH:mm")</small>
             </div>
         }
     </div>
@@ -61,7 +60,7 @@
             color: #333;
         }
 
-        .message-item.sent {
+        .message-item.sent {    
             background-color: #007bff;
             color: white;
             margin-left: auto;

@@ -1,6 +1,5 @@
 ﻿using ModernEstate.Domain.Entities.Account;
 using ModernEstate.Domain.Entities.Base;
-using ModernEstate.Domain.Enums;
 
 namespace ModernEstate.Domain.Entities
 {
@@ -13,5 +12,6 @@ namespace ModernEstate.Domain.Entities
         public string Message { get; set; }
         public AppUser User { get; set; }
         public string Role { get; set; }
+        public string AdminId { get; set; }
     }
 }

@@ -849,6 +849,7 @@ wwwroot\assets\images\e0ca3d10-240a-4b7b-841d-afb4a5eee9f7.jpg
 wwwroot\assets\images\e219da53-20b2-4665-87d5-841ed3483ffb.jpeg
 wwwroot\assets\images\e444a885-06d6-49b7-bee9-6c84590f3439.jpg
 wwwroot\assets\images\e6a3c8fb-2a37-4e6a-9d01-cfd3dd0bee61.webp
+wwwroot\assets\images\ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b.jpg
 wwwroot\assets\images\ec0dd321-69e7-4868-8384-82eae25e2933.jpg
 wwwroot\assets\images\edaeef89-9027-41bc-bd8c-37892b78f649.jpg
 wwwroot\assets\images\elements-1.jpg

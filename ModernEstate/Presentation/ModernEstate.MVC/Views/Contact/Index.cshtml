@@ -30,42 +30,42 @@
                 <hr>
                 <p>You can contact us any way that is convenient for you. We are available 24/7 via fax or email. You can also use a quick contact form below or visit our office personally.</p>
                 <!-- RD Mailform-->
-                <form data-form-output="form-output-global" data-form-type="contact" method="post" class="rd-mailform text-left offset-11">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <label asp-for="Name" class="form-label">Your name</label>
-                                <input asp-for="Name" id="contact-name" type="text" name="name" class="form-control">
-                                <span asp-validation-for="Name" class="text-danger"></span>
+                    <form data-form-output="form-output-global" data-form-type="contact" method="post" class="rd-mailform text-left offset-11">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label asp-for="Name" class="form-label">Your name</label>
+                                    <input asp-for="Name" id="contact-name" type="text" name="name" class="form-control">
+                                    <span asp-validation-for="Name" class="text-danger"></span>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6 input-mod-1">
-                            <div class="form-group">
-                                <label asp-for="Phone" class="form-label">Your phone</label>
-                                <input asp-for="Phone" id="contact-phone" type="text" name="phone" class="form-control">
-                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            <div class="col-sm-6 input-mod-1">
+                                <div class="form-group">
+                                    <label asp-for="Phone" class="form-label">Your phone</label>
+                                    <input asp-for="Phone" id="contact-phone" type="text" name="phone" class="form-control">
+                                    <span asp-validation-for="Phone" class="text-danger"></span>
 
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <label asp-for="Email" class="form-label">Your e-mail</label>
-                                <input asp-for="Email" id="contact-email" type="email" name="email" class="form-control">
-                                <span asp-validation-for="Email" class="text-danger"></span>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label asp-for="Email" class="form-label">Your e-mail</label>
+                                    <input asp-for="Email" id="contact-email" type="email" name="email" class="form-control">
+                                    <span asp-validation-for="Email" class="text-danger"></span>
 
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-12">
-                            <div class="form-group">
-                                <label asp-for="Message" class="form-label">Message</label>
-                                <textarea asp-for="Message" id="contact-message" name="message" data-constraints="Required" class="form-control"></textarea>
-                                <span asp-validation-for="Message" class="text-danger"></span>
+                            <div class="col-xs-12">
+                                <div class="form-group">
+                                    <label asp-for="Message" class="form-label">Message</label>
+                                    <textarea asp-for="Message" id="contact-message" name="message" data-constraints="Required" class="form-control"></textarea>
+                                    <span asp-validation-for="Message" class="text-danger"></span>
 
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-sushi btn-sm">Send message</button>
-                </form>
+                        <button type="submit" class="btn btn-sushi btn-sm">Send message</button>
+                    </form>
             </div>
             <div class="col-md-4 offset-7">
                 <div class="row row-mod-1 flow-offset-6 sidebar text-sm-center text-md-left">

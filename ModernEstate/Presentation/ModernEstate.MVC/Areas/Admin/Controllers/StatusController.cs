@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Areas.Admin.ViewModels.Status;
 using ModernEstate.Domain.Entities;
@@ -11,28 +11,15 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     [Area("Admin")]
     public class StatusController(AppDbContext _context) : Controller
     {
-        public override void OnActionExecuting(ActionExecutingContext context)
-        {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
-            }
-
-            base.OnActionExecuting(context);
-        }
         public async Task<IActionResult> Index(int page = 1)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
-            if (page < 1) return BadRequest();
+            if (page < 1) throw new BadRequestException();
 
             int count = await _context.Status.CountAsync();
 
             double total = Math.Ceiling((double)count / 3);
 
-            if (page > total) return BadRequest();
+            if (page > total) throw new BadRequestException();
 
             var statusVMs = await _context.Status.Select(s => new GetAdminStatusVM
             {
@@ -52,20 +39,12 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             return View();
         }
 
         [HttpPost]
         public async Task<IActionResult> Create(CreateAdminStatusVM statusVM)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             if (!ModelState.IsValid)
             {
                 return View(statusVM);
@@ -95,13 +74,9 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
             Status status = await _context.Status.FirstOrDefaultAsync(s => s.Id == id);
-            if (status == null) return NotFound();
+            if (status == null) throw new NotFoundException();
 
             UpdateAdminStatusVM statusVM = new UpdateAdminStatusVM()
             {
@@ -114,13 +89,9 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateAdminStatusVM statusVM)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
             Status status = await _context.Status.FirstOrDefaultAsync(s => s.Id == id);
-            if (status == null) return NotFound();
+            if (status == null) throw new NotFoundException();
 
             if (!ModelState.IsValid)
             {
@@ -144,13 +115,9 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
             Status status = await _context.Status.FirstOrDefaultAsync(s => s.Id == id);
-            if (status == null) return NotFound();
+            if (status == null) throw new NotFoundException();
 
             _context.Status.Remove(status);
 
@@ -161,13 +128,9 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
             Status status = await _context.Status.FirstOrDefaultAsync(s => s.Id == id);
-            if (status == null) return NotFound();
+            if (status == null) throw new NotFoundException();
 
             return View(status);
         }

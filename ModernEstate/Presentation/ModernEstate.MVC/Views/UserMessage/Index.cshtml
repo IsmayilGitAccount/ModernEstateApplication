@@ -1,0 +1,99 @@
+﻿@using ModernEstate.Application.ViewModels.Contacts
+@model List<GetUserMessageVM>
+@{
+    Layout = null;
+}
+<h2 class="page-title">Messages</h2>
+
+<div class="message-list">
+    @foreach (var message in Model)
+    {
+            <div class="message-item">
+                <div class="message-header">
+                    <strong class="sender-name">@message.Name</strong>
+                    <span class="received-time">Received</span>
+                </div>
+                <p class="message-text">@message.Message</p>
+                <a asp-controller="UserMessage" asp-action="SendMessage" asp-route-userId="@message.UserId" class="go-to-chat-btn">
+                    Go to Chat
+                </a>
+            </div>
+    }
+</div>
+
+<style>
+    body {
+        background-color: #f4f6f9;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 20px;
+    }
+
+    .page-title {
+        text-align: center;
+        color: #333;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .message-list {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .message-item {
+        background: linear-gradient(145deg, #ffffff, #e6e8eb);
+        border: 1px solid #ddd;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.7);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .message-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15), -6px -6px 15px rgba(255, 255, 255, 0.8);
+    }
+
+    .message-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .sender-name {
+        font-size: 18px;
+        color: #007bff;
+        font-weight: bold;
+    }
+
+    .received-time {
+        font-size: 14px;
+        color: #888;
+    }
+
+    .message-text {
+        font-size: 16px;
+        color: #333;
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+
+    .go-to-chat-btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: linear-gradient(145deg, #007bff, #0056b3);
+        color: white;
+        font-size: 14px;
+        text-decoration: none;
+        border-radius: 30px;
+        transition: background 0.3s;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .go-to-chat-btn:hover {
+        background: linear-gradient(145deg, #0056b3, #003f8c);
+        text-decoration: none;
+    }
+</style>

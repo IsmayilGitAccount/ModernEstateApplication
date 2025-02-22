@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Domain.Entities;
 using ModernEstate.MVC.Areas.Admin.ViewModels.Categories;
@@ -16,13 +17,13 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Index(int page = 1)
         {
           
-            if (page < 1) return BadRequest();
+            if (page < 1) throw new BadRequestException("Wrong page input!");
 
             int count = await _context.FAQs.CountAsync();
 
             double total = Math.Ceiling((double)count / 3);
 
-            if (page > total) return BadRequest();
+            if (page > total) throw new NotFoundException("Page was not found!");
 
             var faqVMs = await _context.FAQs.Include(f=>f.Agency).Select(f=>new GetAdminFAQVM
             {
@@ -87,11 +88,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException("Wrong id input!");
 
             FAQ faq = await _context.FAQs.FirstOrDefaultAsync(f=>f.Id == id);
 
-            if (faq == null) return NotFound();
+            if (faq == null) throw new NotFoundException();
 
             UpdateAdminFAQVM faqVM = new UpdateAdminFAQVM()
             {
@@ -109,11 +110,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             faqVM.Agency = await _context.Agencies.ToListAsync();
 
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException("Wrong id input!");
 
             FAQ faq = await _context.FAQs.FirstOrDefaultAsync(f => f.Id == id);
 
-            if (faq == null) return NotFound();
+            if (faq == null) throw new NotFoundException();
 
             var result = await _context.Agencies.AnyAsync(a => a.Id == faqVM.AgencyId);
 
@@ -134,11 +135,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException("Wrong id input!");
 
             FAQ faq = await _context.FAQs.FirstOrDefaultAsync(f => f.Id == id);
 
-            if (faq == null) return NotFound();
+            if (faq == null) throw new NotFoundException();
 
             _context.FAQs.Remove(faq);
 
@@ -149,11 +150,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             FAQ faq = await _context.FAQs.Include(f=>f.Agency).FirstOrDefaultAsync(f => f.Id == id);
 
-            if (faq == null) return NotFound();
+            if (faq == null) throw new NotFoundException();
 
             return View(faq);
         }

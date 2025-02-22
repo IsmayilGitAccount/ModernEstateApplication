@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.Utilities.Extensions;
 using ModernEstate.Application.ViewModels.AdminPaginations;
 using ModernEstate.Application.ViewModels.AdminSlides;
@@ -14,29 +15,17 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     public class SlideController(AppDbContext _context, IWebHostEnvironment _env) : Controller
     {
         string Root = Path.Combine("assets", "images");
-        public override void OnActionExecuting(ActionExecutingContext context)
-        {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                context.Result = new RedirectToActionResult("Login", "Account", new { area = "" });
-            }
-
-            base.OnActionExecuting(context);
-        }
+        
         public async Task<IActionResult> Index(int page = 1)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
 
-            if (page < 1) return BadRequest();
+            if (page < 1) throw new BadRequestException();
 
             int count = await _context.Slides.CountAsync();
 
             double total = Math.Ceiling((double)count / 3);
 
-            if (page > total) return BadRequest();
+            if (page > total) throw new NotFoundException();
 
             var slides = await _context.Slides.Select(s=>new GetAdminSlideVM
             {
@@ -126,11 +115,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             Slide slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
 
-            if (slide == null) return NotFound();
+            if (slide == null) throw new NotFoundException();
 
             UpdateAdminSlideVM slideVM = new UpdateAdminSlideVM()
             {
@@ -146,11 +135,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int? id, UpdateAdminSlideVM slideVM)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             Slide slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
 
-            if (slide == null) return NotFound();
+            if (slide == null) throw new NotFoundException();
 
             if (!ModelState.IsValid)
             {
@@ -207,13 +196,13 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             Slide slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
 
-            if (slide == null) return NotFound();
+            if (slide == null) throw new NotFoundException();
 
-            if(slide.Photo is not  null)
+            if (slide.Photo is not  null)
             {
                 slide.Photo.DeleteFile(_env.WebRootPath, Root);
             }
@@ -227,11 +216,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             Slide slide = await _context.Slides.FirstOrDefaultAsync(s => s.Id == id);
 
-            if (slide == null) return NotFound();
+            if (slide == null) throw new NotFoundException();
 
             return View(slide);
         }

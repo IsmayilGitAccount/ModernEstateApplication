@@ -27,10 +27,6 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         }
         public async Task<IActionResult> Index(int page = 1)
         {
-            if (!User.Identity.IsAuthenticated || !User.IsInRole("Admin"))
-            {
-                return RedirectToAction("Login", "Account");
-            }
             if (page < 1) return BadRequest();
 
             int count = await _context.Assignments.CountAsync();
@@ -53,6 +49,7 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 CurrentPage = page,
                 Items = assignments
             };
+
 
             return View(paginationVM);
         }

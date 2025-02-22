@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.Utilities.Extensions;
 using ModernEstate.Application.ViewModels.AdminAgents;
 using ModernEstate.Application.ViewModels.AdminPaginations;
@@ -18,13 +19,13 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
     {
         public async Task<IActionResult> Index(int page = 1)
         {
-            if (page < 1) return BadRequest();
+            if (page < 1) throw new BadRequestException();
 
             int count = await _context.Services.CountAsync();
 
             double total = Math.Ceiling((double)count / 3);
 
-            if (page > total) return BadRequest();
+            if (page > total) throw new NotFoundException();
 
             var serviceVMs = await _context.Services.Include(s=>s.Agency).Select(s=>new GetAdminServiceVM
             {
@@ -106,11 +107,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Update(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             Service service = await _context.Services.FirstOrDefaultAsync(s => s.Id == id);
 
-            if(service == null) return NotFound();
+            if(service == null) throw new NotFoundException();
 
             UpdateAdminServiceVM serviceVM = new UpdateAdminServiceVM()
             {
@@ -128,11 +129,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         {
             serviceVM.Agencies = await _context.Agencies.ToListAsync();
 
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             Service service = await _context.Services.FirstOrDefaultAsync(s => s.Id == id);
 
-            if (service == null) return NotFound();
+            if (service == null) throw new NotFoundException();
 
             if (!ModelState.IsValid)
             {
@@ -175,11 +176,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             Service service = await _context.Services.FirstOrDefaultAsync(s => s.Id == id);
 
-            if (service == null) return NotFound();
+            if (service == null) throw new NotFoundException();
 
             if (service.Photo is not null)
             {
@@ -195,11 +196,11 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
 
         public async Task<IActionResult> Details(int? id)
         {
-            if (id is null || id <= 0) return BadRequest();
+            if (id is null || id <= 0) throw new BadRequestException();
 
             Service service = await _context.Services.Include(s=>s.Agency).FirstOrDefaultAsync(s => s.Id == id);
 
-            if (service == null) return NotFound();
+            if (service == null) throw new NotFoundException();
 
             return View(service);
         }

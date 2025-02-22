@@ -3,6 +3,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using ModernEstate.Application.Utilities.Exceptions;
 using ModernEstate.Application.ViewModels.Contacts;
 using ModernEstate.Domain.Entities;
 using ModernEstate.Domain.Entities.Account;
@@ -26,11 +27,9 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> Index()
         {
             var contact = await _context.Contacts.ToListAsync();
-
-            Contact text = contact.FirstOrDefault();
-
             var messages = await _context.Contacts
                  .Where(c => c.Role == UserRole.User.ToString())
+                 .OrderByDescending(c => c.CreatedAt)
         .Select(c => new GetContactVM
         {
             MessageId = c.Id,
@@ -49,19 +48,20 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
         public async Task<IActionResult> SendMessage(string userId)
         {
             var contact = await _context.Contacts
+                .Where(c=>c.UserId == userId)
                                         .FirstOrDefaultAsync(c => c.UserId == userId);
 
             if (contact == null)
             {
-                return NotFound();
+                throw new NotFoundException();
             }
 
             SendMessageVM vmMessage = new SendMessageVM()
             {
                 Messages = await _context.Contacts
-                                        .Where(c => c.UserId == userId && c.IsDeleted == false) 
+                                        .Where(c => c.UserId == userId && c.IsDeleted == false)
                                         .ToListAsync(),
-                UserId = userId
+                UserId = userId,
             };
 
             return View(vmMessage);
@@ -83,15 +83,15 @@ namespace ModernEstate.MVC.Areas.Admin.Controllers
                 Email = user.Email,
                 IsDeleted = false,
                 Message = vm.Message,
-                Name = user.UserName,
+                Name = user.Name,
                 PhoneNumber = vm.PhoneNumber,
-                Role = "Agent"
+                Role = "Admin",
             };
 
             await _context.Contacts.AddAsync(contact);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction("SendMessage", new { userId = userId }); 
+            return RedirectToAction("SendMessage", new { userId = userId });
         }
     }
 }

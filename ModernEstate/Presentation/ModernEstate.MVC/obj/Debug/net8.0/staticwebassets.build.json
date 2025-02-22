@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jXmGVyVo2FUJSc5u7pcnEgqCH1uZzDQ4TMFJ74Z6M1w=",
+  "Hash": "7Udf2wTrvXTfOwwh0o7iwsi736rb/Vl6hgy+3uWKYow=",
   "Source": "ModernEstate.MVC",
   "BasePath": "_content/ModernEstate.MVC",
   "Mode": "Default",
@@ -19146,6 +19146,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\e6a3c8fb-2a37-4e6a-9d01-cfd3dd0bee61.webp"
+    },
+    {
+      "Identity": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b.jpg",
+      "SourceId": "ModernEstate.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\",
+      "BasePath": "_content/ModernEstate.MVC",
+      "RelativePath": "assets/images/ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ydgv7xywbp",
+      "Integrity": "tg9gA+50WH5Mm6xn90lWk3VHCt7jkQKQkTErBu6mfVg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b.jpg"
     },
     {
       "Identity": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\ec0dd321-69e7-4868-8384-82eae25e2933.jpg",
@@ -91805,6 +91826,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-nzQBrgGJeStJaq+w9XU6tkLnUcFq9sVLfBOulaRZyag="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b.jpg",
+      "AssetFile": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15980"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tg9gA+50WH5Mm6xn90lWk3VHCt7jkQKQkTErBu6mfVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 17:31:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tg9gA+50WH5Mm6xn90lWk3VHCt7jkQKQkTErBu6mfVg="
+        }
+      ]
+    },
+    {
+      "Route": "assets/images/ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b.ydgv7xywbp.jpg",
+      "AssetFile": "C:\\Users\\ASUS TUF\\Desktop\\ModernEstateDemo\\ModernEstate\\Presentation\\ModernEstate.MVC\\wwwroot\\assets\\images\\ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15980"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tg9gA+50WH5Mm6xn90lWk3VHCt7jkQKQkTErBu6mfVg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 22 Feb 2025 17:31:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ydgv7xywbp"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/images/ea9d212b-2f7f-4dd7-9c03-4ab74d46e43b.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-tg9gA+50WH5Mm6xn90lWk3VHCt7jkQKQkTErBu6mfVg="
         }
       ]
     },

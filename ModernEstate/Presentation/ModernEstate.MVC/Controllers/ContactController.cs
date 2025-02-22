@@ -13,7 +13,7 @@ namespace ModernEstate.MVC.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+           return View();
         }
 
         [HttpPost]
@@ -40,7 +40,8 @@ namespace ModernEstate.MVC.Controllers
                 Message = contactVM.Message,
                 PhoneNumber = contactVM.Phone,
                 Name = contactVM.Name,
-                Role = "User"
+                Role = "User",
+                User = user
             };
 
             await _context.Contacts.AddAsync(contact);

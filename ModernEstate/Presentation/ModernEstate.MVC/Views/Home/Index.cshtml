@@ -1,4 +1,4 @@
-﻿﻿@using ModernEstate.Application.ViewModels.Properties
+﻿﻿﻿@using ModernEstate.Application.ViewModels.Properties
 @using ModernEstate.Domain.Entities
 @model PropertyVM
 
@@ -17,9 +17,9 @@
 		opacity: 1;
 		transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
 		transform: translateX(100%);
-		background-color: #28a745; /* Yaşıl fon */
-		color: white; /* Ağ yazı */
-		border-left: 6px solid #155724; /* Tünd yaşıl border */
+		background-color: #28a745; 
+		color: white; 
+		border-left: 6px solid #155724; 
 	}
 
 	.show {
@@ -57,8 +57,8 @@
 			setTimeout(function () {
 				notification.style.display = "none";
 				notification.classList.remove("fade-out", "show");
-			}, 1000); // 1 saniyəyə tam itəcək
-		}, 5000); // 5 saniyə qalsın, sonra yavaş-yavaş yox olsun
+			}, 1000); 
+		}, 1500);
 	}
 </script>
 
@@ -80,7 +80,6 @@
 									$@propertyVM.Price
 									<span>/day</span>
 								</div>
-								<a asp-controller="SingleProperty" asp-action="Details" asp-route-Id="@propertyVM.Id" data-caption-animate="fadeIn" data-caption-delay="800" class="btn btn-sm btn-sushi">book now</a>
 							</div>
 						</div>
 					</div>
@@ -91,139 +90,6 @@
 		<!-- Swiper Navigation-->
 		<div class="swiper-button-prev"></div>
 		<div class="swiper-button-next"></div>
-	</div>
-</section>
-<section class="section-sm section-bottom-0 bg-dark">
-	<div class="container position-margin-top undefined">
-		<div class="search-form-wrap bg-white container-shadow">
-			<h3>Find Your Home</h3>
-			<form action="#" name="search-form" class="form-variant-1">
-				<div class="form-group">
-					<label for="keyword" class="form-label">Keyword</label>
-					<input id="keyword" type="text" name="keyword" placeholder="Any" class="form-control">
-				</div>
-				<div class="form-group">
-					<label for="select-search-1" class="form-label">Location</label>
-					<select id="select-search-1" data-minimum-results-for-search="Infinity" class="form-control select-filter">
-						@foreach (GetPropertyVM propertyVM in Model.Property)
-						{
-							<option value="@propertyVM.Location">@propertyVM.Location</option>
-						}
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="select-search-2" class="form-label">Property Status</label>
-					<select id="select-search-2" data-minimum-results-for-search="Infinity" class="form-control select-filter">
-						@foreach (Status status in Model.Status)
-						{
-							<option value="@status.StatusName">@status.StatusName</option>
-						}
-					</select>
-				</div>
-				<div class="form-group">
-					<label for="select-search-3" class="form-label">Property Type</label>
-					<select id="select-search-3" data-minimum-results-for-search="Infinity" class="form-control select-filter">
-						@foreach (Types type in Model.Types)
-						{
-							<option value="@type.TypeName">@type.TypeName</option>
-						}
-					</select>
-				</div>
-				<div class="form-group width-1">
-					<span>
-						Area (Sq Ft)
-						<br>
-					</span>
-					<div class="form-inline-flex-xs">
-						<input id="range-3" type="text" name="range-2" class="rd-range-input-value rd-range-input-value-3 form-control" placeholder="100">
-						<span class="text-abbey dash">—</span>
-						<input id="range-4" type="text" name="range-3" class="rd-range-input-value rd-range-input-value-4 form-control" placeholder="15000">
-					</div>
-					<div data-min="500" data-max="22000" data-start="[2000, 20000]" data-step="50" data-tooltip="true" data-min-diff="500" data-input=".rd-range-input-value-3" data-input-2=".rd-range-input-value-4" class="rd-range"></div>
-				</div>
-				<div class="form-group width-1">
-					<span>
-						Price (USD)
-						<br>
-					</span>
-					<div class="form-inline-flex-xs">
-						<input id="range-1" type="text" name="range-2" class="rd-range-input-value rd-range-input-value-1 form-control" placeholder="100">
-						<span class="text-abbey dash">—</span>
-						<input id="range-2" type="text" name="range-3" class="rd-range-input-value rd-range-input-value-2 form-control" placeholder="10,000">
-					</div>
-					<div data-min="100" data-max="10000" data-start="[600, 9500]" data-step="50" data-tooltip="true" data-min-diff="100" data-input=".rd-range-input-value-1" data-input-2=".rd-range-input-value-2" class="rd-range"></div>
-				</div>
-
-				<div class="form-group width-2">
-					<label for="select-search-7" class="form-label">Min Beds</label>
-					<select id="select-search-7" data-minimum-results-for-search="Infinity" class="form-control select-filter">
-						<option value="Any" selected="selected">Any</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-					</select>
-				</div>
-				<div class="form-group width-2">
-					<label for="select-search-8" class="form-label">Min Baths</label>
-					<select id="select-search-8" data-minimum-results-for-search="Infinity" class="form-control select-filter">
-						<option value="Any" selected="selected">Any</option>
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="3">3</option>
-						<option value="4">4</option>
-						<option value="5">5</option>
-						<option value="6">6</option>
-					</select>
-				</div>
-				<button class="btn btn-sm btn-sushi btn-min-width-sm">Search</button>
-				<div class="features">
-					<a href="" onclick="return false" class="btn-features">
-						<span></span>Look for certain features
-					</a>
-					<ul class="checkbox-list list-inline">
-						<li>
-							<label class="checkbox-inline">
-								<input name="input-group-radio" value="checkbox-1" type="checkbox" checked="checked">
-								<span>Central Heating (7)</span>
-							</label>
-						</li>
-						<li>
-							<label class="checkbox-inline">
-								<input name="input-group-radio" value="checkbox-2" type="checkbox">
-								<span>Lawn (6)</span>
-							</label>
-						</li>
-						<li>
-							<label class="checkbox-inline">
-								<input name="input-group-radio" value="checkbox-3" type="checkbox">
-								<span>Marble Floors (8)</span>
-							</label>
-						</li>
-						<li>
-							<label class="checkbox-inline">
-								<input name="input-group-radio" value="checkbox-4" type="checkbox">
-								<span>Fire Alarm (5)</span>
-							</label>
-						</li>
-						<li>
-							<label class="checkbox-inline">
-								<input name="input-group-radio" value="checkbox-5" type="checkbox">
-								<span>Home Theater (3)</span>
-							</label>
-						</li>
-						<li>
-							<label class="checkbox-inline">
-								<input name="input-group-radio" value="checkbox-6" type="checkbox">
-								<span>Hurricane Shutters (1)</span>
-							</label>
-						</li>
-					</ul>
-				</div>
-			</form>
-		</div>
 	</div>
 </section>
 
@@ -284,8 +150,8 @@
 										<path d="M78.6,46h16.7c1.3,0,2.4-1.1,2.4-2.4c0-1.3-1.1-2.4-2.4-2.4H78.6c-1.3,0-2.4,1.1-2.4,2.4                          C76.2,44.9,77.3,46,78.6,46"></path>
 										<path d="M81,43.6v-7.1c0-1.3-1.1-2.4-2.4-2.4c-1.3,0-2.4,1.1-2.4,2.4v7.1c0,1.3,1.1,2.4,2.4,2.4                          C79.9,46,81,44.9,81,43.6"></path>
 										<path d="M81,43.6v-7.1c0-1.3-1.1-2.4-2.4-2.4c-1.3,0-2.4,1.1-2.4,2.4v7.1c0,1.3,1.1,2.4,2.4,2.4                            C79.9,46,81,44.9,81,43.6"></path>
-							</g>
-						  </svg>
+								</g>
+							  </svg>
 									</span>@property.Area sq ft
 								</li>
 								<li><span class="icon icon-sm icon-primary hotel-icon-10"></span>@property.BathroomCount bathrooms</li>
@@ -349,11 +215,11 @@
 				url: "/Home/Index?page=" + page,
 				type: "GET",
 				beforeSend: function () {
-					$("#property-container").css("opacity", "0.5"); 
+					$("#property-container").css("opacity", "0.5");
 				},
 				success: function (data) {
-					let newHtml = $(data).find("#property-container").html(); 
-					let newPagination = $(data).find("#pagination-container").html(); 
+					let newHtml = $(data).find("#property-container").html();
+					let newPagination = $(data).find("#pagination-container").html();
 					$("#property-container").html(newHtml);
 					$("#pagination-container").html(newPagination);
 				},
@@ -401,77 +267,6 @@
 				</div>
 
 			}
-		</div>
-	</div>
-</section>
-
-
-<!--Section Testimonials-->
-<section class="section-md text-center text-sm-left bg-clients">
-	<div class="container">
-		<h2 class="text-white">Testimonials</h2>
-		<hr>
-		<!-- Owl Carousel-->
-		<div class="row flow-offset-1 clearleft-custom-2">
-			<div class="col-xs-12 col-sm-6">
-				<blockquote class="quote">
-					<div class="img-wrap">
-						<img src="~/assets/images/index-16.jpg" alt="" width="50" height="50">
-					</div>
-					<cite class="text-left">
-						<span class="h6 text-primary text-ubold">Laura Russell</span>
-						<span class="text-lightest">Journalist, San Diego</span>
-					</cite>
-					<p>
-						<q class="text-white">Thank you for your prompt response and the help that you gave me. You always have a quick solution to any problem. What an excellent level of customer service!</q>
-					</p>
-				</blockquote>
-			</div>
-			<div class="col-xs-12 col-sm-6">
-				<blockquote class="quote">
-					<div class="img-wrap">
-						<img src="~/assets/images/index-17.jpg" alt="" width="50" height="50">
-					</div>
-					<cite class="text-left">
-						<span class="h6 text-primary text-ubold">Richard Santos</span>
-						<span class="text-lightest">Web Designer, New York</span>
-					</cite>
-					<p>
-						<q>I just don't know how to describe your services... They are extraordinary! I am quite happy with them! Just keep up going this way!</q>
-					</p>
-				</blockquote>
-			</div>
-			<div class="col-xs-12 col-sm-6">
-				<blockquote class="quote">
-					<div class="img-wrap">
-						<img src="~/assets/images/index-18.jpg" alt="" width="50" height="50">
-					</div>
-					<cite class="text-left">
-						<span class="h6 text-primary text-ubold">Diana Valdez</span>
-						<span class="text-lightest">Teacher, San Diego</span>
-					</cite>
-					<p>
-						<q>Thank you very much. I'm impressed with your service. I've already told my friends about your company and your quick response, thanks again!</q>
-					</p>
-				</blockquote>
-			</div>
-			<div class="col-xs-12 col-sm-6">
-				<blockquote class="quote">
-					<div class="img-wrap">
-						<img src="~/assets/images/client-1.jpg" alt="" width="50" height="50">
-					</div>
-					<cite class="text-left">
-						<span class="h6 text-primary text-ubold">George Ortega</span>
-						<span class="text-lightest">Manager, New York</span>
-					</cite>
-					<p>
-						<q>Great organization! Your prompt answer became a pleasant surprise for me. You`ve rendered an invaluable service! Thank you very much!</q>
-					</p>
-				</blockquote>
-			</div>
-			<div class="col-xs-12">
-				<a href="#" class="btn btn-sushi btn-sm">read more testimonials</a>
-			</div>
 		</div>
 	</div>
 </section>

@@ -165,7 +165,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <a asp-controller="Chat" asp-action="Create" asp-route-agentId="@Model.Property.Agent.Id" class="btn btn-sushi btn-sm offset-11 btn-full-width">Contact an Agent</a>
+                        <a asp-controller="Agent" asp-action="Details" asp-route-id="@Model.Property.Agent.Id" class="btn btn-sushi btn-sm offset-11 btn-full-width">Contact an Agent</a>
                         <form method="post" asp-action="AddToWishlist" asp-controller="Wishlist">
                             <input type="hidden" name="propertyId" value="@Model.Property.Id" />
                             <input type="hidden" name="userId" value="@User.Identity.Name" />
@@ -173,9 +173,6 @@
                                 <span class="icon icon-left icon-sm fa-heart"></span> Add to Favorites
                             </button>
                         </form>
-                        <a asp-controller="Review" asp-action="Index" asp-route-Id="@Model.Property.Id" class="btn btn-primary btn-sm btn-min-width-md btn-full-width offset-10">
-                             Write Review
-                        </a>
                     </div>
                     <div class="sidebar-module">
                         <h4>Recent Properties</h4>

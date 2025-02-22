@@ -313,6 +313,7 @@ namespace ModernEstate.MVC.Controllers
                 UserName = user.UserName,
                 Name = user.Name,
                 Surname = user.Surname,
+                UserId = user.Id,
             };
 
             return View(model);

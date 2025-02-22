@@ -238,9 +238,6 @@
 								<li>
 									<a asp-controller="Post" asp-action="Index">Post Page</a>
 								</li>
-								<li>
-									<a asp-controller="Contact" asp-action="Index">Contact Us</a>
-								</li>
 							}
 							else if (User.IsInRole("Author"))
 							{
@@ -248,13 +245,22 @@
 									<a asp-controller="Home" asp-action="Index">Home</a>
 								</li>
 								<li>
-									<a asp-area="Admin" asp-controller="Post" asp-action="Index">Author Panel</a>
+									<a asp-controller="Post" asp-action="Index">Post Page</a>
+								</li>
+								<li>
+									<a asp-controller="Contact" asp-action="Index">Contact Us</a>
 								</li>
 							}
 							else if (User.IsInRole("Agent"))
 							{
+								<li class="active">
+									<a asp-controller="Home" asp-action="Index">Home</a>
+								</li>
 								<li>
-									<a asp-area="Admin" asp-controller="Service" asp-action="Index">Agent Panel</a>
+									<a asp-controller="Post" asp-action="Index">Post Page</a>
+								</li>
+								<li>
+									<a asp-controller="Contact" asp-action="Index">Contact Us</a>
 								</li>
 							}
 							else {

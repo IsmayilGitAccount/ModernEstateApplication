@@ -11,6 +11,14 @@
     {
         <title>Admin Profile</title>
     }
+    else if(User.IsInRole("Agent"))
+    {
+        <title>Agent Profile</title>
+    }
+    else if (User.IsInRole("Author"))
+    {
+        <title>Author Profile</title>
+    }
     else
     {
         <title>User Profile</title>
@@ -94,6 +102,14 @@
         else if (User.IsInRole("Agent"))
         {
             <a asp-area="Admin" asp-controller="Property" asp-action="Index" class="btn btn-primary btn-custom">Agent Panel</a>
+        }
+        else if(User.IsInRole("Author"))
+        {
+            <a asp-area="Admin" asp-controller="Post" asp-action="Index" class="btn btn-primary btn-custom">Author Panel</a>
+        }
+        else 
+        {
+            <a asp-controller="UserMessage" asp-action="Index" asp-route-userId="@Model.UserId" class="btn btn-primary btn-custom">Messages</a>
         }
         <br /> <br />
         <a asp-controller="Account" asp-action="Logout" class="btn btn-primary btn-custom">Logout</a>

@@ -19,7 +19,7 @@ namespace ModernEstate.MVC.Controllers
 
             GetServiceVM serviceVMs = new GetServiceVM()
             {
-                Service = await _context.Services.Include(s => s.Agency).Where(a => a.Id == id).ToListAsync(),
+                Service = await _context.Services.Include(s => s.Agency).Where(a => a.AgencyId == id).ToListAsync(),
                 Agency = agency,
             };
 
