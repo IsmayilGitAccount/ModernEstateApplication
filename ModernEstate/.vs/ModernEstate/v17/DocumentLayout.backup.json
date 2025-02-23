@@ -194,8 +194,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -206,8 +214,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\UserMessage\\SendMessage.cshtml",
               "ViewState": "AgIAAC8AAAAAAAAAAAAowEMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T18:48:56.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:48:56.544Z"
             },
             {
               "$type": "Document",
@@ -219,8 +226,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Contact\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T18:48:49.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:48:49.893Z"
             },
             {
               "$type": "Document",
@@ -232,8 +238,7 @@
               "RelativeToolTip": "src\\Core\\ModernEstate.Application\\ViewModels\\Contacts\\SendMessageVM.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:46:29.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:46:29.272Z"
             },
             {
               "$type": "Document",
@@ -258,8 +263,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyViewController.cs",
               "ViewState": "AgIAAHMAAAAAAAAAAAAowIYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:12:40.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:12:40.464Z"
             },
             {
               "$type": "Document",
@@ -271,8 +275,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\StatusController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:11:56.352Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:11:56.352Z"
             },
             {
               "$type": "Document",
@@ -284,8 +287,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\SlideController.cs",
               "ViewState": "AgIAAMwAAAAAAAAAAAAswN4AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:11:54.708Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:11:54.708Z"
             },
             {
               "$type": "Document",
@@ -297,8 +299,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ServiceController.cs",
               "ViewState": "AgIAAL0AAAAAAAAAAAAswIEAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:11:53.269Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:11:53.269Z"
             },
             {
               "$type": "Document",
@@ -310,8 +311,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\RoofController.cs",
               "ViewState": "AgIAAHkAAAAAAAAAAAAtwIYAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:11:51.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:11:51.805Z"
             },
             {
               "$type": "Document",
@@ -323,8 +323,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyTypeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:11:48.851Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:11:48.851Z"
             },
             {
               "$type": "Document",
@@ -336,8 +335,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PropertyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:11:46.199Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:11:46.199Z"
             },
             {
               "$type": "Document",
@@ -349,8 +347,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ParkingController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:08:20.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:08:20.227Z"
             },
             {
               "$type": "Document",
@@ -362,8 +359,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\FeatureController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAUwIAAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T18:01:34.385Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T18:01:34.385Z"
             },
             {
               "$type": "Document",
@@ -375,8 +371,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\FAQController.cs",
               "ViewState": "AgIAAGsAAAAAAAAAAAAkwJgAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:56:47.945Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:56:47.945Z"
             },
             {
               "$type": "Document",
@@ -388,8 +383,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\ExteriorController.cs",
               "ViewState": "AgIAAE8AAAAAAAAAAAAkwAMAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:54:01.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:54:01.281Z"
             },
             {
               "$type": "Document",
@@ -401,8 +395,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\CategoryController.cs",
               "ViewState": "AgIAAKIAAAAAAAAAAAAswLIAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:43:44.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:43:44.413Z"
             },
             {
               "$type": "Document",
@@ -414,8 +407,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AuthorController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:43:41.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:43:41.322Z"
             },
             {
               "$type": "Document",
@@ -427,8 +419,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgentController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:43:37.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:43:37.801Z"
             },
             {
               "$type": "Document",
@@ -440,8 +431,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AgencyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:43:32.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:43:32.088Z"
             },
             {
               "$type": "Document",
@@ -453,8 +443,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\FAQController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:40:55.215Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:40:55.215Z"
             },
             {
               "$type": "Document",
@@ -466,8 +455,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\ServiceController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:35:46.752Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:35:46.752Z"
             },
             {
               "$type": "Document",
@@ -479,8 +467,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Service\\Details.cshtml",
               "ViewState": "AgIAAA0AAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:34:34.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:34:34.892Z"
             },
             {
               "$type": "Document",
@@ -492,8 +479,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Agency\\Details.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAwB8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:33:32.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:33:32.536Z"
             },
             {
               "$type": "Document",
@@ -505,8 +491,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\PostController.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAQwAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:28:02.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:28:02.364Z"
             },
             {
               "$type": "Document",
@@ -518,16 +503,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Account\\MyProfile.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:26:26.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-02-22T17:26:26.052Z"
             },
             {
               "$type": "Document",
@@ -539,8 +515,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\MessageController.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAEwEAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:19:33.614Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:19:33.614Z"
             },
             {
               "$type": "Document",
@@ -552,8 +527,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\UserMessageController.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:19:13.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:19:13.602Z"
             },
             {
               "$type": "Document",
@@ -565,8 +539,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Controllers\\AssignmentController.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAQwC0AAABmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T17:18:12.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:18:12.088Z"
             },
             {
               "$type": "Document",
@@ -578,8 +551,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\FAQ\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAH0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:16:19.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:16:19.272Z"
             },
             {
               "$type": "Document",
@@ -591,8 +563,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Status\\Index.cshtml",
               "ViewState": "AgIAAGYAAAAAAAAAAAAAAHcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:13:51.142Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:13:51.142Z"
             },
             {
               "$type": "Document",
@@ -604,8 +575,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Service\\Index.cshtml",
               "ViewState": "AgIAAGoAAAAAAAAAAAAAAHoAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:13:38.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:13:38.566Z"
             },
             {
               "$type": "Document",
@@ -617,8 +587,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Roof\\Index.cshtml",
               "ViewState": "AgIAAGUAAAAAAAAAAAAAAHMAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:13:01.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:13:01.702Z"
             },
             {
               "$type": "Document",
@@ -630,8 +599,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\PropertyView\\Index.cshtml",
               "ViewState": "AgIAAGwAAAAAAAAAAAAAAHIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:12:23.854Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:12:23.854Z"
             },
             {
               "$type": "Document",
@@ -643,8 +611,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\PropertyType\\Index.cshtml",
               "ViewState": "AgIAAFIAAAAAAAAAAAAAAHQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:11:44.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:11:44.392Z"
             },
             {
               "$type": "Document",
@@ -656,8 +623,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Parking\\Index.cshtml",
               "ViewState": "AgIAAGgAAAAAAAAAAAAAAHgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:08:59.632Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:08:59.632Z"
             },
             {
               "$type": "Document",
@@ -669,8 +635,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Feature\\Index.cshtml",
               "ViewState": "AgIAAHgAAAAAAAAAAAAAAHcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:08:17.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:08:17.842Z"
             },
             {
               "$type": "Document",
@@ -682,8 +647,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Exterior\\Index.cshtml",
               "ViewState": "AgIAAHEAAAAAAAAAAAAAAHsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:06:59.504Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:06:59.504Z"
             },
             {
               "$type": "Document",
@@ -695,8 +659,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "ViewState": "AgIAAJsAAAAAAAAAAAAAAK8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:05:14.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:05:14.792Z"
             },
             {
               "$type": "Document",
@@ -708,8 +671,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
               "ViewState": "AgIAAIQAAAAAAAAAAAAAAIoAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T17:03:35.812Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T17:03:35.812Z"
             },
             {
               "$type": "Document",
@@ -721,8 +683,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAANwAAAAAAAAAAAAjwO4AAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T16:55:19.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:55:19.914Z"
             },
             {
               "$type": "Document",
@@ -734,8 +695,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Post\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T16:52:23.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:52:23.511Z"
             },
             {
               "$type": "Document",
@@ -747,8 +707,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Post\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T16:52:18.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:52:18.007Z"
             },
             {
               "$type": "Document",
@@ -760,8 +719,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\SingleProperty\\Details.cshtml",
               "ViewState": "AgIAAJcAAAAAAAAAAAAcwK4AAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T16:49:43.863Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:49:43.863Z"
             },
             {
               "$type": "Document",
@@ -773,8 +731,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Category\\Details.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T16:47:12.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:47:12.852Z"
             },
             {
               "$type": "Document",
@@ -786,8 +743,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAACcAAAAAAAAAAAAAADwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-22T16:40:31.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:40:31.536Z"
             },
             {
               "$type": "Document",
@@ -799,8 +755,7 @@
               "RelativeToolTip": "Presentation\\ModernEstate.MVC\\Controllers\\HomeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T16:40:04.146Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-22T16:40:04.146Z"
             }
           ]
         }
